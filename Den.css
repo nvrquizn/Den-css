@@ -160,48 +160,51 @@ div.cave-grid > img[src$="unsortedlionsbanner.png"] {
     display: none !important;
 }
 
-/* Replace with your own background */
+/* Replace cave background with your own image */
 div.cave-grid {
   background: url('https://i.ibb.co/gZSp41Cm/Screenshot-2026-04-09-at-04-49-48.png?v=2') center center / cover no-repeat !important;
-  opacity: 0.9; /* optional, for blending */
+  opacity: 0.9; /* optional blending */
   border-radius: 10px !important;
   box-shadow: 1px 1px 5px var(--darkgray)!important;
   transition: 0.8s !important;
 }
 
-div.cave-grid>img:hover {
+/* Cave image hover effect */
+div.cave-grid > img:hover {
   opacity: 1;
   transition: 0.8s !important;
 }
 
-/* featured lioness image code by hok-z #41458 */
+/* Featured lioness image (Hok-z #41458) */
 .lionImage img:first-child {
   visibility: hidden;
 }
 
 .lionImage {
-  background: url('https://i.ibb.co/gZSp41Cm/Screenshot-2026-04-09-at-04-49-48.png') no-repeat !important;
+  background: url('https://i.ibb.co/gZSp41Cm/Screenshot-2026-04-09-at-04-49-48.png') no-repeat center center !important;
+  background-size: cover !important;
 }
 
-/* color behind den names */
+/* Cave and mound containers */
 .cave-grid,
 .mound-grid {
   box-shadow: var(--kolur3) 0px -50px 36px -28px inset, 1px 1px 5px var(--darkgray) !important;
   border: 0px ridge;
   text-shadow: 1px 1px 1.5px var(--darkgray);
   border-radius: 12px !important;
-  max-height:175px;
-  max-width:250px;
+  max-height: 175px;
+  max-width: 250px;
   overflow: hidden;
+  background: none !important; /* ensures cave image shows */
 }
 
-/* da mounds */
+/* Mound images */
 .mound-grid img {
   width: 0;
   height: 0;
   padding-top: 80px;
   padding-right: 130px;
-  max-height:150px;
+  max-height: 150px;
   border-radius: 10px !important;
   opacity: 0.7;
   transition: 0.8s !important;
