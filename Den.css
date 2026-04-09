@@ -677,10 +677,64 @@ h3:hover {
   5% { opacity: 1; box-shadow: 0 0 2vw 0.4vw var(--kolur2); }
 }
 	
+/* Hide the original cave banner images */
+div.cave-grid > img[src$="pregnantlionesses.png"],
+div.cave-grid > img[src$="prideoverviewbanner.png"],
+div.cave-grid > img[src$="unsortedlionsbanner.png"] {
+    display: none !important;
+}
+
+/* Your custom cave/den background */
 div.cave-grid {
-    background: url('https://i.ibb.co/gZSp41Cm/Screenshot-2026-04-09-at-04-49-48.png?v=168104') center center / cover no-repeat !important;
-    opacity: 0.9 !important; /* optional */
+    background: url("https://i.ibb.co/gZSp41Cm/Screenshot-2026-04-09-at-04-49-48.png?v=3") center center / cover no-repeat !important;
+    opacity: 0.9 !important;
     border-radius: 10px !important;
     box-shadow: 1px 1px 5px var(--darkgray) !important;
+    transition: 0.8s !important;
+}
+
+/* Optional hover visibility if any img shows */
+div.cave-grid > img:hover {
+    opacity: 1!important;
+    transition: 0.8s !important;
+}
+
+/* Featured lioness image (Hok-z #41458) */
+.lionImage img:first-child {
+    visibility: hidden !important;
+}
+
+.lionImage {
+    background: url("https://i.ibb.co/gZSp41Cm/Screenshot-2026-04-09-at-04-49-48.png?v=3") center center / cover no-repeat !important;
+}
+
+/* Cave & Mound container styling */
+.cave-grid,
+.mound-grid {
+    background: none !important; /* prevents color override */
+    box-shadow: var(--kolur3) 0px -50px 36px -28px inset, 1px 1px 5px var(--darkgray) !important;
+    border: 0px ridge !important;
+    text-shadow: 1px 1px 1.5px var(--darkgray) !important;
+    border-radius: 12px !important;
+    max-height: 175px !important;
+    max-width: 250px !important;
+    overflow: hidden !important;
+}
+
+/* Mound image styling */
+.mound-grid img {
+    width: 0 !important;
+    height: 0 !important;
+    padding-top: 80px !important;
+    padding-right: 130px !important;
+    max-height: 150px !important;
+    border-radius: 10px !important;
+    opacity: 0.7 !important;
+    transition: 0.8s !important;
+    box-shadow: 1px 1px 5px var(--darkgray) !important;
+}
+
+.mound-grid img:hover {
+    opacity: 1 !important;
     transition: 0.8s !important;
 }
