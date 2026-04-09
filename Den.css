@@ -193,7 +193,6 @@ div.cave-grid>img:hover {
 
 /* da mounds */
 .mound-grid img {
-  div.cave-grid>img[src$="https://i.ibb.co/gZSp41Cm/Screenshot-2026-04-09-at-04-49-48.png"], 
   width: 0;
   height: 0;
   padding-top: 80px;
