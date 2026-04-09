@@ -153,11 +153,18 @@ button#label_currentChannel {
   filter: grayscale() brightness(400%);
 }
 
-/* all caves image/pregnant lions image */
-div.cave-grid>img[src$="Screenshot-2026-04-09-at-04-49-48.png"],
-div.cave-grid>img[src$="prideoverviewbanner.png"],
-div.cave-grid>img[src$="unsortedlionsbanner.png"],
-div.cave-grid>img {
+/* Hide the original cave images */
+div.cave-grid > img[src$="pregnantlionesses.png"],
+div.cave-grid > img[src$="prideoverviewbanner.png"],
+div.cave-grid > img[src$="unsortedlionsbanner.png"] {
+    display: none !important;
+}
+
+/* Replace with your own background */
+div.cave-grid {
+    background: url('https://i.ibb.co/gZSp41Cm/Screenshot-2026-04-09-at-04-49-48.png') center center / cover no-repeat !important;
+    opacity: 0.9; /* optional, for blending */
+}
   opacity: 0.7;
   border-radius: 10px !important;
   box-shadow: 1px 1px 5px var(--darkgray)!important;
