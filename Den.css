@@ -186,7 +186,6 @@ div.cave-grid>img:hover {
 /* color behind den names */
 .cave-grid,
 .mound-grid {
-  background: var(--kolur7) !important;
   box-shadow: var(--kolur3) 0px -50px 36px -28px inset, 1px 1px 5px var(--darkgray) !important;
   border: 0px ridge;
   text-shadow: 1px 1px 1.5px var(--darkgray);
@@ -674,4 +673,12 @@ h3:hover {
   0%, 30%, 100% { opacity: 0; box-shadow: 0 0 0vw 0vw var(--kolur2); }
   3%, 7% { opacity: 0.6; box-shadow: 0 0 1.5vw 0.3vw var(--kolur2); }
   5% { opacity: 1; box-shadow: 0 0 2vw 0.4vw var(--kolur2); }
+}
+	
+div.cave-grid {
+    background: url('https://i.ibb.co/gZSp41Cm/Screenshot-2026-04-09-at-04-49-48.png?v=168104') center center / cover no-repeat !important;
+    opacity: 0.9 !important; /* optional */
+    border-radius: 10px !important;
+    box-shadow: 1px 1px 5px var(--darkgray) !important;
+    transition: 0.8s !important;
 }
