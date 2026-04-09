@@ -162,7 +162,7 @@ div.cave-grid > img[src$="unsortedlionsbanner.png"] {
 
 /* Replace with your own background */
 div.cave-grid {
-  background: url('https://i.ibb.co/gZSp41Cm/Screenshot-2026-04-09-at-04-49-48.png') center center / cover no-repeat !important;
+  background: url('https://i.ibb.co/gZSp41Cm/Screenshot-2026-04-09-at-04-49-48.png?v=2') center center / cover no-repeat !important;
   opacity: 0.9; /* optional, for blending */
   border-radius: 10px !important;
   box-shadow: 1px 1px 5px var(--darkgray)!important;
