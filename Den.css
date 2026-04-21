@@ -101,6 +101,7 @@
 
 /* chat details */
 div#chatMessageContainer {
+  background: linear-gradient(180deg, #2a0f1f, #0b1a3a) !important;
   border: 0px ridge;
   border-radius: 10px !important;
   box-shadow: 1px 1px 5px var(--darkgray);
