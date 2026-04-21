@@ -32,8 +32,12 @@
   --white: #ffffff;
 }
 
-body {
-    outline: 5px solid red !important;
+@media only screen and (max-width: 800px) {
+    .pun-content {
+        all: unset;
+        display: block !important;
+        color: #6E2C3E !important;
+    }
 }
 
 /*mobile background*/
