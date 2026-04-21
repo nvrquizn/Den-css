@@ -153,7 +153,11 @@ button#label_currentChannel {
 #btnChatSettings, #btnLoadNewMessages, .s-chat-message_menu {
   filter: grayscale() brightness(400%);
 }
-
+/*logo replacer*/
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
+	content: url('https://i.ibb.co/m5DkyN5L/Screenshot-2026-04-21-at-03-40-46.png');
+	
+}
 /* Cave images */
 div.cave-grid>img[src$="nestingbanner.png"],
 div.cave-grid>img[src$="prideoverviewbanner.png"],
