@@ -35,7 +35,7 @@
 /*mobile background*/
 @media screen and (max-width: 800px){
   body {
-    background: url('https://i.ibb.co/nqJDLR5G/Screenshot-2026-04-09-at-04-28-01.png') no-repeat center center fixed;
+    background: url('https://i.ibb.co/nqJDLR5G/Screenshot-2026-04-09-at-04-28-01.png') no-repeat center center fixed !important;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -167,7 +167,6 @@ div.cave-grid>img[src$="unsortedlionsbanner.png"] {
 }
 
 div.cave-grid>img:hover {
-    content: url('https://i.ibb.co/gZSp41Cm/Screenshot-2026-04-09-at-04-49-48.png') !important;
     opacity: 1;
     transition: 0.8s !important;
 }
@@ -375,7 +374,7 @@ h3:hover {
 .pun-content {
     background: linear-gradient(180deg, rgba(255,228,181,0.9), rgba(255,182,193,0.9)) !important; /* soft golden pink */
     box-shadow: inset 0 0 30px #FFB347, 1px 1px 5px #999 !important;
-}
+
     text-align: left;
     height: 340px;
     overflow-x: hidden;
@@ -383,6 +382,8 @@ h3:hover {
     padding: 10px;
     border-radius: 5px;
     font-size: 17px;
+
+	color: #6E2C3E !important;
 }
 .pun-content h3 {
     margin: 0 0 10px 0;
