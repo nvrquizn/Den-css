@@ -157,7 +157,7 @@ button#label_currentChannel {
 div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
 	content: url('https://i.ibb.co/m5DkyN5L/Screenshot-2026-04-21-at-03-40-46.png');
 	width: 190px !important;
-    height: 60px !important;
+    height: 70px !important;
 	object-fit: contain !important;
 }
 /* Cave images */
