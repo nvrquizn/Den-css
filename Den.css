@@ -262,6 +262,97 @@ div#lion_image {
 	margin-top: 19px;
 	margin-left: 6px;
 }
+/*navbar*/
+.navbar {
+	background: var(--kolur3);
+	border-bottom: 0px ridge !important;
+	border-radius: 10px;
+	box-shadow: var(--kolur7) 0px -50px 36px -28px inset, 1px 1px 5px var(--darkgray) !important;
+}
+.navbar-default .navbar-nav > li > a {
+	font-size: 18px !important;
+	color: var(--kolur1) !important;
+}
+.navbar-default .navbar-nav > li > a:hover {
+	background:var(--kolur3);
+	color: var(--kolur1) !important;
+	text-shadow: 1px 1px 1.5px var(--darkgray);
+	border-radius: 18px;
+	box-shadow: var(--kolur2) 0px -50px 36px -48px inset !important;
+	transition: 0.7s!important;
+}
+/* right side of main panel/main background color */
+.container.main {
+	background: var(--kolur350);
+	border-left: 0px ridge;
+	border-right: 0px ridge;
+	border-bottom: 0px ridge;
+	border-radius: 10px;
+	box-shadow: var(--kolur270) 0px 30px 90px 30px inset, 0px 0px 5px var(--darkgray) !important;
+	text-shadow: 1px 1px 1.5px var(--darkgray);
+}
+/* left side of main panel */
+.col-md-9 {
+	background: none;
+	border-right: none;
+    color:var(--light)!important;
+}
+/* home and den breadcrumb */
+.breadcrumb {
+	background: var(--kolur7) !important;
+	border: 0px ridge !important;
+	border-radius: 5px;
+	box-shadow: var(--kolur370) 0px -50px 36px -28px inset, 1px 1px 5px var(--darkgray) !important;
+}
+.breadcrumb .active {
+	color:var(--kolur1) ;
+	font-size: 18px !important;
+}
+/*bookmark button */
+input.floatright{
+	background: var(--kolur270)!important;
+	border: 0px ridge;
+	border-radius: 10px !important;
+	color: var(--kolur5)!important;
+	text-shadow: 1px 1px 3px var(--darkgray)!important;
+	box-shadow: var(--kolur1) 0px -50px 36px -28px inset, 1px 1px 5px var(--darkgray) !important;
+}
+input.floatright:hover{
+	background: var(--kolur7) !important;
+	border: 0px ridge;
+	border-radius: 10px !important;
+	box-shadow: var(--kolur3) 0px -50px 36px -28px inset, 1px 1px 5px var(--darkgray) !important;
+	transition: .7s!important;
+}
+/* switch account button */
+button.button {
+	background: var(--kolur3);
+	border:0px ridge;
+	border-radius: 10px !important;
+	color: var(--kolur1);
+	font-size: 18px !important;
+	text-shadow: 1px 1px 1.5px var(--darkgray) !important;
+	box-shadow: var(--kolur670) 0px -50px 36px -28px inset, 1px 1px 5px var(--darkgray) !important;
+}
+button.button:hover {
+	background: var(--kolur6);
+	border: 0px ridge;
+	border-radius: 10px !important;
+	color: var(--kolur5);
+	font-size: 18px !important;
+	box-shadow: var(--kolur370) 0px -50px 36px -28px inset, 1px 1px 5px var(--darkgray) !important;
+	transition: .7s!important;
+}
+/* code by katie#106445 */
+.breadcrumb::after {
+	content: "CSS by Sak#327675";
+	color: var(--kolur1);
+	text-shadow: 1px 1px 1.5px var(--darkgray);
+	font-size: 16px !important;
+	position: absolute;
+	right: 13%;
+	z-index: 100
+}
 /* alerts */
 .alert {
 	background: #FFD6D1; /* soft pink */
