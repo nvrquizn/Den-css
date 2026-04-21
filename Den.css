@@ -157,7 +157,7 @@ button#label_currentChannel {
 div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
 	content: url('https://i.ibb.co/m5DkyN5L/Screenshot-2026-04-21-at-03-40-46.png');
 	width: 190px !important;
-    height: 51px !important;
+    height: 60px !important;
 	object-fit: contain !important;
 }
 /* Cave images */
@@ -461,6 +461,40 @@ h3 {
 h3:hover {
 	color: #FFB347 !important;
 	transition: .7s!important;
+}
+
+/* main lion info table */
+/* background color */
+.table {
+	background: var(--kolur350);
+	border: 0px ridge;
+	text-shadow: 1px 1px 1.5px var(--darkgray);
+	border-radius: 10px !important;
+	border-collapse: separate;
+	box-shadow: 1px 1px 5px var(--darkgray);
+}
+.table a:link
+{
+	color:var(--kolur1)!important;
+	transition: 0.5s!important;
+}
+.table a:visited
+{
+	color:var(--kolur1)!important;
+	transition: 0.5s!important;
+}
+
+
+.table a:active
+{
+	color:var(--kolur5)!important;
+	transition: 0.5s!important;
+} 
+.table a:hover
+ {
+	color:var(--kolur5)!important;
+	-webkit-transform: scale(1.1);
+	transition: 0.7s!important;
 }
 
 /* BOX CREDIT */
