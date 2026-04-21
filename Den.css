@@ -32,6 +32,10 @@
   --white: #ffffff;
 }
 
+body {
+    outline: 5px solid red !important;
+}
+
 /*mobile background*/
 @media screen and (max-width: 800px){
   body {
