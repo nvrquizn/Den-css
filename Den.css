@@ -156,8 +156,8 @@ button#label_currentChannel {
 /*logo replacer*/
 div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
 	content: url('https://i.ibb.co/m5DkyN5L/Screenshot-2026-04-21-at-03-40-46.png');
-	width: 192px !important;
-    height: 120px !important;
+	width: 190px !important;
+    height: 51px !important;
 	object-fit: contain !important;
 }
 /* Cave images */
