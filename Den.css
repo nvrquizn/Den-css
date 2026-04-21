@@ -158,7 +158,7 @@ button#label_currentChannel {
 }
 
 /* Cave images */
-div.cave-grid>img[src$="pregnantlionesses.png"],
+div.cave-grid>img[src$="pregnantlionessesbanner.png"],
 div.cave-grid>img[src$="prideoverviewbanner.png"],
 div.cave-grid>img[src$="unsortedlionsbanner.png"] {
     content: url('https://i.ibb.co/gZSp41Cm/Screenshot-2026-04-09-at-04-49-48.png') !important;
