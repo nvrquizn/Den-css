@@ -92,10 +92,11 @@
     margin: -550px;
     height: 30px;
     width: 340px;
-    position: relative;
-    z-index: 3;
-    margin-right: 0px;
-  }
+	position: relative;
+	z-index: 1;
+	margin-right: 0px;
+	z-index: 3;
+}
 }
 
 /* chat details */
