@@ -435,7 +435,7 @@ h3:hover {
 
 .pun-graphics {
     background: none;
-    color: #FF9E6D;
+    color: #FF9E6D !important;
     text-align: center;
     border-radius: 5px;
 }
