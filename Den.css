@@ -174,7 +174,7 @@ button#label_currentChannel {
 /*logo replacer*/
 div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
 	content: url('https://i.ibb.co/s9bnVn3r/Untitled335-20260428064332.png');
-    width: 300px !important;
+    width: 280px !important;
     height: 160px !important;
 	object-fit: contain !important;
 }
