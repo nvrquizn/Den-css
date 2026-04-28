@@ -721,6 +721,24 @@ div.slider.round::before {
     }
 }
 
+.dynastylist {
+    flex: 1 1 auto;
+    max-width: 20%; 
+    box-sizing: border-box; 
+}
+
+.dynastylist img {
+    height: 100%!important;
+    width: 100%!important;
+    border-radius: 10px;
+}
+
+.dynastylist h3 {
+    word-break: break-all;
+    font-size: 15px !important;
+}
+
+
 /* background color */
 .table {
 	background: var(--kolur350);
