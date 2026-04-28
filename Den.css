@@ -212,7 +212,23 @@ div.cave-grid>img[src$="nestingbanner.png"]:hover {
     width: 250px;
     opacity: 1;
 }
-	
+
+div.cave-grid>img {
+    content: url('https://i.ibb.co/67K4ffS6/Screenshot-2026-04-28-at-03-33-55.png') !important;
+    height: 145px;
+    width: 250px;
+    opacity: 0.7;
+    border-radius: 10px !important;
+    box-shadow: 1px 1px 5px var(--darkgray)!important;
+    overflow: hidden;
+}
+
+div.cave-grid>img:hover {
+    content: url('https://i.ibb.co/67K4ffS6/Screenshot-2026-04-28-at-03-33-55.png') !important;
+    height: 145px;
+    width: 250px;
+    opacity: 1;
+}
 div.cave-grid>img:hover {
     opacity: 1;
     transition: 0.8s !important;
