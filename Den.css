@@ -162,8 +162,7 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
 	object-fit: contain !important;
 }
 /* Cave images */
-div.cave-grid>img[src$="priveoverviewbanner.png"], 
-div.cave-grid>img {
+div.cave-grid>img[src$="prideoverviewbanner.png"] {
     content: url('https://i.ibb.co/S4w9qFyP/Screenshot-2026-04-28-at-03-31-19.png') !important;
     height: 145px;
     width: 250px;
@@ -172,9 +171,15 @@ div.cave-grid>img {
     box-shadow: 1px 1px 5px var(--darkgray)!important;
     overflow: hidden;
 }
+
+div.cave-grid>img[src$="prideoverviewbanner.png"]:hover {
+    content: url('https://i.ibb.co/S4w9qFyP/Screenshot-2026-04-28-at-03-31-19.png') !important;
+    height: 145px;
+    width: 250px;
+    opacity: 1;
+}
 	
-div.cave-grid>img[src$="unsortedlionsbanner.png"], 
-div.cave-grid>img {
+div.cave-grid>img[src$="unsortedlionsbanner.png"] {
     content: url('https://i.ibb.co/bj5bLZfc/Screenshot-2026-04-28-at-03-28-38.png') !important;
     height: 145px;
     width: 250px;
@@ -184,8 +189,14 @@ div.cave-grid>img {
     overflow: hidden;
 }
 
-div.cave-grid>img[src$="nestingbanner.png"], 
-div.cave-grid>img {
+div.cave-grid>img[src$="unsortedlionsbanner.png"]:hover {
+    content: url('https://i.ibb.co/bj5bLZfc/Screenshot-2026-04-28-at-03-28-38.png') !important;
+    height: 145px;
+    width: 250px;
+    opacity: 1;
+}
+
+div.cave-grid>img[src$="nestingbanner.png"] {
     content: url('https://i.ibb.co/tPxtMGxW/Screenshot-2026-04-28-at-03-30-16.png') !important;
     height: 145px;
     width: 250px;
@@ -193,6 +204,13 @@ div.cave-grid>img {
     border-radius: 10px !important;
     box-shadow: 1px 1px 5px var(--darkgray)!important;
     overflow: hidden;
+}
+
+div.cave-grid>img[src$="nestingbanner.png"]:hover {
+    content: url('https://i.ibb.co/tPxtMGxW/Screenshot-2026-04-28-at-03-30-16.png') !important;
+    height: 145px;
+    width: 250px;
+    opacity: 1;
 }
 	
 div.cave-grid>img:hover {
