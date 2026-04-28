@@ -101,17 +101,17 @@
 
 /* 🪨 CHAT CONTAINER (overall frame) */
 div#chatMessageContainer {
+	background: linear-gradient(180deg, #2b2b2f, #1a1a1a) !important;
 	border: 0px ridge;
 	border-radius: 10px !important;
 	box-shadow: 1px 1px 6px #1a1a1a; /* ash depth shadow */
-	background: linear-gradient(180deg, #2b2b2f, #1a1a1a);
 }
 
 .s-chat-message:nth-child(even) {
 	background: rgba(43, 43, 47, 0.95) !important; /* ash slate */
 	color: #fff4e6 !important; /* warm light text */
 	font-size: 14px !important;
-	text-shadow: 1px 1px 1.5px #1a1a1a;
+	text-shadow: 1px 1px 1.5px #1a1a1a !important;
 
 	box-shadow: rgba(255, 106, 43, 0.25) 0px -50px 36px -28px inset,
 	            1px 1px 5px #1a1a1a !important;
@@ -123,7 +123,7 @@ div#chatMessageContainer {
 	background: rgba(26, 26, 26, 0.95) !important; /* deeper ash */
 	color: #fff4e6 !important;
 	font-size: 14px !important;
-	text-shadow: 1px 1px 1.5px #1a1a1a;
+	text-shadow: 1px 1px 1.5px #1a1a1a !important;
 
 	box-shadow: rgba(255, 122, 58, 0.2) 0px -50px 36px -28px inset,
 	            1px 1px 5px #1a1a1a !important;
@@ -135,7 +135,7 @@ div#chatMessageContainer {
 	background: rgba(43, 43, 47, 0.98) !important;
 	color: #ff9a5a !important; /* ember highlight text */
 
-	text-shadow: 1px 1px 1.5px #1a1a1a;
+	text-shadow: 1px 1px 1.5px #1a1a1a !important;
 
 	box-shadow: rgba(255, 122, 58, 0.35) 0px -50px 36px -28px inset,
 	            1px 1px 5px #1a1a1a !important;
@@ -146,7 +146,7 @@ div#chatMessageContainer {
 .s-chat-message_timestamp {
 	color: #ff9a5a !important; /* ember tint */
 	font-size: 12px !important;
-	text-shadow: 1px 1px 1.5px #1a1a1a;
+	text-shadow: 1px 1px 1.5px #1a1a1a !important;
 	opacity: 0.7;
 }
 
@@ -156,7 +156,7 @@ button#label_currentChannel {
 
 	color: #fff4e6 !important;
 	font-size: 14px !important;
-	text-shadow: 1px 1px 1.5px #1a1a1a;
+	text-shadow: 1px 1px 1.5px #1a1a1a !important;
 
 	background: linear-gradient(90deg, #2b2b2f, #ff6a2b) !important; /* ash → ember */
 
