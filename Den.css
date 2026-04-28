@@ -433,6 +433,17 @@ input#comment {
 	border-radius: 10px !important;
 }
 
+small.text-muted {
+	color: var(--white);
+}
+small.text-muted a {
+	color: var(--kolur1);
+}
+input[type="button"].bad {
+	background: var(--kolur5) !important;
+	border-radius: 10px !important;
+}
+
 /* 🔥 GENERAL ALERT (neutral notices) */
 .alert {
 	background: #2b2b2f; /* charcoal base */
@@ -558,7 +569,158 @@ h3:hover {
 	color: #ff8c42 !important; /* brighter flame on hover */
 	transition: .7s!important;
 }
-/* main lion info table */
+/* 🪵 MAIN LION INFO TABLE (container) */
+.table {
+	background: var(--kolur350); /* ash panel base */
+	border: 0px ridge;
+	text-shadow: 1px 1px 1.5px var(--darkgray);
+	border-radius: 10px !important;
+	border-collapse: separate;
+	box-shadow: 1px 1px 5px var(--darkgray);
+}
+
+.table a:link,
+.table a:visited {
+	color: var(--kolur1)!important; /* ember highlight */
+	transition: 0.5s!important;
+}
+
+.table a:active {
+	color: var(--kolur5)!important; /* brighter ember */
+	transition: 0.5s!important;
+}
+
+.table a:hover {
+	color: var(--kolur5)!important;
+	transform: scale(1.05);
+	transition: 0.7s!important;
+}
+
+/* 🔥 HEADER ROWS */
+.top,
+.bottom,
+th {
+	background: var(--kolur3) !important; /* deep ash */
+	box-shadow: var(--kolur270) 0px -50px 36px -28px inset, 1px 1px 5px var(--darkgray) !important;
+	color: var(--kolur7) !important; /* ember glow text */
+	font-size: 18px !important;
+	border-radius: 10px;
+}
+
+.table .left {
+	background: var(--kolur6)!important; /* mid ash */
+	box-shadow: var(--kolur1) 0px -50px 36px -28px inset !important; /* ember tint */
+	border-radius: 10px;
+}
+
+input,
+select,
+textarea {
+	background: var(--kolur3) !important; /* ash input base */
+	border: 0px ridge !important;
+	box-shadow: var(--kolur3) 0px -50px 36px -28px inset, 1px 1px 5px var(--darkgray) !important;
+	border-radius: 10px;
+	color: var(--kolur7) !important; /* ember text */
+	text-shadow: 1px 1px 2px var(--darkgray) !important;
+}
+
+.inner-table .left {
+	background: var(--kolur4) !important; /* light ash */
+	color: var(--kolur7) !important;
+	box-shadow: var(--kolur170) 0px -50px 36px -28px inset, 1px 1px 5px var(--darkgray) !important;
+}
+
+.inner-table .right {
+	background: var(--kolur3)!important; /* deep ash */
+	box-shadow: var(--kolur350) 0px -50px 36px -28px inset, 1px 1px 5px var(--darkgray) !important;
+	color: var(--kolur1) !important; /* ember text */
+	border-radius: 10px;
+}
+
+.right_odd {
+	background: var(--kolur350)!important;
+	box-shadow: var(--kolur760) 0px -50px 36px -28px inset !important;
+}
+
+.item-header {
+	background: var(--kolur3) !important;
+	border-radius: 10px;
+	box-shadow: var(--kolur760) 0px -50px 36px -28px inset !important;
+	color: var(--kolur7) !important;
+	font-size: 15px !important;
+}
+
+.item {
+	background: var(--kolur3)!important;
+	box-shadow: var(--kolur760) 0px -50px 36px -28px inset, 1px 1px 5px var(--darkgray) !important;
+	border-radius: 10px;
+	border: 0px ridge !important;
+}
+
+.item-footer {
+	background: var(--kolur3);
+}
+
+div.slider.round {
+	background: var(--kolur1) !important; /* ember knob base */
+}
+div.slider.round::before {
+	background: var(--kolur2) !important; /* flame slider dot */
+}
+
+.boxcontainer {
+	background: none;
+	height: auto;
+	padding: 0px;
+	display: flex;
+	justify-content: center;
+}
+
+.Box1,
+.Box2 {
+	float: left;
+	background: var(--kolur350); /* ash panel */
+	color: var(--kolur7);
+	padding: 15px;
+	border: 0px ridge !important;
+	box-shadow: var(--kolur470) 0px -100px 80px -10px inset, 1px 1px 5px var(--darkgray) !important;
+	border-radius: 10px;
+	margin: 5px;
+	height: 300px;
+	width: 350px;
+	overflow: hidden;
+	margin-bottom: 25px;
+	transition: 1s;
+}
+
+.Box1:hover,
+.Box2:hover {
+	overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+	width: 9px;
+	height: 9px;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--kolur3); /* ash track */
+	box-shadow: var(--kolur350) 0px -150px 50px 0px inset, 1px 1px 5px var(--darkgray) !important;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--kolur1); /* ember thumb */
+	box-shadow: var(--kolur270) 0px -150px 50px 0px inset, 1px 1px 5px var(--darkgray) !important;
+	border-radius: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+    .container.main .hidden-xs {
+        display: block !important;
+    }
+}
+
 /* background color */
 .table {
 	background: var(--kolur350);
