@@ -409,6 +409,30 @@ button.button:hover {
 	right: 13%;
 	z-index: 100
 }
+
+#commentBox {
+	background: var(--kolur780)!important;
+	box-shadow: var(--kolur270) 0px -50px 36px -28px inset, 1px 1px 5px var(--darkgray) !important;
+	border: var(--kolur3)!important;
+}
+::placeholder {
+	color: var(--kolur1) !important;
+}
+
+
+div.comment {
+	background: var(--kolur470);
+	box-shadow: var(--kolur780) 0px -50px 36px -28px inset, 1px 1px 5px var(--darkgray) !important;
+	font-weight: bold;
+	color: var(--white);
+	
+}
+input#comment {
+	background: var(--kolur760) !important;
+	color: var(--kolur3) !important;
+	border-radius: 10px !important;
+}
+
 /* 🔥 GENERAL ALERT (neutral notices) */
 .alert {
 	background: #2b2b2f; /* charcoal base */
