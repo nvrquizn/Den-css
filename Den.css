@@ -356,7 +356,7 @@ div#lion_image {
 }
 /* right side of main panel/main background color */
 .container.main {
-	background: var(--kolur350);
+	background: var(--kolur350) !important;
 	border-left: 0px ridge;
 	border-right: 0px ridge;
 	border-bottom: 0px ridge;
