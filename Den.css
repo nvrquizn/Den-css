@@ -174,8 +174,8 @@ button#label_currentChannel {
 /*logo replacer*/
 div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
 	content: url('https://i.ibb.co/s9bnVn3r/Untitled335-20260428064332.png');
-    width: 250px !important;
-    height: 140px !important;
+    width: 230px !important;
+    height: 120px !important;
 	object-fit: contain !important;
 }
 /* Cave images */
