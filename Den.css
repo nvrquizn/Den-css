@@ -171,6 +171,12 @@ button#label_currentChannel {
 	opacity: 0.85;
 }
 
+#fraSidebarChat iframe {
+	border-radius: 10px;
+	box-shadow: 0 0 15px rgba(255, 106, 43, 0.4);
+	filter: saturate(1.1) contrast(1.05);
+}
+
 /*logo replacer*/
 div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
 	content: url('https://i.ibb.co/s9bnVn3r/Untitled335-20260428064332.png');
