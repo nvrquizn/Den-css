@@ -948,11 +948,14 @@ div#lion_image {
 
     border-radius: 16px 16px 0 0;
 
-    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    position: relative;
+    z-index: 2;
 }
 
-#lion_image {
-    margin-bottom: -1px !important;
+.container.main > div > div.col-md-9 .table:first-of-type {
+    position: relative;
+    z-index: 1;
+    margin-top: -2px !important;
 }
 
 #lion_image .lion-image-block {
@@ -965,16 +968,19 @@ div#lion_image {
 
 .container.main > div > div.col-md-9 .table:first-of-type {
     margin: 0 !important;
+    padding: 0 !important;
+
+    border-collapse: collapse !important;
+    border-spacing: 0 !important;
+
     border-radius: 0 0 16px 16px !important;
     overflow: hidden;
-
-    border-collapse: collapse;
 }
 
 .container.main > div > div.col-md-9 td {
-    padding-top: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
-
 
 
 /* accent text */
