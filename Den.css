@@ -947,7 +947,7 @@ div#lion_image {
 
     /* key fix: prevents the weird side-shift / duplicate illusion */
     background-position: center center;
-    background-size: contain;
+    background-size: cover;
 
     margin: 0 !important;
 
@@ -956,6 +956,10 @@ div#lion_image {
     box-shadow:
         0 0 30px rgba(0,0,0,0.6),
         0 0 60px rgba(255, 106, 43, 0.15);
+}
+
+#lion_image .lion-image-block {
+    display: none !important;
 }
 
 /* ============================= */
