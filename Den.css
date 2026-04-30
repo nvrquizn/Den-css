@@ -97,7 +97,6 @@
 	margin-right: 0px;
 	z-index: 3;
 }
-}
 
 /* 🪨 CHAT CONTAINER (overall frame) */
 /* Even Messages */
@@ -125,7 +124,6 @@ rgba(10, 10, 10, 0.95)
 ) !important;
 
 color: #fff4e6 !important;
-
 border: none !important;
 
 box-shadow:
@@ -141,7 +139,7 @@ rgba(35, 35, 38, 0.98),
 rgba(18, 18, 18, 0.98)
 ) !important;
 
-color: #ff9a5a !important; /* ember highlight */
+color: #ff9a5a !important;
 border: none !important;
 
 box-shadow:
@@ -191,6 +189,7 @@ rgba(255, 122, 58, 0.25)
 border-bottom: none !important;
 color: #ffd7b0 !important;
 }
+
 /*logo replacer*/
 div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
 	content: url('https://i.ibb.co/s9bnVn3r/Untitled335-20260428064332.png');
