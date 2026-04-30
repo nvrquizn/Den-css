@@ -955,9 +955,19 @@ div.slider.round::before {
 /* 🖼️ HEADER IMAGE ABOVE TABLE */
 /* ============================= */
 
-	div#lion_image {
+div#lion_image {
     content: url('https://i.ibb.co/Q7xQ8d1B/Screenshot-2026-04-30-at-13-34-47.png') !important;
     background-image: none !important;
+}
+
+div#lion_image {
+    display: block;
+    width: 100%;
+    max-width: 520px;
+
+    margin: 15px auto;
+
+    transform: scale(1);
 }
 
 /* ============================= */
