@@ -190,6 +190,25 @@ border-bottom: none !important;
 color: #ffd7b0 !important;
 }
 
+/* LINKS inside chat */
+#chatMessageContainer a,
+.s-chat-message a {
+    color: #ff6a2b !important; /* ember link */
+    text-decoration: none !important;
+}
+
+#chatMessageContainer a:hover,
+.s-chat-message a:hover {
+    color: #ff9a5a !important;
+    text-decoration: underline !important;
+}
+
+/* FORCE message backgrounds */
+.s-chat-message {
+    background: rgba(20, 20, 20, 0.95) !important;
+    color: #fff4e6 !important;
+}
+
 /*logo replacer*/
 div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
 	content: url('https://i.ibb.co/s9bnVn3r/Untitled335-20260428064332.png');
