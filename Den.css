@@ -1036,6 +1036,16 @@ div.slider.round::before {
     font-weight: 600;
 }
 
+#lion_image .lion-image-block > img[data-type="background"],
+#lion_image .lion-image-block > img[data-layer="background"] {
+    display: none !important;
+}
+
+#lion_image:hover {
+    transform: scale(1.01);
+    transition: 0.2s ease;
+}
+
 .firefly::after {
     background: #ff6a2b; /* hotter ember */
     opacity: 0;
