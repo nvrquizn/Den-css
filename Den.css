@@ -196,7 +196,7 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
 }
 /* Cave images */
 div.cave-grid>img[src$="prideoverviewbanner.png"] {
-    content: url('https://i.ibb.co/S4w9qFyP/Screenshot-2026-04-28-at-03-31-19.png') !important;
+    content: url('https://i.ibb.co/4HKYfyN/ed82fe4878eb9633ca87c8ab857cfea9.gif') !important;
     height: 145px;
     width: 250px;
     opacity: 0.7;
@@ -206,14 +206,14 @@ div.cave-grid>img[src$="prideoverviewbanner.png"] {
 }
 
 div.cave-grid>img[src$="prideoverviewbanner.png"]:hover {
-    content: url('https://i.ibb.co/S4w9qFyP/Screenshot-2026-04-28-at-03-31-19.png') !important;
+    content: url('https://i.ibb.co/4HKYfyN/ed82fe4878eb9633ca87c8ab857cfea9.gif') !important;
     height: 145px;
     width: 250px;
     opacity: 1;
 }
 	
 div.cave-grid>img[src$="unsortedlionsbanner.png"] {
-    content: url('https://i.ibb.co/bj5bLZfc/Screenshot-2026-04-28-at-03-28-38.png') !important;
+    content: url('https://i.ibb.co/RGyYLLYZ/3c836f3841b75a92152ee40ee50573b8.gif') !important;
     height: 145px;
     width: 250px;
     opacity: 0.7;
@@ -223,7 +223,7 @@ div.cave-grid>img[src$="unsortedlionsbanner.png"] {
 }
 
 div.cave-grid>img[src$="unsortedlionsbanner.png"]:hover {
-    content: url('https://i.ibb.co/bj5bLZfc/Screenshot-2026-04-28-at-03-28-38.png') !important;
+    content: url('https://i.ibb.co/RGyYLLYZ/3c836f3841b75a92152ee40ee50573b8.gif') !important;
     height: 145px;
     width: 250px;
     opacity: 1;
