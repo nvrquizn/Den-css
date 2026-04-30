@@ -196,7 +196,7 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
 }
 /* Cave images */
 div.cave-grid>img[src$="prideoverviewbanner.png"] {
-    content: url('https://i.ibb.co/4HKYfyN/ed82fe4878eb9633ca87c8ab857cfea9.gif') !important;
+    content: url('https://i.ibb.co/W4h384q8/4988b24c5c02071d88a7816d4c3e6105.gif') !important;
     height: 145px;
     width: 250px;
     opacity: 0.7;
@@ -206,7 +206,7 @@ div.cave-grid>img[src$="prideoverviewbanner.png"] {
 }
 
 div.cave-grid>img[src$="prideoverviewbanner.png"]:hover {
-    content: url('https://i.ibb.co/4HKYfyN/ed82fe4878eb9633ca87c8ab857cfea9.gif') !important;
+    content: url('https://i.ibb.co/W4h384q8/4988b24c5c02071d88a7816d4c3e6105.gif') !important;
     height: 145px;
     width: 250px;
     opacity: 1;
