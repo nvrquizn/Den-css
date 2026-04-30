@@ -912,41 +912,61 @@ div.slider.round::before {
     animation: drift ease alternate infinite;
 }
 
-/* ONLY affect the main lion panel */
+  
+/* ============================= */
+/* 🪵 MAIN LION PANEL CONTAINER */
+/* ============================= */
+
 .container.main > div > div.col-md-9 .table:first-of-type {
-    display: block !important;
     width: 100% !important;
     background: none !important;
     box-shadow: none !important;
     border: none !important;
+    padding: 0 !important;
 }
 
-.container.main > div > div.col-md-9 .table:first-of-type tr {
-    display: block !important;
-    width: 100% !important;
-}
-
+/* IMPORTANT: do NOT break table structure */
+.container.main > div > div.col-md-9 .table:first-of-type tr,
 .container.main > div > div.col-md-9 .table:first-of-type td {
-    display: block !important;
-    width: 100% !important;
     text-align: center !important;
 }
 
-.container.main > div > div.col-md-9 .table:first-of-type img {
-    display: block !important;
-    margin: 0 auto !important;
+/* ============================= */
+/* 🦁 LION IMAGE (FIXED LAYOUT) */
+/* ============================= */
 
-    width: 520px !important;
-    max-width: 90% !important;
+#lion_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 18px;
+    margin-bottom: 10px;
+
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* ONLY target LION LAYERED IMAGE, not all imgs */
+#lion_image img {
+    max-width: 520px !important;
+    width: 90% !important;
     height: auto !important;
+
+    display: block;
+    margin: 0 auto;
 
     border-radius: 18px;
 
     box-shadow:
         0 0 25px rgba(0,0,0,0.8),
         0 0 60px rgba(255, 106, 43, 0.25),
-        inset 0 0 20px rgba(255, 122, 58, 0.15);
+        inset 0 0 20px rgba(255, 122, 58, 0.12);
 }
+
+/* ============================= */
+/* 🖼️ HEADER IMAGE ABOVE TABLE */
+/* ============================= */
 
 #about::before {
     content: "";
@@ -955,12 +975,12 @@ div.slider.round::before {
     background: url("https://i.ibb.co/Q7xQ8d1B/Screenshot-2026-04-30-at-13-34-47.png")
     no-repeat center;
 
-    background-size: auto 100%;
+    background-size: contain;
 
     width: 100%;
     height: 220px;
 
-    margin-bottom: 15px;
+    margin: 15px 0;
 
     border-radius: 16px;
 
@@ -969,7 +989,27 @@ div.slider.round::before {
         0 0 60px rgba(255, 106, 43, 0.12);
 }
 
-/* skip the image cell, style everything else */
+/* ============================= */
+/* 📦 TABLE STYLING (SAFE) */
+/* ============================= */
+
+.container.main > div > div.col-md-9 .table:first-of-type {
+    padding: 20px !important;
+
+    background: linear-gradient(
+        180deg,
+        rgba(0,0,0,0.4),
+        rgba(20,20,20,0.6)
+    ) !important;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 0 40px rgba(0,0,0,0.6),
+        inset 0 0 50px rgba(255,106,43,0.08);
+}
+
+/* inner stat boxes only */
 .container.main > div > div.col-md-9 .table:first-of-type td:not(:first-child) {
     max-width: 480px;
     margin: 12px auto !important;
@@ -990,30 +1030,10 @@ div.slider.round::before {
         0px 3px 8px rgba(0,0,0,0.7) !important;
 }
 
+/* accent text */
 .container.main > div > div.col-md-9 .table:first-of-type b {
-    color: #ff9a5a !important; /* ember accent */
+    color: #ff9a5a !important;
     font-weight: 600;
-}
-
-.container.main > div > div.col-md-9 .table:first-of-type {
-    padding: 20px !important;
-
-    background: linear-gradient(
-        180deg,
-        rgba(0,0,0,0.4),
-        rgba(20,20,20,0.6)
-    ) !important;
-
-    border-radius: 18px;
-
-    box-shadow:
-        0 0 40px rgba(0,0,0,0.6),
-        inset 0 0 50px rgba(255,106,43,0.08);
-}
-
-.container.main::before {
-    display: none !important;
-    content: none !important;
 }
 
 .firefly::after {
