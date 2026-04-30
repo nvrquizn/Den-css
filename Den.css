@@ -938,23 +938,20 @@ div.slider.round::before {
 div#lion_image {
 
     display: block;
+    width: 100% !important;
 
-    /* THIS is the key fix */
-    width: calc(100% + 40px) !important;
-    margin-left: -20px !important;
-
-    height: 300px;
+    height: 320px;
 
     background-image: url("https://i.ibb.co/Q7xQ8d1B/Screenshot-2026-04-30-at-13-34-47.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
+    margin: 0 !important;
+
     border-radius: 16px 16px 0 0;
 
-    box-shadow:
-        0 0 30px rgba(0,0,0,0.6),
-        0 0 60px rgba(255, 106, 43, 0.15);
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
 }
 
 #lion_image .lion-image-block {
@@ -969,9 +966,7 @@ div#lion_image {
     margin-top: 0 !important;
 
     border-radius: 0 0 16px 16px !important;
-
-    position: relative;
-    top: -2px; /* removes visual gap */
+    overflow: hidden;
 
     box-shadow:
         0 10px 40px rgba(0,0,0,0.5),
