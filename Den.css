@@ -968,30 +968,6 @@ div#lion_image {
 }
 
 /* ============================= */
-/* 🖼️ HEADER IMAGE ABOVE TABLE */
-/* ============================= */
-
-div#lion_image {
-    content: url('https://i.ibb.co/Q7xQ8d1B/Screenshot-2026-04-30-at-13-34-47.png') !important;
-
-    display: block;
-    width: 100% !important;
-
-    max-width: none !important;
-    height: 300px; /* adjust this for banner height */
-
-    object-fit: cover;
-
-    margin: 0 !important;
-
-    border-radius: 16px 16px 0 0;
-
-    box-shadow:
-        0 0 30px rgba(0,0,0,0.6),
-        0 0 60px rgba(255, 106, 43, 0.15);
-}
-
-/* ============================= */
 /* 📦 TABLE STYLING (SAFE) */
 /* ============================= */
 
