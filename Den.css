@@ -936,32 +936,25 @@ div.slider.round::before {
 /* ============================= */
 
 #lion_image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    margin-top: 18px;
-    margin-bottom: 10px;
-
-    border-radius: 10px;
-    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
 }
 
-/* ONLY target LION LAYERED IMAGE, not all imgs */
+#lion_image a {
+    display: inline-block;
+}
+
+/* ONLY control overall size of the whole lion render */
+#lion_image .lion-image-block {
+    transform: scale(1.05);
+    transform-origin: center;
+    display: inline-block;
+}
+
+/* prevent weird layering artifacts */
 #lion_image img {
-    max-width: 520px !important;
-    width: 90% !important;
-    height: auto !important;
-
-    display: block;
-    margin: 0 auto;
-
-    border-radius: 18px;
-
-    box-shadow:
-        0 0 25px rgba(0,0,0,0.8),
-        0 0 60px rgba(255, 106, 43, 0.25),
-        inset 0 0 20px rgba(255, 122, 58, 0.12);
+    max-width: none !important;
 }
 
 /* ============================= */
