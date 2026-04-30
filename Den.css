@@ -912,6 +912,55 @@ div.slider.round::before {
     animation: drift ease alternate infinite;
 }
 
+/* break table layout */
+.table {
+    display: block !important;
+    width: 100% !important;
+    background: none !important;
+    box-shadow: none !important;
+}
+
+/* break rows */
+.table tr {
+    display: block !important;
+    width: 100% !important;
+}
+
+/* break cells */
+.table td {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+}
+
+.table img {
+    display: block !important;
+    margin: 0 auto !important;
+
+    width: 500px !important;   /* adjust this */
+    max-width: 90% !important;
+    height: auto !important;
+
+    border-radius: 15px;
+    box-shadow: 
+        0 0 20px rgba(0,0,0,0.7),
+        0 0 40px rgba(255, 106, 43, 0.25);
+}
+
+.table td:not(:first-child) {
+    max-width: 450px;
+    margin: 10px auto !important;
+    padding: 12px !important;
+
+    background: linear-gradient(180deg, #2b2b2f, #1a1a1a) !important;
+
+    border-radius: 12px;
+
+    box-shadow:
+    rgba(255, 106, 43, 0.2) 0px -20px 30px -10px inset,
+    0px 2px 6px rgba(0,0,0,0.6) !important;
+}
+
 .firefly::after {
     background: #ff6a2b; /* hotter ember */
     opacity: 0;
