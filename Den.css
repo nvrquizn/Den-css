@@ -936,25 +936,30 @@ div.slider.round::before {
 /* ============================= */
 
 #lion_image {
-    display: inline-block;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 18px;
+    margin-bottom: 10px;
+
     cursor: pointer;
 }
 
-#lion_image a {
-    display: inline-block;
-}
-
-/* ONLY control overall size of the whole lion render */
+/* keep Lioden's internal system untouched */
 #lion_image .lion-image-block {
-    transform: scale(1.05);
-    transform-origin: center;
     display: inline-block;
+    border-radius: 12px;
+    overflow: hidden;
+
+    box-shadow:
+        0 0 25px rgba(0,0,0,0.8),
+        0 0 60px rgba(255, 106, 43, 0.2);
 }
 
-/* prevent weird layering artifacts */
+/* DO NOT break layers */
 #lion_image img {
-    max-width: none !important;
+    display: inline-block;
 }
 
 /* ============================= */
