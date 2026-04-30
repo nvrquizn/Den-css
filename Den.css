@@ -938,28 +938,17 @@ div.slider.round::before {
 #lion_image {
     display: flex;
     justify-content: center;
-    align-items: center;
-
-    margin-top: 18px;
-    margin-bottom: 10px;
-
-    cursor: pointer;
+    margin: 18px 0;
 }
 
-/* keep Lioden's internal system untouched */
 #lion_image .lion-image-block {
     display: inline-block;
-    border-radius: 12px;
+    border-radius: 14px;
     overflow: hidden;
 
     box-shadow:
         0 0 25px rgba(0,0,0,0.8),
         0 0 60px rgba(255, 106, 43, 0.2);
-}
-
-/* DO NOT break layers */
-#lion_image img {
-    display: inline-block;
 }
 
 /* ============================= */
