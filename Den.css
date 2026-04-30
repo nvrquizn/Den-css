@@ -935,10 +935,26 @@ div.slider.round::before {
 /* 🦁 LION IMAGE (FIXED LAYOUT) */
 /* ============================= */
 
-#lion_image {
-    display: flex;
-    justify-content: center;
-    margin: 18px 0;
+div#lion_image {
+    content: "" !important;
+
+    display: block;
+    width: 100% !important;
+
+    height: 300px;
+
+    background-image: url("https://i.ibb.co/Q7xQ8d1B/Screenshot-2026-04-30-at-13-34-47.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    margin: 0 !important;
+
+    border-radius: 16px 16px 0 0;
+
+    box-shadow:
+        0 0 30px rgba(0,0,0,0.6),
+        0 0 60px rgba(255, 106, 43, 0.15);
 }
 
 #lion_image .lion-image-block {
