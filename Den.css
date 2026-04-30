@@ -957,17 +957,22 @@ div.slider.round::before {
 
 div#lion_image {
     content: url('https://i.ibb.co/Q7xQ8d1B/Screenshot-2026-04-30-at-13-34-47.png') !important;
-    background-image: none !important;
-}
 
-div#lion_image {
     display: block;
-    width: 100%;
-    max-width: 520px;
+    width: 100% !important;
 
-    margin: 15px auto;
+    max-width: none !important;
+    height: 300px; /* adjust this for banner height */
 
-    transform: scale(1);
+    object-fit: cover;
+
+    margin: 0 !important;
+
+    border-radius: 16px 16px 0 0;
+
+    box-shadow:
+        0 0 30px rgba(0,0,0,0.6),
+        0 0 60px rgba(255, 106, 43, 0.15);
 }
 
 /* ============================= */
@@ -975,40 +980,16 @@ div#lion_image {
 /* ============================= */
 
 .container.main > div > div.col-md-9 .table:first-of-type {
-    padding: 20px !important;
+    margin-top: 0 !important;
 
-    background: linear-gradient(
-        180deg,
-        rgba(0,0,0,0.4),
-        rgba(20,20,20,0.6)
-    ) !important;
+    border-radius: 0 0 16px 16px !important;
 
-    border-radius: 18px;
+    position: relative;
+    top: -2px; /* removes visual gap */
 
     box-shadow:
-        0 0 40px rgba(0,0,0,0.6),
+        0 10px 40px rgba(0,0,0,0.5),
         inset 0 0 50px rgba(255,106,43,0.08);
-}
-
-/* inner stat boxes only */
-.container.main > div > div.col-md-9 .table:first-of-type td:not(:first-child) {
-    max-width: 480px;
-    margin: 12px auto !important;
-    padding: 14px !important;
-
-    background: linear-gradient(
-        180deg,
-        rgba(40,40,42,0.95),
-        rgba(18,18,18,0.95)
-    ) !important;
-
-    border-radius: 14px;
-
-    color: #fff4e6 !important;
-
-    box-shadow:
-        rgba(255,106,43,0.25) 0px -25px 40px -15px inset,
-        0px 3px 8px rgba(0,0,0,0.7) !important;
 }
 
 /* accent text */
