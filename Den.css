@@ -938,18 +938,17 @@ div.slider.round::before {
 div#lion_image {
 
     display: block;
-    width: 100% !important;
+
+    /* THIS is the key fix */
+    width: calc(100% + 40px) !important;
+    margin-left: -20px !important;
 
     height: 300px;
 
     background-image: url("https://i.ibb.co/Q7xQ8d1B/Screenshot-2026-04-30-at-13-34-47.png");
     background-repeat: no-repeat;
-
-    /* key fix: prevents the weird side-shift / duplicate illusion */
-    background-position: center center;
+    background-position: center;
     background-size: cover;
-
-    margin: 0 !important;
 
     border-radius: 16px 16px 0 0;
 
