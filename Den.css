@@ -914,25 +914,37 @@ div.slider.round::before {
 
   
 /* ============================= */
-/* 🪵 MAIN LION PANEL CONTAINER */
+/* 🪵 TABLE RESET (SAFE BASE) */
 /* ============================= */
 
 .container.main > div > div.col-md-9 .table:first-of-type {
     width: 100% !important;
+
     background: none !important;
     box-shadow: none !important;
     border: none !important;
+
+    margin: 0 !important;
     padding: 0 !important;
+
+    border-collapse: collapse !important;
+    border-spacing: 0 !important;
+
+    border-radius: 0 0 16px 16px !important;
+    overflow: hidden;
 }
 
-/* IMPORTANT: do NOT break table structure */
+/* keep text aligned, DO NOT mess with spacing */
 .container.main > div > div.col-md-9 .table:first-of-type tr,
 .container.main > div > div.col-md-9 .table:first-of-type td {
     text-align: center !important;
+    padding: 8px 12px !important;
+    font-size: 13px;
+    line-height: 1.4;
 }
 
 /* ============================= */
-/* 🦁 LION IMAGE (FIXED LAYOUT) */
+/* 🦁 LION IMAGE HEADER */
 /* ============================= */
 
 div#lion_image {
@@ -948,39 +960,14 @@ div#lion_image {
     background-position: center;
     background-size: cover;
 
-    margin: 0 auto !important;
+    margin: 0 !important;
 
     border-radius: 16px 16px 0 0;
 }
 
-.container.main > div > div.col-md-9 .table:first-of-type {
-    position: relative;
-    z-index: 1;
-    margin-top: -2px !important;
-}
-
+/* hide original lion system */
 #lion_image .lion-image-block {
     display: none !important;
-}
-
-/* ============================= */
-/* 📦 TABLE STYLING (SAFE) */
-/* ============================= */
-
-.container.main > div > div.col-md-9 .table:first-of-type {
-    margin: 0 !important;
-    padding: 0 !important;
-
-    border-collapse: collapse !important;
-    border-spacing: 0 !important;
-
-    border-radius: 0 0 16px 16px !important;
-    overflow: hidden;
-}
-
-.container.main > div > div.col-md-9 td {
-    padding: 0 !important;
-    margin: 0 !important;
 }
 
 
