@@ -936,20 +936,21 @@ div.slider.round::before {
 /* ============================= */
 
 div#lion_image {
+
     display: block;
+
     width: 100% !important;
-    height: 320px;
+    height: 250px;
 
     background-image: url("https://i.ibb.co/Q7xQ8d1B/Screenshot-2026-04-30-at-13-34-47.png");
-    background-size: cover;
-    background-position: center;
 
-    margin: 0 !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    margin: 0 auto !important;
 
     border-radius: 16px 16px 0 0;
-
-    position: relative;
-    z-index: 2;
 }
 
 .container.main > div > div.col-md-9 .table:first-of-type {
