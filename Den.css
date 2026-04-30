@@ -106,10 +106,8 @@ background: linear-gradient(
 rgba(35, 35, 38, 0.95),   /* ash slate */
 rgba(18, 18, 18, 0.95)    /* deeper ash */
 ) !important;
-
 color: #fff4e6 !important; /* warm bone white */
 border: none !important;
-
 box-shadow:
 rgba(255, 106, 43, 0.20) 0px -50px 36px -28px inset,
 1px 1px 6px #111 !important;
@@ -122,10 +120,8 @@ background: linear-gradient(
 rgba(18, 18, 18, 0.95),
 rgba(10, 10, 10, 0.95)
 ) !important;
-
 color: #fff4e6 !important;
 border: none !important;
-
 box-shadow:
 rgba(255, 122, 58, 0.18) 0px -50px 36px -28px inset,
 1px 1px 6px #111 !important;
@@ -138,10 +134,8 @@ background: linear-gradient(
 rgba(35, 35, 38, 0.98),
 rgba(18, 18, 18, 0.98)
 ) !important;
-
 color: #ff9a5a !important;
 border: none !important;
-
 box-shadow:
 rgba(255, 122, 58, 0.35) 0px -50px 36px -28px inset,
 1px 1px 6px #111 !important;
@@ -156,7 +150,6 @@ opacity: 0.75;
 /* Chat Container */
 div#chatMessageContainer {
 border: none !important;
-
 box-shadow:
 0 0 10px rgba(0,0,0,0.6),
 inset 0 0 30px rgba(255, 106, 43, 0.08) !important;
@@ -169,10 +162,8 @@ background: linear-gradient(
 rgba(20, 20, 20, 0.95),
 rgba(255, 106, 43, 0.85)
 ) !important;
-
 color: #fff4e6 !important;
 border: none !important;
-
 box-shadow:
 rgba(255, 106, 43, 0.3) 0px -50px 36px -28px inset,
 1px 1px 6px #111 !important;
@@ -185,7 +176,6 @@ background: linear-gradient(
 rgba(30, 30, 30, 0.95),
 rgba(255, 122, 58, 0.25)
 ) !important;
-
 border-bottom: none !important;
 color: #ffd7b0 !important;
 }
