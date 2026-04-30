@@ -944,8 +944,10 @@ div#lion_image {
 
     background-image: url("https://i.ibb.co/Q7xQ8d1B/Screenshot-2026-04-30-at-13-34-47.png");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+
+    /* key fix: prevents the weird side-shift / duplicate illusion */
+    background-position: center center;
+    background-size: contain;
 
     margin: 0 !important;
 
