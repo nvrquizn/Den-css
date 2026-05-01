@@ -856,7 +856,7 @@ div.slider.round::before {
 /* ============================= */
 
 div#lion_image {
-    content: url("https://i.ibb.co/Q7xQ8d1B/Screenshot-2026-04-30-at-13-34-47.png") !important;
+    content: url("https://i.ibb.co/Xxptg5JN/Screenshot-2026-04-30-at-23-29-35.png") !important;
 
     display: block;
     margin: 0 auto !important;
@@ -906,8 +906,8 @@ div#lion_image {
     width: 580px;
     background: url('https://i.ibb.co/b5THPT4F/Screenshot-2026-04-28-at-03-59-57.png') top center no-repeat !important;
     box-shadow: 1px 1px 5px #1a1a1a !important;
-    border-radius: 5px;
-    opacity: 0.9;
+    border-radius: 5px !important;
+    opacity: 0.9 !important;
 
     display: table !important;
     margin: 20px auto !important;
@@ -926,8 +926,8 @@ div#lion_image {
 
 /* spacer */
 .pun-spacer {
-    background: none;
-    width: 350px;
+    background: none !important;
+    width: 350px !important;
 }
 
 /* content box */
@@ -935,26 +935,26 @@ div#lion_image {
     background: linear-gradient(180deg, rgba(43,43,47,0.95), rgba(26,26,26,0.95)) !important;
     box-shadow: inset 0 0 30px #ff6a2b55, 1px 1px 5px #1a1a1a !important;
 
-    text-align: left;
-    height: 340px;
-    overflow-x: hidden;
-    width: 280px;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 17px;
+    text-align: left !important;
+    height: 340px !important;
+    overflow-x: hidden !important;
+    width: 280px !important;
+    padding: 10px !important;
+    border-radius: 5px !important;
+    font-size: 17px !important;
 
     color: #fff4e6 !important;
 }
 
 .pun-content h3 {
-    margin: 0 0 10px 0;
-    border-bottom: 1px solid #ff6a2b;
-    text-align: left;
+    margin: 0 0 10px 0 !important;
+    border-bottom: 1px solid #ff6a2b !important;
+    text-align: left !important;
 }
 
 .pun-content a {
     font-weight: normal !important;
-    opacity: 0.7;
+    opacity: 0.7 !important;
 }
 
 .pun-content a:hover {
@@ -965,12 +965,12 @@ div#lion_image {
 .pun-links {
     background: linear-gradient(90deg, #2b2b2f 0%, #ff6a2b 100%) !important;
     box-shadow: 1px 1px 5px #1a1a1a !important;
-    color: #fff4e6;
-    text-transform: uppercase;
-    font-size: 11px;
-    letter-spacing: 1px;
-    text-align: center;
-    border-radius: 5px 5px 0 0;
+    color: #fff4e6 !important;
+    text-transform: uppercase !important;
+    font-size: 11px !important;
+    letter-spacing: 1px !important;
+    text-align: center !important;
+    border-radius: 5px 5px 0 0 !important;
 }
 
 .pun-links a {
@@ -979,21 +979,21 @@ div#lion_image {
 
 /* title */
 .pun-title {
-    text-align: center;
-    color: #ff7a3a;
-    font-size: 64px;
-    letter-spacing: 2px;
-    font-family: Gideon Roman;
-    text-transform: uppercase;
-    opacity: 0.7;
+    text-align: center !important;
+    color: #ff7a3a !important;
+    font-size: 64px !important;
+    letter-spacing: 2px !important;
+    font-family: Gideon Roman !important;
+    text-transform: uppercase !important;
+    opacity: 0.7 !important;
 }
 
 /* graphics */
 .pun-graphics {
-    background: none;
+    background: none !important;
     color: #fff4e6 !important;
-    text-align: center;
-    border-radius: 5px;
+    text-align: center !important;
+    border-radius: 5px !important;
 }
 
 .pun-graphics a {
@@ -1002,16 +1002,16 @@ div#lion_image {
 
 /* credit */
 .pun-credit {
-    position: fixed;
-    bottom: 0px;
-    right: 10px;
+    position: fixed !important;
+    bottom: 0px !important;
+    right: 10px !important;
     color: #fff4e6 !important;
-    font-size: 10px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-align: center;
+    font-size: 10px !important;
+    letter-spacing: 2px !important;
+    text-transform: uppercase !important;
+    text-align: center !important;
     background: linear-gradient(90deg, #2b2b2f 0%, #ff6a2b 100%) !important;
-    padding: 5px;
+    padding: 5px !important;
 }
 
 .pun-credit a {
