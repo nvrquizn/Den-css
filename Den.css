@@ -928,12 +928,34 @@ div.slider.round::before {
 
     border-collapse: collapse !important;
     border-spacing: 0 !important;
+
+    border-radius: 12px !important;
 }
 
-/* readable spacing (NOT zero) */
+/* readable spacing */
 .container.main > div > div.col-md-9 .table:first-of-type td {
     padding: 8px 12px !important;
     text-align: center !important;
+}
+
+/* ============================= */
+/* 🔄 STACK LAYOUT (FIX SIDE-BY-SIDE) */
+/* ============================= */
+
+/* stack rows vertically */
+.container.main > div > div.col-md-9 .table:first-of-type tr {
+    display: block !important;
+}
+
+/* make cells full width (no side-by-side) */
+.container.main > div > div.col-md-9 .table:first-of-type td {
+    display: block !important;
+    width: 100% !important;
+}
+
+/* space between image and info */
+.container.main > div > div.col-md-9 .table:first-of-type td:first-child {
+    margin-bottom: 12px !important;
 }
 
 /* ============================= */
@@ -947,7 +969,7 @@ div#lion_image {
     margin: 0 auto !important;
 
     width: auto !important;
-    max-width: 800px !important;  /* 👈 THIS controls the size now */
+    max-width: 800px !important;
 
     height: auto !important;
 }
@@ -958,12 +980,12 @@ div#lion_image {
 }
 
 /* ============================= */
-/* 📦 ATTACH TABLE (LIGHT TOUCH) */
+/* 🎨 FINAL TOUCHES */
 /* ============================= */
 
+/* spacing under whole block */
 .container.main > div > div.col-md-9 .table:first-of-type {
-    margin-top: 10px !important; /* slight space under image */
-    border-radius: 12px !important;
+    margin-top: 10px !important;
 }
 
 /* accent text */
@@ -971,6 +993,7 @@ div#lion_image {
     color: #ff9a5a !important;
     font-weight: 600;
 }
+
 #lion_image .lion-image-block > img[data-type="background"],
 #lion_image .lion-image-block > img[data-layer="background"] {
     display: none !important;
