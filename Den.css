@@ -1022,13 +1022,15 @@ div#lion_image {
     opacity: 1 !important;
 }
 
-/* HARD RESET: pun system cannot inherit page table rules */
-.pun-table,
-.pun-table * {
-    all: unset !important;
+/* keep pun table stable and independent */
+.pun-table {
+    width: 580px !important;
+    margin: 20px auto !important;
+    display: table !important;
+    color: #fff4e6 !important;
 }
 
-/* restore table structure */
+/* restore structure WITHOUT breaking layout */
 .pun-table tr {
     display: table-row !important;
 }
@@ -1043,6 +1045,7 @@ div#lion_image {
     box-shadow: 0 0 0vw 0vw #ff9a5a;
     animation: drift ease alternate infinite, flash ease infinite;
 }
+
 .firefly:nth-child(12) {
   animation-name: move12;
 }
