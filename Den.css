@@ -1004,6 +1004,20 @@ div#lion_image {
     color: #ff9a5a !important; /* soft ember link */
 }
 
+/* keep pun table fully independent from lion layout changes */
+.pun-table {
+    display: table !important;
+    margin: 20px auto !important;
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+/* prevent any global table rules from affecting it */
+.pun-table td,
+.pun-table tr {
+    display: table-cell !important;
+}
+
 .firefly::after {
     background: #ff6a2b; /* hotter ember */
     opacity: 0;
