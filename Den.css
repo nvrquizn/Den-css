@@ -937,53 +937,40 @@ div.slider.round::before {
 }
 
 /* ============================= */
-/* 🦁 LION HEADER */
+/* 🦁 LION HEADER (SIMPLE + STABLE) */
 /* ============================= */
 
 div#lion_image {
+    content: url("https://i.ibb.co/Q7xQ8d1B/Screenshot-2026-04-30-at-13-34-47.png") !important;
+
     display: block;
+    margin: 0 auto !important;
 
-    width: 100% !important;
-    height: 280px;
+    width: 90% !important;   /* adjust this (85–95%) if needed */
+    max-width: 900px;
 
-    background-image: url("https://i.ibb.co/Q7xQ8d1B/Screenshot-2026-04-30-at-13-34-47.png");
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
-
-    margin: 0 !important;
-
-    border-radius: 16px 16px 0 0;
+    height: auto !important;
 }
 
-/* remove original lion */
+/* remove original lion system */
 #lion_image .lion-image-block {
     display: none !important;
 }
 
 /* ============================= */
-/* 📦 ATTACH TABLE */
+/* 📦 ATTACH TABLE (LIGHT TOUCH) */
 /* ============================= */
 
 .container.main > div > div.col-md-9 .table:first-of-type {
-    border-radius: 0 0 16px 16px !important;
-
-    /* this is the ONLY “gap fix” we use */
-    margin-top: -1px !important;
+    margin-top: 10px !important; /* slight space under image */
+    border-radius: 12px !important;
 }
-
-/* hide original lion system */
-#lion_image .lion-image-block {
-    display: none !important;
-}
-
 
 /* accent text */
 .container.main > div > div.col-md-9 .table:first-of-type b {
     color: #ff9a5a !important;
     font-weight: 600;
 }
-
 #lion_image .lion-image-block > img[data-type="background"],
 #lion_image .lion-image-block > img[data-layer="background"] {
     display: none !important;
