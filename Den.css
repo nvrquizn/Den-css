@@ -942,19 +942,19 @@ div.slider.round::before {
 /* 🔄 STACK LAYOUT (FIX SIDE-BY-SIDE) */
 /* ============================= */
 
-/* ONLY break the FIRST row (image + info split) */
-.container.main > div > div.col-md-9 .table:first-of-type > tbody > tr:first-child {
+/* target the row that holds image + info */
+#about > tbody > tr:nth-child(2) {
     display: block !important;
 }
 
-/* ONLY affect the two main cells in that row */
-.container.main > div > div.col-md-9 .table:first-of-type > tbody > tr:first-child > td {
+/* stack the two cells inside it */
+#about > tbody > tr:nth-child(2) > td {
     display: block !important;
     width: 100% !important;
 }
 
 /* spacing between image and info */
-.container.main > div > div.col-md-9 .table:first-of-type > tbody > tr:first-child > td:first-child {
+#about > tbody > tr:nth-child(2) > td:first-child {
     margin-bottom: 12px !important;
 }
 
