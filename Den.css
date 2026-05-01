@@ -946,7 +946,7 @@ div#lion_image {
     display: block;
     margin: 0 auto !important;
 
-    width: 90% !important;   /* adjust this (85–95%) if needed */
+    width: 95% !important;   /* adjust this (85–95%) if needed */
     max-width: 900px;
 
     height: auto !important;
