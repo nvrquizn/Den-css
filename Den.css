@@ -798,6 +798,105 @@ div.slider.round::before {
 	transition: 0.7s!important;
 }
 
+/* 🔥 ANIMATED EMBERS (instead of fireflies) */
+.firefly::before {
+    background: #ff8c42; /* ember glow */
+    opacity: 0.4;
+    animation: drift ease alternate infinite;
+}
+
+  
+/* ============================= */
+/* 🪵 MAIN TABLE CLEAN RESET */
+/* ============================= */
+
+.container.main > div > div.col-md-9 .table:first-of-type {
+    width: 100% !important;
+
+    background: none !important;
+    box-shadow: none !important;
+    border: none !important;
+
+    margin: 0 !important;
+
+    border-collapse: collapse !important;
+    border-spacing: 0 !important;
+
+    border-radius: 12px !important;
+}
+
+/* readable spacing */
+.container.main > div > div.col-md-9 .table:first-of-type td {
+    padding: 8px 12px !important;
+    text-align: center !important;
+}
+
+/* ============================= */
+/* 🔄 STACK LAYOUT (FIX SIDE-BY-SIDE) */
+/* ============================= */
+
+/* target the row that holds image + info */
+#about > tbody > tr:nth-child(2) {
+    display: block !important;
+}
+
+/* stack the two cells inside it */
+#about > tbody > tr:nth-child(2) > td {
+    display: block !important;
+    width: 100% !important;
+}
+
+/* spacing between image and info */
+#about > tbody > tr:nth-child(2) > td:first-child {
+    margin-bottom: 12px !important;
+}
+
+/* ============================= */
+/* 🦁 LION HEADER (SIMPLE + STABLE) */
+/* ============================= */
+
+div#lion_image {
+    content: url("https://i.ibb.co/Q7xQ8d1B/Screenshot-2026-04-30-at-13-34-47.png") !important;
+
+    display: block;
+    margin: 0 auto !important;
+
+    width: auto !important;
+    max-width: 800px !important;
+
+    height: auto !important;
+}
+
+/* remove original lion system */
+#lion_image .lion-image-block {
+    display: none !important;
+}
+
+/* ============================= */
+/* 🎨 FINAL TOUCHES */
+/* ============================= */
+
+/* spacing under whole block */
+.container.main > div > div.col-md-9 .table:first-of-type {
+    margin-top: 10px !important;
+}
+
+/* accent text */
+.container.main > div > div.col-md-9 .table:first-of-type b {
+    color: #ff9a5a !important;
+    font-weight: 600;
+}
+
+#lion_image .lion-image-block > img[data-type="background"],
+#lion_image .lion-image-block > img[data-layer="background"] {
+    display: none !important;
+}
+
+#lion_image:hover {
+    transform: scale(1.01);
+    transition: 0.2s ease;
+}
+
 /* 🔥 BOX CREDIT (small footer tag) */
 .pun-credit {
     position: fixed;
@@ -903,105 +1002,6 @@ div.slider.round::before {
 }
 .pun-graphics a {
     color: #ff9a5a !important; /* soft ember link */
-}
-
-/* 🔥 ANIMATED EMBERS (instead of fireflies) */
-.firefly::before {
-    background: #ff8c42; /* ember glow */
-    opacity: 0.4;
-    animation: drift ease alternate infinite;
-}
-
-  
-/* ============================= */
-/* 🪵 MAIN TABLE CLEAN RESET */
-/* ============================= */
-
-.container.main > div > div.col-md-9 .table:first-of-type {
-    width: 100% !important;
-
-    background: none !important;
-    box-shadow: none !important;
-    border: none !important;
-
-    margin: 0 !important;
-
-    border-collapse: collapse !important;
-    border-spacing: 0 !important;
-
-    border-radius: 12px !important;
-}
-
-/* readable spacing */
-.container.main > div > div.col-md-9 .table:first-of-type td {
-    padding: 8px 12px !important;
-    text-align: center !important;
-}
-
-/* ============================= */
-/* 🔄 STACK LAYOUT (FIX SIDE-BY-SIDE) */
-/* ============================= */
-
-/* target the row that holds image + info */
-#about > tbody > tr:nth-child(2) {
-    display: block !important;
-}
-
-/* stack the two cells inside it */
-#about > tbody > tr:nth-child(2) > td {
-    display: block !important;
-    width: 100% !important;
-}
-
-/* spacing between image and info */
-#about > tbody > tr:nth-child(2) > td:first-child {
-    margin-bottom: 12px !important;
-}
-
-/* ============================= */
-/* 🦁 LION HEADER (SIMPLE + STABLE) */
-/* ============================= */
-
-div#lion_image {
-    content: url("https://i.ibb.co/Q7xQ8d1B/Screenshot-2026-04-30-at-13-34-47.png") !important;
-
-    display: block;
-    margin: 0 auto !important;
-
-    width: auto !important;
-    max-width: 800px !important;
-
-    height: auto !important;
-}
-
-/* remove original lion system */
-#lion_image .lion-image-block {
-    display: none !important;
-}
-
-/* ============================= */
-/* 🎨 FINAL TOUCHES */
-/* ============================= */
-
-/* spacing under whole block */
-.container.main > div > div.col-md-9 .table:first-of-type {
-    margin-top: 10px !important;
-}
-
-/* accent text */
-.container.main > div > div.col-md-9 .table:first-of-type b {
-    color: #ff9a5a !important;
-    font-weight: 600;
-}
-
-#lion_image .lion-image-block > img[data-type="background"],
-#lion_image .lion-image-block > img[data-layer="background"] {
-    display: none !important;
-}
-
-#lion_image:hover {
-    transform: scale(1.01);
-    transition: 0.2s ease;
 }
 
 .firefly::after {
