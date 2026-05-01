@@ -914,7 +914,7 @@ div.slider.round::before {
 
   
 /* ============================= */
-/* 🪵 TABLE RESET (SAFE BASE) */
+/* 🪵 MAIN TABLE CLEAN RESET */
 /* ============================= */
 
 .container.main > div > div.col-md-9 .table:first-of-type {
@@ -925,44 +925,51 @@ div.slider.round::before {
     border: none !important;
 
     margin: 0 !important;
-    padding: 0 !important;
 
     border-collapse: collapse !important;
     border-spacing: 0 !important;
-
-    border-radius: 0 0 16px 16px !important;
-    overflow: hidden;
 }
 
-/* keep text aligned, DO NOT mess with spacing */
-.container.main > div > div.col-md-9 .table:first-of-type tr,
+/* readable spacing (NOT zero) */
 .container.main > div > div.col-md-9 .table:first-of-type td {
-    text-align: center !important;
     padding: 8px 12px !important;
-    font-size: 13px;
-    line-height: 1.4;
+    text-align: center !important;
 }
 
 /* ============================= */
-/* 🦁 LION IMAGE HEADER */
+/* 🦁 LION HEADER */
 /* ============================= */
 
 div#lion_image {
-
     display: block;
 
     width: 100% !important;
-    height: 250px;
+    height: 280px;
 
     background-image: url("https://i.ibb.co/Q7xQ8d1B/Screenshot-2026-04-30-at-13-34-47.png");
-
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center top;
     background-size: cover;
 
     margin: 0 !important;
 
     border-radius: 16px 16px 0 0;
+}
+
+/* remove original lion */
+#lion_image .lion-image-block {
+    display: none !important;
+}
+
+/* ============================= */
+/* 📦 ATTACH TABLE */
+/* ============================= */
+
+.container.main > div > div.col-md-9 .table:first-of-type {
+    border-radius: 0 0 16px 16px !important;
+
+    /* this is the ONLY “gap fix” we use */
+    margin-top: -1px !important;
 }
 
 /* hide original lion system */
