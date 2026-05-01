@@ -1022,6 +1022,29 @@ div#lion_image {
     opacity: 1 !important;
 }
 
+/* HARD RESET: pun system cannot inherit page table rules */
+.pun-table,
+.pun-table * {
+    all: unset !important;
+}
+
+/* rebuild only what we need */
+.pun-table {
+    display: table !important;
+    width: 580px !important;
+    margin: 20px auto !important;
+    color: #fff4e6 !important;
+}
+
+/* restore table structure */
+.pun-table tr {
+    display: table-row !important;
+}
+
+.pun-table td {
+    display: table-cell !important;
+}
+
 .firefly::after {
     background: #ff6a2b; /* hotter ember */
     opacity: 0;
