@@ -872,11 +872,22 @@ div#lion_image {
     display: none !important;
 }
 
+/* hide background layers */
+#lion_image .lion-image-block > img[data-type="background"],
+#lion_image .lion-image-block > img[data-layer="background"] {
+    display: none !important;
+}
+
+/* hover effect */
+#lion_image:hover {
+    transform: scale(1.01);
+    transition: 0.2s ease;
+}
+
 /* ============================= */
 /* 🎨 FINAL TOUCHES */
 /* ============================= */
 
-/* spacing under whole block */
 .container.main > div > div.col-md-9 .table:first-of-type {
     margin-top: 10px !important;
 }
@@ -887,59 +898,42 @@ div#lion_image {
     font-weight: 600;
 }
 
-#lion_image .lion-image-block > img[data-type="background"],
-#lion_image .lion-image-block > img[data-layer="background"] {
-    display: none !important;
-}
+/* ============================= */
+/* 🔥 PUN SYSTEM (ISOLATED SAFE ZONE) */
+/* ============================= */
 
-#lion_image:hover {
-    transform: scale(1.01);
-    transition: 0.2s ease;
-}
-
-/* 🔥 BOX CREDIT (small footer tag) */
-.pun-credit {
-    position: fixed;
-    bottom: 0px;
-    right: 10px;
-    color: #fff4e6 !important; /* soft warm light */
-    font-size: 10px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-align: center;
-    background: linear-gradient(90deg, #2b2b2f 0%, #ff6a2b 100%) !important; /* ash → ember */
-    padding: 5px;
-}
-.pun-credit a {
-    color: #fff4e6 !important;
-}
-.pun-credit a:hover {
-    opacity: 1 !important;
-}
-.pun-credit:hover {
-    opacity: 1;
-    transition: 2s;
-}
-
-/* 🪨 MAIN TABLE (background image container) */
 .pun-table {
     width: 580px;
     background: url('https://i.ibb.co/b5THPT4F/Screenshot-2026-04-28-at-03-59-57.png') top center no-repeat !important;
-    box-shadow: 1px 1px 5px #1a1a1a !important; /* deeper shadow */
+    box-shadow: 1px 1px 5px #1a1a1a !important;
     border-radius: 5px;
-    opacity: 0.9; /* slightly clearer */
+    opacity: 0.9;
+
+    display: table !important;
+    margin: 20px auto !important;
+    position: relative !important;
+    z-index: 1 !important;
 }
 
-/* 📦 SPACER */
+/* restore proper table structure inside pun system */
+.pun-table tr {
+    display: table-row !important;
+}
+
+.pun-table td {
+    display: table-cell !important;
+}
+
+/* spacer */
 .pun-spacer {
     background: none;
-    width: 350px;	
+    width: 350px;
 }
 
-/* 🔥 CONTENT BOX (main readable area) */
+/* content box */
 .pun-content {
-    background: linear-gradient(180deg, rgba(43,43,47,0.95), rgba(26,26,26,0.95)) !important; /* ash gradient */
-    box-shadow: inset 0 0 30px #ff6a2b55, 1px 1px 5px #1a1a1a !important; /* ember glow */
+    background: linear-gradient(180deg, rgba(43,43,47,0.95), rgba(26,26,26,0.95)) !important;
+    box-shadow: inset 0 0 30px #ff6a2b55, 1px 1px 5px #1a1a1a !important;
 
     text-align: left;
     height: 340px;
@@ -949,43 +943,44 @@ div#lion_image {
     border-radius: 5px;
     font-size: 17px;
 
-	color: #fff4e6 !important; /* readable light text */
+    color: #fff4e6 !important;
 }
-/* 🔥 CONTENT HEADERS */
+
 .pun-content h3 {
     margin: 0 0 10px 0;
-    border-bottom: 1px solid #ff6a2b; /* ember divider */
+    border-bottom: 1px solid #ff6a2b;
     text-align: left;
 }
-/* 🔗 LINKS */
+
 .pun-content a {
     font-weight: normal !important;
     opacity: 0.7;
 }
+
 .pun-content a:hover {
     opacity: 1 !important;
 }
 
-/* 🔥 TOP BAR LINKS */
+/* top bar */
 .pun-links {
-    background: linear-gradient(90deg, #2b2b2f 0%, #ff6a2b 100%) !important; /* ash → ember */
+    background: linear-gradient(90deg, #2b2b2f 0%, #ff6a2b 100%) !important;
     box-shadow: 1px 1px 5px #1a1a1a !important;
     color: #fff4e6;
     text-transform: uppercase;
     font-size: 11px;
-    font-weight: normal;
     letter-spacing: 1px;
     text-align: center;
     border-radius: 5px 5px 0 0;
 }
+
 .pun-links a {
     color: #fff4e6 !important;
 }
 
-/* 🔥 TITLE TEXT */
+/* title */
 .pun-title {
     text-align: center;
-    color: #ff7a3a; /* ember title */
+    color: #ff7a3a;
     font-size: 64px;
     letter-spacing: 2px;
     font-family: Gideon Roman;
@@ -993,29 +988,38 @@ div#lion_image {
     opacity: 0.7;
 }
 
-/* 🎨 GRAPHICS AREA */
+/* graphics */
 .pun-graphics {
     background: none;
     color: #fff4e6 !important;
     text-align: center;
     border-radius: 5px;
 }
+
 .pun-graphics a {
-    color: #ff9a5a !important; /* soft ember link */
+    color: #ff9a5a !important;
 }
 
-/* keep pun table fully independent from lion layout changes */
-.pun-table {
-    display: table !important;
-    margin: 20px auto !important;
-    position: relative !important;
-    z-index: 1 !important;
+/* credit */
+.pun-credit {
+    position: fixed;
+    bottom: 0px;
+    right: 10px;
+    color: #fff4e6 !important;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    background: linear-gradient(90deg, #2b2b2f 0%, #ff6a2b 100%) !important;
+    padding: 5px;
 }
 
-/* prevent any global table rules from affecting it */
-.pun-table td,
-.pun-table tr {
-    display: table-cell !important;
+.pun-credit a {
+    color: #fff4e6 !important;
+}
+
+.pun-credit a:hover {
+    opacity: 1 !important;
 }
 
 .firefly::after {
