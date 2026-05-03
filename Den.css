@@ -877,7 +877,7 @@ div#lion_image {
 }
 
 /* ============================= */
-/* 🔥 HARD-LOCKED LAYOUT */
+/* 🔥 WRAPPER */
 /* ============================= */
 
 .box-wrapper {
@@ -886,31 +886,132 @@ div#lion_image {
     margin: 0 auto;
 }
 
-/* FORCE big box to take full row */
+/* ============================= */
+/* 🔥 BASE BOX STYLE */
+/* ============================= */
+
+.smallbox,
+.mediumbox,
+.largebox,
+.smallhoverbox,
+.mediumhoverbox,
+.largehoverbox {
+
+    background: linear-gradient(
+        180deg,
+        rgba(40,40,42,0.95),
+        rgba(18,18,18,0.95)
+    ) !important;
+
+    color: #fff4e6;
+
+    padding: 10px;
+
+    border: 1px solid rgba(255,106,43,0.35);
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 0 18px rgba(0,0,0,0.7),
+        inset 0 0 20px rgba(255,106,43,0.08);
+
+    box-sizing: border-box;
+
+    overflow: auto;
+
+    transition: all 0.3s ease;
+}
+
+/* ============================= */
+/* 🔥 TOP BOX (FULL WIDTH) */
+/* ============================= */
+
 .largebox,
 .largehoverbox {
-    display: block;
-    width: 100% !important;
+    width: 100%;
     height: 320px;
 
+    display: block;
     margin-bottom: 10px;
-    clear: both;
 }
 
-/* container for the 2 small boxes */
+/* ============================= */
+/* 🔥 BOTTOM ROW (CLEAN & CONTROLLED) */
+/* ============================= */
+
 .box-row {
-    display: block; /* NOT flex */
     width: 100%;
+    display: block;
+    font-size: 0; /* removes inline-block spacing issues */
 }
 
-/* small boxes sit side-by-side ONLY here */
+/* small boxes */
 .smallbox,
-.smallhoverbox,
-.mediumbox,
-.mediumhoverbox {
-    width: 48% !important;
+.smallhoverbox {
+    width: 49%;
+    height: 150px;
+
     display: inline-block;
     vertical-align: top;
+
+    font-size: 14px; /* restores text */
+}
+
+/* if you ever use medium boxes in row */
+.mediumbox,
+.mediumhoverbox {
+    width: 49%;
+    height: 250px;
+
+    display: inline-block;
+    vertical-align: top;
+
+    font-size: 14px;
+}
+
+/* spacing between the two bottom boxes */
+.box-row > div:first-child {
+    margin-right: 2%;
+}
+
+/* ============================= */
+/* ✨ HOVER EFFECTS */
+/* ============================= */
+
+.smallhoverbox:hover {
+    height: 210px;
+    box-shadow:
+        0 0 25px rgba(255,106,43,0.3),
+        inset 0 0 25px rgba(255,106,43,0.15);
+}
+
+.mediumhoverbox:hover {
+    height: 310px;
+    box-shadow:
+        0 0 30px rgba(255,106,43,0.35),
+        inset 0 0 30px rgba(255,106,43,0.15);
+}
+
+.largehoverbox:hover {
+    height: 380px;
+    box-shadow:
+        0 0 30px rgba(255,106,43,0.4),
+        inset 0 0 30px rgba(255,106,43,0.2);
+}
+
+/* ============================= */
+/* 🖼️ IMAGE FIX */
+/* ============================= */
+
+.smallbox img,
+.mediumbox img,
+.largebox img,
+.smallhoverbox img,
+.mediumhoverbox img,
+.largehoverbox img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
 }
 
 .firefly::after {
