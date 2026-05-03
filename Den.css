@@ -887,7 +887,7 @@ div#lion_image {
 }
 
 /* ============================= */
-/* 🔥 BASE BOX STYLE (FIRE/ASH THEME) */
+/* 🔥 BASE BOX STYLE */
 /* ============================= */
 
 .largehoverbox,
@@ -914,23 +914,23 @@ div#lion_image {
     box-sizing: border-box;
 
     overflow: auto;
+
+    transition: all 0.3s ease;
 }
 
 /* ============================= */
-/* 🔥 BIG BOX (FORCE FULL WIDTH) */
+/* 🔥 TOP BOX */
 /* ============================= */
 
 .largehoverbox {
-    width: 100% !important;
-    display: block !important;
-
     float: none !important;
+    width: 100% !important;
 
     margin-bottom: 10px;
 }
 
 /* ============================= */
-/* 🔥 BOTTOM BOXES (KEEP SIMPLE FLOAT) */
+/* 🔥 BOTTOM ROW */
 /* ============================= */
 
 .bottomboxes {
@@ -938,14 +938,14 @@ div#lion_image {
     overflow: hidden; /* contains floats */
 }
 
-/* left */
+/* LEFT BOX */
 .bottomboxes .mediumhoverbox:nth-child(1) {
     float: left;
     width: 49%;
     height: 180px;
 }
 
-/* right */
+/* RIGHT BOX */
 .bottomboxes .mediumhoverbox:nth-child(2) {
     float: right;
     width: 49%;
@@ -953,11 +953,32 @@ div#lion_image {
 }
 
 /* ============================= */
-/* ✨ OPTIONAL SPACING FIX (VERY IMPORTANT) */
+/* 🧹 CLEAR FIX */
 /* ============================= */
 
-.bottomboxes {
-    margin-top: 0 !important;
+.bottomboxes::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* ============================= */
+/* ✨ HOVER EFFECTS */
+/* ============================= */
+
+.largehoverbox:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0 0 30px rgba(255,106,43,0.35),
+        inset 0 0 25px rgba(255,106,43,0.15);
+}
+
+.mediumhoverbox:hover {
+    transform: translateY(-2px);
+    height: 220px;
+    box-shadow:
+        0 0 25px rgba(255,106,43,0.3),
+        inset 0 0 25px rgba(255,106,43,0.15);
 }
 
 /* ============================= */
@@ -968,6 +989,7 @@ div#lion_image {
 .mediumhoverbox img {
     max-width: 100%;
     height: auto;
+    border-radius: 6px;
 }
 
 .firefly::after {
