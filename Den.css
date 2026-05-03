@@ -1,11 +1,11 @@
-/* Sak (#327675)'s den CSS - Sunrise/ Sunset Palette */
+/* Sak (#327675)'s den CSS - Fire and Ash Theme */
 
 /* font */
 /* font 1: font-family: 'IM Fell Double Pica SC', serif; */
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica+SC&display=swap');
 
 :root {
-  /* Sunrise / Sunset Palette */
+  /* Fire/Ash Palette */
   --kolur1: #ff6a2b;     /* ember orange */
   --kolur170: #ff6a2bab; /* ember glow (transparent) */
   
