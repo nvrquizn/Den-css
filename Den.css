@@ -83,7 +83,8 @@
     font-family: 'IM Fell Double Pica SC', serif;
     font-size: 18px !important;
     color: var(--kolur1) !important;
-}
+  } 
+} 
 
 @media screen and (min-width: 768px){
   .boxtopper {
@@ -96,7 +97,8 @@
 	z-index: 1;
 	margin-right: 0px;
 	z-index: 3;
-}
+  } 
+} 
 
 /* ============================= */
 /* 🔥 CHAT (EMBER / ASH THEME) */
