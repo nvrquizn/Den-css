@@ -876,6 +876,7 @@ div#lion_image {
     font-weight: 600;
 }
 
+
 /* ============================= */
 /* 🔥 CONTAINER */
 /* ============================= */
@@ -884,18 +885,15 @@ div#lion_image {
     width: 100%;
     max-width: 820px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 /* ============================= */
 /* 🔥 BASE BOX STYLE */
 /* ============================= */
 
-.smallbox,
-.mediumbox,
-.largebox,
-.smallhoverbox,
-.mediumhoverbox,
-.largehoverbox {
+.largehoverbox,
+.mediumhoverbox {
 
     background: linear-gradient(
         180deg,
@@ -921,28 +919,33 @@ div#lion_image {
 }
 
 /* ============================= */
-/* 🔥 TOP BOX */
+/* 🔥 TOP BOX (FORCED FULL ROW) */
 /* ============================= */
 
 .largehoverbox {
+    display: block !important;
     width: 100% !important;
+
     height: 320px;
 
-    display: block;
+    float: none !important;   /* KEY FIX */
+    clear: both !important;   /* KEY FIX */
+
     margin-bottom: 10px;
 }
 
 /* ============================= */
-/* 🔥 BOTTOM ROW CONTAINER */
+/* 🔥 BOTTOM BOX WRAPPER */
 /* ============================= */
 
 .bottomboxes {
     width: 100%;
-    overflow: hidden; /* contains floats */
+    display: block;
+    clear: both;
 }
 
 /* ============================= */
-/* 🔥 BOTTOM BOXES (FLOAT FIXED) */
+/* 🔥 BOTTOM BOXES (FORCED SIDE-BY-SIDE ONLY HERE) */
 /* ============================= */
 
 .bottomboxes .mediumhoverbox {
@@ -967,7 +970,7 @@ div#lion_image {
 }
 
 /* ============================= */
-/* ✨ HOVER EFFECTS */
+/* ✨ HOVER */
 /* ============================= */
 
 .largehoverbox:hover {
@@ -989,8 +992,7 @@ div#lion_image {
 /* ============================= */
 
 .largehoverbox img,
-.mediumhoverbox img,
-.smallhoverbox img {
+.mediumhoverbox img {
     max-width: 100%;
     height: auto;
     border-radius: 6px;
