@@ -923,55 +923,66 @@ div#lion_image {
 }
 
 /* ============================= */
-/* 🔥 TOP BOX (FULL WIDTH) */
+/* 🔥 TOP BOX (ALWAYS STACKED) */
 /* ============================= */
 
 .largebox,
 .largehoverbox {
-    width: 100%;
+    display: block !important;
+    width: 100% !important;
+
     height: 320px;
 
-    display: block;
-    margin-bottom: 10px;
+    margin: 0 0 10px 0 !important;
+
+    clear: both !important;
 }
 
 /* ============================= */
-/* 🔥 BOTTOM ROW (CLEAN & CONTROLLED) */
+/* 🔥 BOTTOM ROW CONTAINER */
 /* ============================= */
 
 .box-row {
-    width: 100%;
-    display: block;
-    font-size: 0; /* removes inline-block spacing issues */
+    display: block !important;
+    width: 100% !important;
 }
 
-/* small boxes */
+/* ============================= */
+/* 🔥 BOTTOM BOXES (FORCED SIDE-BY-SIDE) */
+/* ============================= */
+
+.box-row .smallbox,
+.box-row .smallhoverbox,
+.box-row .mediumbox,
+.box-row .mediumhoverbox {
+    display: inline-block !important;
+    vertical-align: top !important;
+
+    width: 48% !important;
+
+    margin: 0 !important;
+}
+
+/* spacing between bottom boxes */
+.box-row .smallbox:first-child,
+.box-row .smallhoverbox:first-child,
+.box-row .mediumbox:first-child,
+.box-row .mediumhoverbox:first-child {
+    margin-right: 4% !important;
+}
+
+/* ============================= */
+/* 📦 BOX HEIGHTS */
+/* ============================= */
+
 .smallbox,
 .smallhoverbox {
-    width: 49%;
     height: 150px;
-
-    display: inline-block;
-    vertical-align: top;
-
-    font-size: 14px; /* restores text */
 }
 
-/* if you ever use medium boxes in row */
 .mediumbox,
 .mediumhoverbox {
-    width: 49%;
     height: 250px;
-
-    display: inline-block;
-    vertical-align: top;
-
-    font-size: 14px;
-}
-
-/* spacing between the two bottom boxes */
-.box-row > div:first-child {
-    margin-right: 2%;
 }
 
 /* ============================= */
