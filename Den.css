@@ -877,179 +877,40 @@ div#lion_image {
 }
 
 /* ============================= */
-/* 🔥 BOX LAYOUT WRAPPER */
+/* 🔥 HARD-LOCKED LAYOUT */
 /* ============================= */
 
 .box-wrapper {
     width: 100%;
-    max-width: 900px;
+    max-width: 820px;
     margin: 0 auto;
 }
 
-/* row for bottom boxes */
-.box-row {
-    display: flex;
-    gap: 10px;
-}
-
-/* ============================= */
-/* 🔥 BOX LAYOUT WRAPPER */
-/* ============================= */
-
-.box-wrapper {
-    width: 100%;
-    max-width: 820px; /* was 900px */
-    margin: 0 auto;
-}
-
-/* row for bottom boxes */
-.box-row {
-    display: flex;
-    gap: 8px; /* slightly tighter */
-}
-
-/* ============================= */
-/* 🔥 BASE BOX STYLE */
-/* ============================= */
-
-.smallbox, .mediumbox, .largebox,
-.smallhoverbox, .mediumhoverbox, .largehoverbox {
-
-    background: linear-gradient(
-        180deg,
-        rgba(40,40,42,0.95),
-        rgba(18,18,18,0.95)
-    ) !important;
-
-    color: #fff4e6;
-
-    padding: 10px; /* was 12px */
-
-    border: 1px solid rgba(255,106,43,0.35);
-
-    border-radius: 9px; /* slightly softer */
-
-    box-shadow:
-        0 0 18px rgba(0,0,0,0.7),
-        inset 0 0 20px rgba(255,106,43,0.08);
-
-    margin: 0;
-
-    transition: all 0.35s ease;
-
-    overflow: auto;
-    box-sizing: border-box;
-}
-
-/* ============================= */
-/* 📦 STATIC BOXES */
-/* ============================= */
-
-.largebox {
-    width: 100%;
-    height: 320px; /* was 350px */
-    margin-bottom: 8px;
-}
-
-.smallbox {
-    width: 50%;
-    height: 135px; /* was 150px */
-}
-
-.mediumbox {
-    width: 50%;
-    height: 225px; /* was 250px */
-}
-
-/* ============================= */
-/* ✨ HOVER BOXES */
-/* ============================= */
-
+/* FORCE big box to take full row */
+.largebox,
 .largehoverbox {
-    width: 100%;
+    display: block;
+    width: 100% !important;
     height: 320px;
-    margin-bottom: 8px;
+
+    margin-bottom: 10px;
+    clear: both;
 }
 
-.largehoverbox:hover {
-    height: 380px; /* scaled down */
-
-    box-shadow:
-        0 0 30px rgba(255,106,43,0.4),
-        inset 0 0 30px rgba(255,106,43,0.2);
+/* container for the 2 small boxes */
+.box-row {
+    display: block; /* NOT flex */
+    width: 100%;
 }
 
-.smallhoverbox {
-    width: 50%;
-    height: 135px;
-}
-
-.smallhoverbox:hover {
-    height: 200px;
-
-    box-shadow:
-        0 0 22px rgba(255,106,43,0.3),
-        inset 0 0 22px rgba(255,106,43,0.15);
-}
-
+/* small boxes sit side-by-side ONLY here */
+.smallbox,
+.smallhoverbox,
+.mediumbox,
 .mediumhoverbox {
-    width: 50%;
-    height: 225px;
-}
-
-.mediumhoverbox:hover {
-    height: 290px;
-
-    box-shadow:
-        0 0 26px rgba(255,106,43,0.35),
-        inset 0 0 26px rgba(255,106,43,0.15);
-}
-
-/* ============================= */
-/* 🧠 SCROLLBAR */
-/* ============================= */
-
-.smallbox::-webkit-scrollbar,
-.mediumbox::-webkit-scrollbar,
-.largebox::-webkit-scrollbar,
-.smallhoverbox::-webkit-scrollbar,
-.mediumhoverbox::-webkit-scrollbar,
-.largehoverbox::-webkit-scrollbar {
-    width: 6px;
-}
-
-.smallbox::-webkit-scrollbar-track,
-.mediumbox::-webkit-scrollbar-track,
-.largebox::-webkit-scrollbar-track,
-.smallhoverbox::-webkit-scrollbar-track,
-.mediumhoverbox::-webkit-scrollbar-track,
-.largehoverbox::-webkit-scrollbar-track {
-    background: #1a1a1a;
-}
-
-.smallbox::-webkit-scrollbar-thumb,
-.mediumbox::-webkit-scrollbar-thumb,
-.largebox::-webkit-scrollbar-thumb,
-.smallhoverbox::-webkit-scrollbar-thumb,
-.mediumhoverbox::-webkit-scrollbar-thumb,
-.largehoverbox::-webkit-scrollbar-thumb {
-    background: #ff6a2b;
-    border-radius: 10px;
-}
-
-/* ============================= */
-/* 🖼️ IMAGE FIX */
-/* ============================= */
-
-.smallbox img,
-.mediumbox img,
-.largebox img,
-.smallhoverbox img,
-.mediumhoverbox img,
-.largehoverbox img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 6px;
+    width: 48% !important;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .firefly::after {
