@@ -885,7 +885,6 @@ div#lion_image {
     width: 100%;
     max-width: 820px;
     margin: 0 auto;
-    overflow: hidden;
 }
 
 /* ============================= */
@@ -919,48 +918,43 @@ div#lion_image {
 }
 
 /* ============================= */
-/* 🔥 TOP BOX (FORCED FULL ROW) */
+/* 🔥 BIG BOX (TOP) */
 /* ============================= */
 
 .largehoverbox {
-    display: block !important;
     width: 100% !important;
-
     height: 320px;
 
-    float: none !important;   /* KEY FIX */
-    clear: both !important;   /* KEY FIX */
+    display: block;
 
+    float: none;
     margin-bottom: 10px;
 }
 
 /* ============================= */
-/* 🔥 BOTTOM BOX WRAPPER */
+/* 🔥 SMALL BOXES (BOTTOM ROW) */
 /* ============================= */
 
 .bottomboxes {
     width: 100%;
-    display: block;
-    clear: both;
 }
 
-/* ============================= */
-/* 🔥 BOTTOM BOXES (FORCED SIDE-BY-SIDE ONLY HERE) */
-/* ============================= */
-
-.bottomboxes .mediumhoverbox {
-    width: 49% !important;
-    height: 180px;
-
+/* LEFT BOX */
+.bottomboxes .mediumhoverbox:nth-child(1) {
     float: left;
+    width: 49%;
+    height: 180px;
 }
 
+/* RIGHT BOX */
 .bottomboxes .mediumhoverbox:nth-child(2) {
     float: right;
+    width: 49%;
+    height: 180px;
 }
 
 /* ============================= */
-/* 🧹 CLEAR FIX */
+/* 🧹 CLEAR FIX (IMPORTANT) */
 /* ============================= */
 
 .bottomboxes::after {
@@ -970,7 +964,7 @@ div#lion_image {
 }
 
 /* ============================= */
-/* ✨ HOVER */
+/* ✨ HOVER EFFECTS */
 /* ============================= */
 
 .largehoverbox:hover {
