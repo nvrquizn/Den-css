@@ -220,25 +220,66 @@ div.cave-grid>img[src$="nestingbanner.png"]:hover {
     opacity: 1;
 }
 
-div.cave-grid>img {
+/* Eyktan’krr */
+a[href="cave.php?id=531977"] .cave-grid > img {
+    content: url('https://i.ibb.co/SXsf1sWn/Screenshot-2026-05-04-at-03-51-52.png') !important;
+    height: 145px;
+    width: 250px;
+    opacity: 0.7;
+    border-radius: 10px !important;
+    box-shadow: 1px 1px 5px var(--darkgray) !important;
+    overflow: hidden;
+}
+
+a[href="cave.php?id=531977"] .cave-grid > img:hover {
+    opacity: 1;
+}
+
+/* Ileyä */
+a[href="cave.php?id=270907"] .cave-grid > img {
+    content: url('https://i.ibb.co/1YrRJpKq/Screenshot-2026-05-04-at-03-52-52.png') !important;
+    height: 145px;
+    width: 250px;
+    opacity: 0.7;
+    border-radius: 10px !important;
+    box-shadow: 1px 1px 5px var(--darkgray) !important;
+    overflow: hidden;
+}
+
+a[href="cave.php?id=270907"] .cave-grid > img:hover {
+    opacity: 1;
+}
+
+
+/* Kame’t’ìng */
+a[href="cave.php?id=261140"] .cave-grid > img {
     content: url('https://i.ibb.co/67K4ffS6/Screenshot-2026-04-28-at-03-33-55.png') !important;
     height: 145px;
     width: 250px;
     opacity: 0.7;
     border-radius: 10px !important;
-    box-shadow: 1px 1px 5px var(--darkgray)!important;
+    box-shadow: 1px 1px 5px var(--darkgray) !important;
     overflow: hidden;
 }
 
-div.cave-grid>img:hover {
-    content: url('https://i.ibb.co/67K4ffS6/Screenshot-2026-04-28-at-03-33-55.png') !important;
-    height: 145px;
-    width: 250px;
+a[href="cave.php?id=261140"] .cave-grid > img:hover {
     opacity: 1;
 }
-div.cave-grid>img:hover {
+
+
+/* Raffle Lions */
+a[href="cave.php?id=533067"] .cave-grid > img {
+    content: url('https://i.ibb.co/6RxTg48p/Screenshot-2026-05-04-at-03-53-27.png') !important;
+    height: 145px;
+    width: 250px;
+    opacity: 0.7;
+    border-radius: 10px !important;
+    box-shadow: 1px 1px 5px var(--darkgray) !important;
+    overflow: hidden;
+}
+
+a[href="cave.php?id=533067"] .cave-grid > img:hover {
     opacity: 1;
-    transition: 0.8s !important;
 }
 
 /* Featured lioness image */
