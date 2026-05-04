@@ -282,6 +282,14 @@ a[href="cave.php?id=533067"] .cave-grid > img:hover {
     opacity: 1;
 }
 
+a[href^="cave.php?id="] .cave-grid > img {
+    transition: 0.3s;
+}
+
+a[href^="cave.php?id="] .cave-grid > img:hover {
+    filter: brightness(1.1) contrast(1.05);
+}
+
 /* Featured lioness image */
 .lionImage img:first-child {
     visibility: hidden;
