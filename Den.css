@@ -917,36 +917,6 @@ table#player img:hover {
 	transition: 0.7s!important;
 }
 
-/* level stats branch territory color backing */
-.inner-table .left {
-	background: var(--lightpink) !important;
-	box-shadow: var(--darkpink70) 0px -50px 36px -28px inset, 1px 1px 5px var(--darkgray) !important;
-}
-/* right collumns colors */
-.inner-table .right {
-	background: var(--lightpurple)!important;
-	box-shadow: var(--darkpurple) 0px -60px 50px -33px inset, 1px 1px 5px var(--darkgray) !important;
-	color: var(--lightblue) !important;
-	border-radius: 10px;
-}
-.inner-table .right a:link{
-	color: var(--lightpink) !important;
-}
-.inner-table .right a:visited{
-	color: var(--lightpink) !important;
-}
-.inner-table .right a:active{
-	color: var(--lightpink) !important;
-}
-.inner-table .right a:hover{
-	color: var(--darkpink) !important;
-}
-.right_odd {
-	background: var(--lightblue)!important;
-	box-shadow: var(--darkblue70) 0px -50px 36px -28px inset !important;
-	border-radius:10px;
-}
-
 /* ============================= */
 /* 🦁 HIDE ORIGINAL LION STACK */
 /* ============================= */
