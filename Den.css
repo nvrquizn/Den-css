@@ -32,14 +32,16 @@
   --white: #ffffff;
 }
 
-/*mobile background*/
+/* Mobile Background */
 @media screen and (max-width: 800px){
+
   body {
     background: url('https://i.ibb.co/TBVbQK6t/Screenshot-2026-04-28-at-03-44-03.png') no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
+
     font-family: 'IM Fell Double Pica SC', serif;
     color: var(--kolur1) !important;
   }
@@ -52,11 +54,13 @@
     left:0;
     right:0;
     z-index:-1;
+
     background: url('https://i.ibb.co/TBVbQK6t/Screenshot-2026-04-28-at-03-44-03.png') center center;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
+
     font-family: 'IM Fell Double Pica SC', serif;
     color: var(--kolur1) !important;
   }
@@ -73,32 +77,32 @@
   }
 }
 
-/* desktop background */
+/* Desktop Background */
 @media screen and (min-width: 801px){
+
   body {
     background: url('https://i.ibb.co/TBVbQK6t/Screenshot-2026-04-28-at-03-44-03.png') center center fixed;
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
+
     font-family: 'IM Fell Double Pica SC', serif;
     font-size: 18px !important;
-    color: var(--kolur1) !important;
-  } 
-} 
 
-@media screen and (min-width: 768px){
+    color: var(--kolur1) !important;
+  }
+
   .boxtopper {
     padding: none;
     float: right;
     margin: -550px;
     height: 30px;
     width: 340px;
-	position: relative;
-	z-index: 1;
-	margin-right: 0px;
-	z-index: 3;
-  } 
-} 
+    position: relative;
+    z-index: 3;
+    margin-right: 0px;
+  }
+}
 
 /* Flaming Ornate Gem Arrow - https://www.cursors-4u.com/cursor/flaming-gem-arrow */
 * {
