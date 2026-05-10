@@ -913,42 +913,41 @@ table.inner-table.auto tr {
 }
 
 /* ============================= */
-/* 🦁 MOBILE LION IMAGE */
+/* 🦁 MOBILE & DESKTOP LION IMAGE */
 /* ============================= */
+
 
 @media screen and (max-width: 800px){
 
 #lion_image > div::after {
     content: url('https://i.ibb.co/dsK99mzs/Screenshot-2026-05-10-at-03-59-46-cropped.png') !important;
 
-    display: block;
     position: absolute !important;
+    top: 0;
+    left: 0;
 
     width: 100% !important;
     height: auto !important;
 
-    top: 0;
-    left: 0;
+    display: block;
+    z-index: 999;
 }
 
 }
 
-/* ============================= */
-/* 🦁 DESKTOP LION IMAGE */
-/* ============================= */
 @media screen and (min-width: 801px){
 
 #lion_image > div::after {
     content: url('https://i.ibb.co/dsK99mzs/Screenshot-2026-05-10-at-03-59-46-cropped.png') !important;
 
-    display: block;
     position: absolute !important;
-
-    width: auto;
-    max-width: 800px;
-
     top: 0;
     left: 0;
+
+    max-width: 800px;
+
+    display: block;
+    z-index: 999;
 }
 }
 
