@@ -841,46 +841,63 @@ div.slider.round::before {
     animation: drift ease alternate infinite;
 }
 
-  
-
 /* ============================= */
-/* 🌲 ABOUT TABLE (STRUCTURE MATCHED TO INNER-TABLE STYLE) */
+/* 🔥 MAIN INNER TABLE RESET */
 /* ============================= */
 
-/* LEFT COLUMN */
-#about > tbody > tr:nth-child(2) > td:first-child {
-    box-shadow: 1px 1px 5px rgba(0,0,0,0.45) !important;
+table.inner-table.auto {
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+    width: 100% !important;
+}
+
+/* ============================= */
+/* 🔥 LEFT LABEL CELLS */
+/* ============================= */
+table.inner-table.auto td.left {
+    background: transparent !important;
+    box-shadow: none !important;
+
+    font-weight: bold;
+}
+
+/* ============================= */
+/* 🔥 RIGHT VALUE CELLS */
+/* ============================= */
+table.inner-table.auto td.right {
+    background: transparent !important;
+    box-shadow: none !important;
+
     border-radius: 10px;
 }
 
-/* RIGHT COLUMN */
-#about > tbody > tr:nth-child(2) > td:last-child {
-    box-shadow: 1px 1px 5px rgba(0,0,0,0.45) !important;
-    border-radius: 10px;
+/* ============================= */
+/* 🔥 SPACING CELLS (the 3px gaps) */
+/* ============================= */
+table.inner-table.auto td[width="3"] {
+    background: transparent !important;
+    box-shadow: none !important;
 }
 
-/* RIGHT LINKS */
-#about > tbody > tr:nth-child(2) > td:last-child a:link {
+/* ============================= */
+/* 🔥 LINKS INSIDE TABLE */
+/* ============================= */
+table.inner-table.auto td.right a:link,
+table.inner-table.auto td.right a:visited,
+table.inner-table.auto td.right a:active {
     color: inherit !important;
 }
 
-#about > tbody > tr:nth-child(2) > td:last-child a:visited {
-    color: inherit !important;
+table.inner-table.auto td.right a:hover {
+    text-decoration: underline;
 }
 
-#about > tbody > tr:nth-child(2) > td:last-child a:active {
-    color: inherit !important;
-}
-
-#about > tbody > tr:nth-child(2) > td:last-child a:hover {
-    color: inherit !important;
-}
-
-/* RIGHT ODD (simulated alternate row style) */
-#about > tbody > tr:nth-child(2) > td {
+/* ============================= */
+/* 🌿 ROW CLEANUP */
+/* ============================= */
+table.inner-table.auto tr {
     background: transparent !important;
 }
-
 /* ============================= */
 /* 🦁 MOBILE LION IMAGE */
 /* ============================= */
