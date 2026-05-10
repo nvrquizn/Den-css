@@ -891,27 +891,45 @@ div.slider.round::before {
 /* 🦁 LION HEADER (SIMPLE + STABLE) */
 /* ============================= */
 
-div#lion_image {
+@media screen and (max-width: 800px){
+
+#lion_image > div {
+    position: relative;
+}
+
+/* mobile lion image */
+#lion_image > div::after {
     content: url("https://i.ibb.co/Xxptg5JN/Screenshot-2026-04-30-at-23-29-35.png") !important;
 
     display: block;
-    margin: 0 auto !important;
+    position: relative;
 
-    width: auto !important;
-    max-width: 800px !important;
-
+    width: 100% !important;
+    max-width: 100% !important;
     height: auto !important;
+
+    margin: 0 auto !important;
+}
 }
 
-/* remove original lion system */
-#lion_image .lion-image-block {
-    display: none !important;
+@media screen and (min-width: 801px){
+
+#lion_image > div {
+    position: relative;
 }
 
-/* hide background layers */
-#lion_image .lion-image-block > img[data-type="background"],
-#lion_image .lion-image-block > img[data-layer="background"] {
-    display: none !important;
+/* desktop lion image */
+#lion_image > div::after {
+    content: url("https://i.ibb.co/Xxptg5JN/Screenshot-2026-04-30-at-23-29-35.png") !important;
+
+    display: block;
+    position: relative;
+
+    width: auto;
+    max-width: 800px;
+
+    margin: 0 auto !important;
+}
 }
 
 /* hover effect */
