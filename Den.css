@@ -350,6 +350,7 @@ a:hover {
   color: var(--kolur5)  !important;
   transition: .7s!important;
 }
+
 /* lion and user avatar opacity */
 div#lion_image {
 	opacity: .8;
@@ -840,6 +841,47 @@ div.slider.round::before {
     opacity: 0.4;
     animation: drift ease alternate infinite;
 }
+
+@media screen and (min-width: 801px){
+	div#lion_image {
+	border-radius: 10% !important;
+	transition: 1.5s;
+	margin-top:-0px!important;
+	margin-left: 70px !important;
+	width: 650px !important;
+	height: 0px !important;
+	opacity:.75;
+	border-radius: 5% !important;
+}
+#lion_image > div {
+	width: 640px !important;
+	height: 500px !important;
+	border-radius: 5% !important;
+	box-shadow:  1px 1px 5px var(--darkgray)!important;
+}
+
+}
+div#lion_image:hover {
+	opacity: 1;
+	transition:1s;
+}	
+table#player img {
+	opacity: 0.75;
+	border-radius: 5% !important;
+	box-shadow:  1px 1px 5px var(--darkgray)!important;
+	transition: 1.5s;
+}
+table#player img:hover {
+	opacity: 1;
+	transition:1s;
+}
+
+
+ #player.table {
+    border-radius: 5%;
+    position: relative !important;
+    overflow: hidden !important;
+  }
 
 /* ============================= */
 /* 🔥 MAIN INNER TABLE RESET */
