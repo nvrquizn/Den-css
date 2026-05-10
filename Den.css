@@ -926,16 +926,8 @@ table#player img:hover {
 
 #lion_image > div::after {
     content: url('https://i.ibb.co/dsK99mzs/Screenshot-2026-05-10-at-03-59-46-cropped.png') !important;
-
     position: absolute !important;
-    top: 0;
-    left: 0;
-
-    width: 100% !important;
-    height: auto !important;
-
     display: block;
-    z-index: 999;
 }
 
 }
@@ -944,15 +936,8 @@ table#player img:hover {
 
 #lion_image > div::after {
     content: url('https://i.ibb.co/dsK99mzs/Screenshot-2026-05-10-at-03-59-46-cropped.png') !important;
-
     position: absolute !important;
-    top: 0;
-    left: 0;
-
-    max-width: 800px;
-
     display: block;
-    z-index: 999;
 }
 }
 
