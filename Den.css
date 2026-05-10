@@ -892,7 +892,7 @@ div.slider.round::before {
 /* ============================= */
 @media screen and (max-width: 800px){
 #lion_image>div::after {
-   content: url('https://i.ibb.co/Xxptg5JN/Screenshot-2026-04-30-at-23-29-35.png')!important;
+   content: url('https://i.ibb.co/dsK99mzs/Screenshot-2026-05-10-at-03-59-46-cropped.png')!important;
    display: block;
    position: absolute!important;
 }
@@ -903,7 +903,7 @@ div.slider.round::before {
 /* ============================= */
 @media screen and (min-width: 801px){
 #lion_image>div::after {
-   content: url('https://i.ibb.co/Xxptg5JN/Screenshot-2026-04-30-at-23-29-35.png')!important;
+   content: url('https://i.ibb.co/dsK99mzs/Screenshot-2026-05-10-at-03-59-46-cropped.png')!important;
    display: block;
    position: absolute!important;
 }
