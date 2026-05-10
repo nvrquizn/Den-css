@@ -842,75 +842,43 @@ div.slider.round::before {
 }
 
   
-/* ============================= */
-/* 🪵 MAIN TABLE CLEAN RESET */
-/* ============================= */
-
-.container.main > div > div.col-md-9 .table:first-of-type {
-    width: 100% !important;
-
-    background: none !important;
-    box-shadow: none !important;
-    border: none !important;
-
-    margin: 0 !important;
-
-    border-collapse: collapse !important;
-    border-spacing: 0 !important;
-
-    border-radius: 12px !important;
-}
-
-/* readable spacing */
-.container.main > div > div.col-md-9 .table:first-of-type td {
-    padding: 8px 12px !important;
-    text-align: center !important;
-}
 
 /* ============================= */
-/* 🌲 ABOUT TABLE LAYOUT (STACKED STRUCTURE) */
+/* 🌲 ABOUT TABLE (STRUCTURE MATCHED TO INNER-TABLE STYLE) */
 /* ============================= */
 
-/* target the row that holds image + info */
-#about > tbody > tr:nth-child(2) {
-    display: block !important;
-}
-
-/* stack the two cells inside it */
-#about > tbody > tr:nth-child(2) > td {
-    display: block !important;
-    width: 100% !important;
-}
-
-/* spacing between image and info */
-#about > tbody > tr:nth-child(2) > td:first-child {
-    margin-bottom: 12px !important;
-}
-
-/* ============================= */
-/* 🌿 LEFT COLUMN (IMAGE SIDE) */
-/* ============================= */
+/* LEFT COLUMN */
 #about > tbody > tr:nth-child(2) > td:first-child {
     box-shadow: 1px 1px 5px rgba(0,0,0,0.45) !important;
     border-radius: 10px;
 }
 
-/* ============================= */
-/* 🌲 RIGHT COLUMN (INFO SIDE) */
-/* ============================= */
+/* RIGHT COLUMN */
 #about > tbody > tr:nth-child(2) > td:last-child {
     box-shadow: 1px 1px 5px rgba(0,0,0,0.45) !important;
     border-radius: 10px;
 }
 
-/* ============================= */
-/* 🌿 LINKS (RESET ONLY, NO COLOR CHANGES) */
-/* ============================= */
-#about > tbody > tr:nth-child(2) td:last-child a:link,
-#about > tbody > tr:nth-child(2) td:last-child a:visited,
-#about > tbody > tr:nth-child(2) td:last-child a:active,
-#about > tbody > tr:nth-child(2) td:last-child a:hover {
-    text-decoration: none;
+/* RIGHT LINKS */
+#about > tbody > tr:nth-child(2) > td:last-child a:link {
+    color: inherit !important;
+}
+
+#about > tbody > tr:nth-child(2) > td:last-child a:visited {
+    color: inherit !important;
+}
+
+#about > tbody > tr:nth-child(2) > td:last-child a:active {
+    color: inherit !important;
+}
+
+#about > tbody > tr:nth-child(2) > td:last-child a:hover {
+    color: inherit !important;
+}
+
+/* RIGHT ODD (simulated alternate row style) */
+#about > tbody > tr:nth-child(2) > td {
+    background: transparent !important;
 }
 
 /* ============================= */
