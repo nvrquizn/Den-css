@@ -868,7 +868,7 @@ div.slider.round::before {
 }
 
 /* ============================= */
-/* 🔄 STACK LAYOUT (FIX SIDE-BY-SIDE) */
+/* 🌲 ABOUT TABLE LAYOUT (STACKED STRUCTURE) */
 /* ============================= */
 
 /* target the row that holds image + info */
@@ -885,6 +885,32 @@ div.slider.round::before {
 /* spacing between image and info */
 #about > tbody > tr:nth-child(2) > td:first-child {
     margin-bottom: 12px !important;
+}
+
+/* ============================= */
+/* 🌿 LEFT COLUMN (IMAGE SIDE) */
+/* ============================= */
+#about > tbody > tr:nth-child(2) > td:first-child {
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.45) !important;
+    border-radius: 10px;
+}
+
+/* ============================= */
+/* 🌲 RIGHT COLUMN (INFO SIDE) */
+/* ============================= */
+#about > tbody > tr:nth-child(2) > td:last-child {
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.45) !important;
+    border-radius: 10px;
+}
+
+/* ============================= */
+/* 🌿 LINKS (RESET ONLY, NO COLOR CHANGES) */
+/* ============================= */
+#about > tbody > tr:nth-child(2) td:last-child a:link,
+#about > tbody > tr:nth-child(2) td:last-child a:visited,
+#about > tbody > tr:nth-child(2) td:last-child a:active,
+#about > tbody > tr:nth-child(2) td:last-child a:hover {
+    text-decoration: none;
 }
 
 /* ============================= */
