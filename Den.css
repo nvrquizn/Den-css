@@ -891,40 +891,21 @@ div.slider.round::before {
 /* 🦁 MOBILE LION IMAGE */
 /* ============================= */
 @media screen and (max-width: 800px){
-
-#lion_image > div::after {
-    content: url("https://i.ibb.co/Xxptg5JN/Screenshot-2026-04-30-at-23-29-35.png") !important;
-    display: block;
-
-    background-image: url("https://i.ibb.co/Xxptg5JN/Screenshot-2026-04-30-at-23-29-35.png") !important;
-
-    position: absolute !important;
-
-    margin: 0 auto !important;
-    width: auto !important;
-    max-width: 800px !important;
-    height: auto !important;
+#lion_image>div::after {
+   content: url('https://i.ibb.co/Xxptg5JN/Screenshot-2026-04-30-at-23-29-35.png')!important;
+   display: block;
+   position: absolute!important;
 }
-
 }
 
 /* ============================= */
 /* 🦁 DESKTOP LION IMAGE */
 /* ============================= */
 @media screen and (min-width: 801px){
-
-#lion_image > div::after {
-    content: url("https://i.ibb.co/Xxptg5JN/Screenshot-2026-04-30-at-23-29-35.png") !important;
-    display: block;
-
-    background-image: url("https://i.ibb.co/Xxptg5JN/Screenshot-2026-04-30-at-23-29-35.png") !important;
-
-    position: absolute !important;
-
-    margin: 0 auto !important;
-    width: auto !important;
-    max-width: 800px !important;
-    height: auto !important;
+#lion_image>div::after {
+   content: url('https://i.ibb.co/Xxptg5JN/Screenshot-2026-04-30-at-23-29-35.png')!important;
+   display: block;
+   position: absolute!important;
 }
 }
 
