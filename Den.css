@@ -918,19 +918,6 @@ table#player img:hover {
 }
 
 /* ============================= */
-/* 🦁 HIDE ORIGINAL LION STACK */
-/* ============================= */
-
-#lion_image .lion-image-block img {
-    display: none !important;
-}
-
-/* hide container visuals */
-#lion_image .lion-image-block {
-    background: none !important;
-}
-
-/* ============================= */
 /* 🦁 MOBILE & DESKTOP LION IMAGE */
 /* ============================= */
 
