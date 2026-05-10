@@ -884,7 +884,6 @@ table#player img:hover {
   }
 
 /* main lion info table */
-/* background color */
 .table {
 	background: var(--lightblue50);
 	border: 0px ridge;
@@ -920,31 +919,20 @@ table#player img:hover {
 /* ============================= */
 /* 🦁 MOBILE & DESKTOP LION IMAGE */
 /* ============================= */
-
-
 @media screen and (max-width: 800px){
-
-#lion_image > div::after {
+#lion_image>div::after {
     content: url('https://i.ibb.co/dsK99mzs/Screenshot-2026-05-10-at-03-59-46-cropped.png') !important;
-    position: absolute !important;
     display: block;
+    position: absolute !important;
 }
-
 }
 
 @media screen and (min-width: 801px){
-
-#lion_image > div::after {
+#lion_image>div::after {
     content: url('https://i.ibb.co/dsK99mzs/Screenshot-2026-05-10-at-03-59-46-cropped.png') !important;
-    position: absolute !important;
     display: block;
+	position: absolute !important;
 }
-}
-
-/* hover effect */
-#lion_image:hover {
-    transform: scale(1.01);
-    transition: 0.2s ease;
 }
 
 /* ============================= */
