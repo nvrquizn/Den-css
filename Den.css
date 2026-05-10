@@ -888,47 +888,43 @@ div.slider.round::before {
 }
 
 /* ============================= */
-/* 🦁 LION HEADER (SIMPLE + STABLE) */
+/* 🦁 MOBILE LION IMAGE */
 /* ============================= */
-
 @media screen and (max-width: 800px){
 
-#lion_image > div {
-    position: relative;
-}
-
-/* mobile lion image */
 #lion_image > div::after {
     content: url("https://i.ibb.co/Xxptg5JN/Screenshot-2026-04-30-at-23-29-35.png") !important;
-
     display: block;
-    position: relative;
 
-    width: 100% !important;
-    max-width: 100% !important;
-    height: auto !important;
+    background-image: url("https://i.ibb.co/Xxptg5JN/Screenshot-2026-04-30-at-23-29-35.png") !important;
+
+    position: absolute !important;
 
     margin: 0 auto !important;
-}
+    width: auto !important;
+    max-width: 800px !important;
+    height: auto !important;
 }
 
+}
+
+/* ============================= */
+/* 🦁 DESKTOP LION IMAGE */
+/* ============================= */
 @media screen and (min-width: 801px){
 
-#lion_image > div {
-    position: relative;
-}
-
-/* desktop lion image */
 #lion_image > div::after {
     content: url("https://i.ibb.co/Xxptg5JN/Screenshot-2026-04-30-at-23-29-35.png") !important;
-
     display: block;
-    position: relative;
 
-    width: auto;
-    max-width: 800px;
+    background-image: url("https://i.ibb.co/Xxptg5JN/Screenshot-2026-04-30-at-23-29-35.png") !important;
+
+    position: absolute !important;
 
     margin: 0 auto !important;
+    width: auto !important;
+    max-width: 800px !important;
+    height: auto !important;
 }
 }
 
