@@ -894,6 +894,7 @@ div.slider.round::before {
 #lion_image>div::after {
    content: url('https://i.ibb.co/dsK99mzs/Screenshot-2026-05-10-at-03-59-46-cropped.png')!important;
    display: block;
+   background-image: url('LINK')!important;
    position: absolute!important;
 }
 }
@@ -905,6 +906,7 @@ div.slider.round::before {
 #lion_image>div::after {
    content: url('https://i.ibb.co/dsK99mzs/Screenshot-2026-05-10-at-03-59-46-cropped.png')!important;
    display: block;
+   background-image: url('LINK')!important;
    position: absolute!important;
 }
 }
