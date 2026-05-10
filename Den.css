@@ -883,62 +883,39 @@ table#player img:hover {
     overflow: hidden !important;
   }
 
-/* ============================= */
-/* 🔥 MAIN INNER TABLE RESET */
-/* ============================= */
-
-table.inner-table.auto {
-    border-collapse: separate !important;
-    border-spacing: 0 !important;
-    width: 100% !important;
+/* main lion info table */
+/* background color */
+.table {
+	background: var(--lightblue50);
+	border: 0px ridge;
+	text-shadow: 1px 1px 1.5px var(--darkgray);
+	border-radius: 10px !important;
+	color: var(--lightpurple) !important;
+	border-collapse: separate;
+	box-shadow:  var(--darkblueblue70) 0px -80px 120px -28px inset,1px 1px 5px var(--darkgray);
+}
+.table a:link
+{
+	color:var(--lightpink)!important;
+	transition: 0.5s!important;
+}
+.table a:visited
+{
+	color:var(--lightpink)!important;
+	transition: 0.5s!important;
 }
 
-/* ============================= */
-/* 🔥 LEFT LABEL CELLS */
-/* ============================= */
-table.inner-table.auto td.left {
-    background: transparent !important;
-    box-shadow: none !important;
 
-    font-weight: bold;
-}
-
-/* ============================= */
-/* 🔥 RIGHT VALUE CELLS */
-/* ============================= */
-table.inner-table.auto td.right {
-    background: transparent !important;
-    box-shadow: none !important;
-
-    border-radius: 10px;
-}
-
-/* ============================= */
-/* 🔥 SPACING CELLS (the 3px gaps) */
-/* ============================= */
-table.inner-table.auto td[width="3"] {
-    background: transparent !important;
-    box-shadow: none !important;
-}
-
-/* ============================= */
-/* 🔥 LINKS INSIDE TABLE */
-/* ============================= */
-table.inner-table.auto td.right a:link,
-table.inner-table.auto td.right a:visited,
-table.inner-table.auto td.right a:active {
-    color: inherit !important;
-}
-
-table.inner-table.auto td.right a:hover {
-    text-decoration: underline;
-}
-
-/* ============================= */
-/* 🌿 ROW CLEANUP */
-/* ============================= */
-table.inner-table.auto tr {
-    background: transparent !important;
+.table a:active
+{
+	color:var(--lightpink)!important;
+	transition: 0.5s!important;
+} 
+.table a:hover
+ {
+	color:var(--darkblue)!important;
+	-webkit-transform: scale(1.1);
+	transition: 0.7s!important;
 }
 
 /* ============================= */
