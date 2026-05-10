@@ -898,27 +898,57 @@ table.inner-table.auto td.right a:hover {
 table.inner-table.auto tr {
     background: transparent !important;
 }
+
+/* ============================= */
+/* 🦁 HIDE ORIGINAL LION STACK */
+/* ============================= */
+
+#lion_image .lion-image-block img {
+    display: none !important;
+}
+
+/* hide container visuals */
+#lion_image .lion-image-block {
+    background: none !important;
+}
+
 /* ============================= */
 /* 🦁 MOBILE LION IMAGE */
 /* ============================= */
+
 @media screen and (max-width: 800px){
-#lion_image>div::after {
-   content: url('https://i.ibb.co/dsK99mzs/Screenshot-2026-05-10-at-03-59-46-cropped.png')!important;
-   display: block;
-   background-image: url('LINK')!important;
-   position: absolute!important;
+
+#lion_image > div::after {
+    content: url('https://i.ibb.co/dsK99mzs/Screenshot-2026-05-10-at-03-59-46-cropped.png') !important;
+
+    display: block;
+    position: absolute !important;
+
+    width: 100% !important;
+    height: auto !important;
+
+    top: 0;
+    left: 0;
 }
+
 }
 
 /* ============================= */
 /* 🦁 DESKTOP LION IMAGE */
 /* ============================= */
 @media screen and (min-width: 801px){
-#lion_image>div::after {
-   content: url('https://i.ibb.co/dsK99mzs/Screenshot-2026-05-10-at-03-59-46-cropped.png')!important;
-   display: block;
-   background-image: url('LINK')!important;
-   position: absolute!important;
+
+#lion_image > div::after {
+    content: url('https://i.ibb.co/dsK99mzs/Screenshot-2026-05-10-at-03-59-46-cropped.png') !important;
+
+    display: block;
+    position: absolute !important;
+
+    width: auto;
+    max-width: 800px;
+
+    top: 0;
+    left: 0;
 }
 }
 
