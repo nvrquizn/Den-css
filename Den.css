@@ -710,12 +710,6 @@ h3:hover {
     animation: varang-simple-blink .75s step-end infinite;
 }
 
-.typewriter h1 {
-    background: red !important;
-    color: white !important;
-    min-height: 50px !important;
-}
-
 /* ============================= */
 /* TYPING ENGINE */
 /* ============================= */
