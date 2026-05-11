@@ -1154,6 +1154,31 @@ div#lion_image {
         vox-simple-blink .75s step-end infinite;
 }
 
+/*---COMMENT BOX---*/
+#commentBox {
+    background: #302E2Ecc!important;
+    border: 1px solid #C20000!important;
+    border-radius: 10px;
+    padding: 0px;
+    margin-bottom: 5px;
+    height: 300px;
+    overflow: auto;
+
+}
+
+/*---MUTED TEXT: COMMENT BOX TIME STAMP---*/
+.text-muted {
+color: #C20000;
+}
+
+/*---TEXT INPUT---*/
+button, input, optgroup, select, textarea {
+    background: #000000;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+}
+
 .v-slide {
     position: absolute !important;
     top: 0; left: 0;
