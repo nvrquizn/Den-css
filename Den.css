@@ -677,19 +677,17 @@ h3:hover {
     align-items: center;
 }
 
-/* Stable container */
 .typewriter h1 {
-    position: relative !important;
-    display: inline-block !important;
-
-    width: 720px !important;
+    width: 720px;
     text-align: center;
 
-    white-space: nowrap !important;
-    overflow: hidden !important;
+    white-space: nowrap;
+    overflow: hidden;
 
-    color: #ff6a2a !important; /* FORCE visible text */
-    font-size: 20px;
+    color: #ff6a2a;
+    border-right: .15em solid #ff6a2a;
+
+    font-family: 'IM Fell Double Pica SC', serif;
 }
 
 /* Broadcast text layer */
