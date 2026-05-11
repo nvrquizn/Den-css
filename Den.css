@@ -677,7 +677,7 @@ h3:hover {
     align-items: center;
 }
 
-/* Make the h1 a stable container instead of hiding it */
+/* Stable container */
 .typewriter h1 {
     position: relative !important;
     display: inline-block !important;
@@ -688,7 +688,8 @@ h3:hover {
     white-space: nowrap !important;
     overflow: hidden !important;
 
-    color: transparent; /* hides original text safely instead of visibility hack */
+    color: #ff6a2a !important; /* FORCE visible text */
+    font-size: 20px;
 }
 
 /* Broadcast text layer */
@@ -702,14 +703,13 @@ h3:hover {
 
     white-space: nowrap;
 
-    color: #ff6a2a !important; /* visible ember text */
+    color: #ff6a2a !important;
 
     border-right: .15em solid #ff6a2a;
 
     width: 100%;
 
-    animation:
-        varang-simple-blink .75s step-end infinite;
+    animation: varang-simple-blink .75s step-end infinite;
 }
 
 /* ============================= */
