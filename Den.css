@@ -656,12 +656,11 @@ h3:hover {
 /* VARANG CENTRAL TERMINAL */
 /* ============================= */
 .central-terminal {
-    margin: 40px auto !important;
-    width: 95% !important;
-    max-width: 650px !important;
-    height: 550px !important;
-    overflow-y: auto !important;
-    overflow-x: hidden !important;
+    width: 500px !important;
+    height: 200px !important;
+    margin: 20px auto !important;
+    padding: 15px !important;
+    overflow: hidden !important;
     background: rgba(0, 5, 5, 0.95) !important; 
     border: 3px solid #C20000 !important; 
     border-radius: 10px !important;
@@ -672,43 +671,44 @@ h3:hover {
     box-sizing: border-box !important;
 }
 
-/* ============================= */
-/* TYPEWRITER CORE FIX */
-/* ============================= */
 .typewriter {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* Make the h1 a stable container instead of hiding it */
 .typewriter h1 {
     position: relative !important;
     display: inline-block !important;
-    overflow: hidden !important;
-    white-space: nowrap !important;
+
     width: 720px !important;
     text-align: center;
-    visibility: hidden;
+
+    white-space: nowrap !important;
+    overflow: hidden !important;
+
+    color: transparent; /* hides original text safely instead of visibility hack */
 }
 
-/* ============================= */
-/* BROADCAST ENGINE */
-/* ============================= */
+/* Broadcast text layer */
 .typewriter h1::before {
     content: "I AM THE FIRE!";
-    visibility: visible;
+
     position: absolute !important;
     left: 50%;
-    transform: translateX(-50%);
     top: 0;
+    transform: translateX(-50%);
+
     white-space: nowrap;
-    overflow: hidden;
-    border-right: .15em solid #C20000;
-    width: 0;
+
+    color: #ff6a2a !important; /* visible ember text */
+
+    border-right: .15em solid #ff6a2a;
+
+    width: 100%;
 
     animation:
-        varang-15-typing 120s steps(50) infinite,
-        varang-15-swap 120s steps(1) infinite,
         varang-simple-blink .75s step-end infinite;
 }
 
