@@ -1000,7 +1000,9 @@ div#lion_image {
     border-radius: 6px;
 }
 
+/* ============================= */
 /* VARANG CENTRAL TERMINAL */
+/* ============================= */
 .central-terminal {
     margin: 40px auto !important;
     width: 95% !important;
@@ -1008,126 +1010,47 @@ div#lion_image {
     height: 550px !important;
     overflow-y: auto !important;
     overflow-x: hidden !important;
-    background: rgba(28, 28, 28, 0.95) !important;
-
-    border: 3px solid #C20000 !important;
+    background: rgba(0, 5, 5, 0.95) !important; 
+    border: 3px solid #C20000 !important; 
     border-radius: 10px !important;
-
     padding: 30px !important;
-
-    box-shadow:
-        0 0 20px #C20000,
-        inset 0 0 15px rgba(255, 120, 80, 0.12) !important;
-
-    color: #e6dddd !important;
-
+    box-shadow: 0 0 20px #C20000, inset 0 0 15px rgba(0, 255, 255, 0.2) !important;
+    color: #C20000 !important; 
     text-align: center !important;
     box-sizing: border-box !important;
 }
 
-/* IMAGE FADE FOR SLIDESHOW */
-.v-hover-frame {
-    position: relative !important;
-    width: 350px !important;
-    height: 230px !important;
-
-    margin: 15px auto !important;
-
-    overflow: hidden !important;
-
-    border: 1px solid #C2000033 !important;
-
-    background: #1f1f1f !important;
-
-    box-shadow:
-        0 0 10px rgba(194, 0, 0, 0.25),
-        inset 0 0 10px rgba(255, 120, 80, 0.08);
-}
-
-/* SMALL BOX FOR SLIDESHOW */
-.v-img-base,
-.v-img-top {
-    position: absolute !important;
-
-    top: 0 !important;
-    left: 0 !important;
-
-    width: 100% !important;
-    height: 100% !important;
-
-    object-fit: cover !important;
-}
-
-.v-img-base {
-    z-index: 1 !important;
-}
-
-.v-img-top {
-    z-index: 2 !important;
-
-    opacity: 0;
-
-    animation: vox-auto-fade 8s infinite ease-in-out !important;
-}
-
-@keyframes vox-auto-fade {
-    0%, 40%   { opacity: 0; }
-    50%, 90%  { opacity: 1; }
-    100%      { opacity: 0; }
-}
-
-/* TYPEWRITER */
+/* ============================= */
+/* TYPEWRITER CORE FIX (IMPORTANT) */
+/* ============================= */
 .typewriter {
     display: flex;
-
     justify-content: center;
     align-items: center;
-
-    width: 100%;
-
-    margin: 20px 0;
 }
 
 .typewriter h1 {
-    font-size: 20px;
-
-    font-family: 'IM Fell Double Pica SC', sans-serif;
-
-    color: #C20000 !important;
-
-    white-space: nowrap;
-
-    margin: 0 auto !important;
-
-    letter-spacing: .08em;
-
-    display: inline-block;
-
-    position: relative;
-
+    position: relative !important;
+    display: inline-block !important;
+    overflow: hidden !important;          /* IMPORTANT FIX */
+    white-space: nowrap !important;       /* IMPORTANT FIX */
     width: 720px !important;
-
     text-align: center;
-
     visibility: hidden;
 }
 
+/* ============================= */
+/* BROADCAST ENGINE CORE FIX */
+/* ============================= */
 .typewriter h1::before {
     content: "I AM THE FIRE!";
-
     visibility: visible;
-
-    position: absolute;
-
+    position: absolute !important;
     left: 50%;
-
     transform: translateX(-50%);
-
     top: 0;
-
-    overflow: hidden;
-
     white-space: nowrap;
+    overflow: hidden;
 
     border-right: .15em solid #C20000;
 
@@ -1140,17 +1063,22 @@ div#lion_image {
 }
 
 /* ============================= */
-/* VARANG'S BROADCAST MESSSAGES */
+/* CORE KEYFRAME SAFETY (PREVENT OVERRIDES) */
 /* ============================= */
-
 @keyframes vox-15-typing {
     0%, 6.6%, 13.3%, 20%, 26.6%, 33.3%, 40%, 46.6%, 53.3%, 60%, 66.6%, 73.3%, 80%, 86.6%, 93.3%, 100% { width: 0; }
-
     1.5%, 8.1%, 14.8%, 21.5%, 28.1%, 34.8%, 41.5%, 48.1%, 54.8%, 61.5%, 68.1%, 74.8%, 81.5%, 88.1%, 94.8% { width: 720px; }
-
     5.1%, 11.7%, 18.4%, 25.1%, 31.7%, 38.4%, 45.1%, 51.7%, 58.4%, 65.1%, 71.7%, 78.4%, 85.1%, 91.7%, 98.4% { width: 720px; }
 }
 
+@keyframes vox-simple-blink {
+    from, to { border-color: transparent; }
+    50% { border-color: #C20000; }
+}
+
+/* ============================= */
+/* YOUR BROADCAST MESSAGES (UNCHANGED) */
+/* ============================= */
 @keyframes vox-15-swap {
     0%, 6.5%      { content: "I AM THE FIRE!"; }
     6.6%, 13.2%   { content: "IF I CUT NOW, DO YOU THINK EYWA WILL COME TO SAVE HIM?"; }
@@ -1223,7 +1151,7 @@ div#lion_image {
     }
 }
 
-/*---COMMENT BOX---*/
+/* COMMENT BOX */
 #commentBox {
     background: #302E2Ecc !important;
 
@@ -1242,12 +1170,12 @@ div#lion_image {
     color: #e6dddd !important;
 }
 
-/*---MUTED TEXT: COMMENT BOX TIME STAMP---*/
+/* MUTED TEXT: COMMENT BOX TIME STAMP */
 .text-muted {
     color: #d16b6b !important;
 }
 
-/*---TEXT INPUT---*/
+/* TEXT INPUT */
 button,
 input,
 optgroup,
