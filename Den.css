@@ -8,40 +8,38 @@
   /* Fire/Ash Palette */
   --kolur1: #ff6a2b;     /* ember orange */
   --kolur170: #ff6a2bab; /* ember glow (transparent) */
-  
+
   --kolur2: #ff8c42;     /* warm flame orange */
   --kolur270: #ff8c42b0; /* transparent flame */
-  
+
   --kolur3: #2b2b2f;     /* deep charcoal */
   --kolur370: #2b2b2fa8; /* charcoal transparent */
-  
+
   --kolur350: #2b2b2f85; /* softer charcoal for main panels */
-  
+
   --kolur4: #4a4a4f;     /* mid ash grey */
   --kolur470: #4a4a4fc7; /* transparent smoke */
-  
+
   --kolur5: #ff9a5a;     /* bright ember highlight */
   --kolur6: #3a3a3f;     /* soft ash for chat alternates */
   --kolur7: #ff7a3a;     /* inner ember glow for inset effects */
-  
+
   --kolur760: #ff6a2bab; /* ember overlay effect */
   --kolur780: #ff8c42a8; /* semi-transparent flame overlay for comments */
-  
+
   --darkgray: #333333;
   --lightwhite: #ffffffcc;
   --white: #ffffff;
 }
 
-/* Mobile Background */
+/*mobile background*/
 @media screen and (max-width: 800px){
-
   body {
     background: url('https://i.ibb.co/TBVbQK6t/Screenshot-2026-04-28-at-03-44-03.png') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
     background-size: cover;
-
     font-family: 'IM Fell Double Pica SC', serif;
     color: var(--kolur1) !important;
   }
@@ -54,13 +52,11 @@
     left:0;
     right:0;
     z-index:-1;
-
     background: url('https://i.ibb.co/TBVbQK6t/Screenshot-2026-04-28-at-03-44-03.png') center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
     background-size: cover;
-
     font-family: 'IM Fell Double Pica SC', serif;
     color: var(--kolur1) !important;
   }
@@ -68,43 +64,41 @@
   .boxtopper {
     padding: none;
     float: left;
-    margin: -180px;
+    margin: -120px;
     height: 30px;
     width: 300px;
     position: relative;
     z-index: 1;
     margin-left: 0px;
-    pointer-events:none !important;
   }
 }
 
-/* Desktop Background */
+/* desktop background */
 @media screen and (min-width: 801px){
-
   body {
     background: url('https://i.ibb.co/TBVbQK6t/Screenshot-2026-04-28-at-03-44-03.png') center center fixed;
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
-
     font-family: 'IM Fell Double Pica SC', serif;
     font-size: 18px !important;
-
     color: var(--kolur1) !important;
-  }
+  } 
+} 
 
+@media screen and (min-width: 768px){
   .boxtopper {
     padding: none;
     float: right;
-    margin: -680px;
+    margin: -550px;
     height: 30px;
     width: 340px;
-    position: relative;
-    z-index: 3;
-	margin-right: -30px;
-    pointer-events:none !important;
-  }
-}
+	position: relative;
+	z-index: 1;
+	margin-right: 0px;
+	z-index: 3;
+  } 
+} 
 
 /* Flaming Ornate Gem Arrow - https://www.cursors-4u.com/cursor/flaming-gem-arrow */
 * {
@@ -191,7 +185,7 @@ div.cave-grid>img[src$="prideoverviewbanner.png"]:hover {
     width: 250px;
     opacity: 1;
 }
-	
+
 div.cave-grid>img[src$="unsortedlionsbanner.png"] {
     content: url('https://i.ibb.co/RGyYLLYZ/3c836f3841b75a92152ee40ee50573b8.gif') !important;
     height: 145px;
@@ -350,30 +344,29 @@ a:hover {
   color: var(--kolur5)  !important;
   transition: .7s!important;
 }
-
 /* lion and user avatar opacity */
 div#lion_image {
 	opacity: .8;
 	box-shadow:  1px 1px 5px var(--darkgray)!important;
 }
-	
+
 div#lion_image:hover {
 	opacity: 1;
 	box-shadow:  1px 1px 5px var(--darkgray)!important;
 	transition: .7s!important;
 }	
-	
+
 table#player img {
 	opacity: 0.8;
 	box-shadow:  1px 1px 5px var(--darkgray)!important;
 }
-	
+
 table#player img:hover {
 	opacity: 1;
 	box-shadow:  1px 1px 5px var(--darkgray)!important;
 	transition: .7s!important;
 }
-	
+
 /* lion and user avatar */
 div#lion_image {
 	border-radius: 5% !important;
@@ -488,7 +481,7 @@ div.comment {
 	box-shadow: var(--kolur780) 0px -50px 36px -28px inset, 1px 1px 5px var(--darkgray) !important;
 	font-weight: bold;
 	color: var(--white);
-	
+
 }
 input#comment {
 	background: var(--kolur760) !important;
@@ -801,21 +794,6 @@ div.slider.round::before {
     font-size: 15px !important;
 }
 
-@media screen and (max-width: 800px){
-table#about {
-	.inner-table {
-	margin-top:400px;
-	margin-left:-540px;
-	}
-}
-}
-@media screen and (min-width: 801px){
-table#about {
-	.inner-table {
-	margin-top:500px;
-	margin-left:-640px;
-	}
-}
 
 /* background color */
 .table {
@@ -837,6 +815,7 @@ table#about {
 	transition: 0.5s!important;
 }
 
+
 .table a:active
 {
 	color:var(--kolur5)!important;
@@ -849,100 +828,90 @@ table#about {
 	transition: 0.7s!important;
 }
 
-@media screen and (min-width: 801px){
-	div#lion_image {
-	border-radius: 10% !important;
-	transition: 1.5s;
-	margin-top:-0px!important;
-	margin-left: 70px !important;
-	width: 650px !important;
-	height: 0px !important;
-	opacity:.75;
-	border-radius: 5% !important;
-}
-#lion_image > div {
-	width: 640px !important;
-	height: 500px !important;
-	border-radius: 5% !important;
-	box-shadow:  1px 1px 5px var(--darkgray)!important;
+/* 🔥 ANIMATED EMBERS (instead of fireflies) */
+.firefly::before {
+    background: #ff8c42; /* ember glow */
+    opacity: 0.4;
+    animation: drift ease alternate infinite;
 }
 
-}
-div#lion_image:hover {
-	opacity: 1;
-	transition:1s;
-}	
-table#player img {
-	opacity: 0.75;
-	border-radius: 5% !important;
-	box-shadow:  1px 1px 5px var(--darkgray)!important;
-	transition: 1.5s;
-}
-table#player img:hover {
-	opacity: 1;
-	transition:1s;
+
+/* ============================= */
+/* 🪵 MAIN TABLE CLEAN RESET */
+/* ============================= */
+
+.container.main > div > div.col-md-9 .table:first-of-type {
+    width: 100% !important;
+
+    background: none !important;
+    box-shadow: none !important;
+    border: none !important;
+
+    margin: 0 !important;
+
+    border-collapse: collapse !important;
+    border-spacing: 0 !important;
+
+    border-radius: 12px !important;
 }
 
- #player.table {
-    border-radius: 5%;
-    position: relative !important;
-    overflow: hidden !important;
-  }
-
-/* main lion info table */
-.table {
-	background: var(--lightblue50);
-	border: 0px ridge;
-	text-shadow: 1px 1px 1.5px var(--darkgray);
-	border-radius: 10px !important;
-	color: var(--lightpurple) !important;
-	border-collapse: separate;
-	box-shadow:  var(--darkblueblue70) 0px -80px 120px -28px inset,1px 1px 5px var(--darkgray);
-}
-.table a:link
-{
-	color:var(--lightpink)!important;
-	transition: 0.5s!important;
-}
-.table a:visited
-{
-	color:var(--lightpink)!important;
-	transition: 0.5s!important;
-}
-
-.table a:active
-{
-	color:var(--lightpink)!important;
-	transition: 0.5s!important;
-} 
-.table a:hover
- {
-	color:var(--darkblue)!important;
-	-webkit-transform: scale(1.1);
-	transition: 0.7s!important;
-}
-
-body > div.container.main > div:nth-child(2) > div.col-md-9.col-xs-12 > center > b {
-   color: var(--cream);
+/* readable spacing */
+.container.main > div > div.col-md-9 .table:first-of-type td {
+    padding: 8px 12px !important;
+    text-align: center !important;
 }
 
 /* ============================= */
-/* 🦁 MOBILE & DESKTOP LION IMAGE */
+/* 🔄 STACK LAYOUT (FIX SIDE-BY-SIDE) */
 /* ============================= */
-@media screen and (max-width: 800px){
-#lion_image>div::after {
-    content: url('https://i.ibb.co/dsK99mzs/Screenshot-2026-05-10-at-03-59-46-cropped.png') !important;
-    display: block;
-    position: absolute !important;
-}
+
+/* target the row that holds image + info */
+#about > tbody > tr:nth-child(2) {
+    display: block !important;
 }
 
-@media screen and (min-width: 801px){
-#lion_image>div::after {
-    content: url('https://i.ibb.co/dsK99mzs/Screenshot-2026-05-10-at-03-59-46-cropped.png') !important;
-    display: block;
-	position: absolute !important;
+/* stack the two cells inside it */
+#about > tbody > tr:nth-child(2) > td {
+    display: block !important;
+    width: 100% !important;
 }
+
+/* spacing between image and info */
+#about > tbody > tr:nth-child(2) > td:first-child {
+    margin-bottom: 12px !important;
+}
+
+/* ============================= */
+/* 🦁 LION HEADER (SIMPLE + STABLE) */
+/* ============================= */
+
+div#lion_image {
+    content: url("https://i.ibb.co/1tMLxn5p/Screenshot-2026-05-11-at-03-10-25.png") !important;
+
+    display: block;
+    margin: 0 auto !important;
+
+    width: auto !important;
+    max-width: 800px !important;
+
+    height: auto !important;
+}
+
+/* remove original lion system */
+#lion_image .lion-image-block {
+    display: none !important;
+}
+
+/* hide background layers */
+#lion_image .lion-image-block > img[data-type="background"],
+#lion_image .lion-image-block > img[data-layer="background"] {
+    display: none !important;
+}
+
+/* hover effect */
+#lion_image:hover {
+    transform: scale(1.01);
+    transition: 0.2s ease;
 }
 
 /* ============================= */
@@ -1029,4 +998,117 @@ body > div.container.main > div:nth-child(2) > div.col-md-9.col-xs-12 > center >
     max-width: 100%;
     height: auto;
     border-radius: 6px;
+}
+
+/* ============================= */
+/* VARANG'S BROADCAST MESSSAGES */
+/* ============================= */
+@keyframes vox-15-typing {
+    0%, 6.6%, 13.3%, 20%, 26.6%, 33.3%, 40%, 46.6%, 53.3%, 60%, 66.6%, 73.3%, 80%, 86.6%, 93.3%, 100% { width: 0; }
+    1.5%, 8.1%, 14.8%, 21.5%, 28.1%, 34.8%, 41.5%, 48.1%, 54.8%, 61.5%, 68.1%, 74.8%, 81.5%, 88.1%, 94.8% { width: 720px; }
+    5.1%, 11.7%, 18.4%, 25.1%, 31.7%, 38.4%, 45.1%, 51.7%, 58.4%, 65.1%, 71.7%, 78.4%, 85.1%, 91.7%, 98.4% { width: 720px; }
+}
+
+@keyframes vox-15-swap {
+    0%, 6.5%      { content: "I AM THE FIRE!"; }
+    6.6%, 13.2%   { content: "IF I CUT NOW, DO YOU THINK EYWA WILL COME TO SAVE HIM?"; }
+    13.3%, 19.9%  { content: "BY MY HAND, MY PEOPLE GROW STRONG!"; }
+    20%, 26.5%    { content: "FIRE IS THE ONLY PURE THING IN THIS WORLD"; }
+    26.6%, 33.2%  { content: "YOU WISH TO SERVE ME?"; }
+    33.3%, 39.9%  { content: "FIRST, I MUST SEE YOUR SOUL. BE STILL"; }
+    40%, 46.5%    { content: "THE FIRE CAME FROM THE MOUNTAIN WHEN I WAS LITTLE, BURNT OUR FOREST"; }
+    46.6%, 53.2%  { content: "MY PEOPLE WERE STARVING. THEY CRIED FOR HELP, BUT EYWA DID NOT COME"; }
+    53.3%, 59.9%  { content: "SO I WENT TO THE FIRE, AND I LEARNED ITS WAY"; }
+    60%, 66.5%    { content: "NOW, ONLY TRUE WORDS WILL COME FROM YOUR TONGUE"; }
+    66.6%, 73.2%  { content: "KE'U KE TSUN TXEP TIVONG KEHE!"; }
+    73.3%, 79.9%  { content: "I WANT HER HEART!"; }
+    80%, 86.5%    { content: "BURN THEM ALL!"; }
+    86.6%, 93.2%  { content: "WE DO NOT LIE DOWN AND DIE JUST BECAUSE EYWA TURNS HER BACK ON US, WE TURN OUR BACK ON EYWA"; }
+    93.3%, 100%   { content: "A WEAK MOTHER FOR WEAK CHILDREN, WE DO NOT SUCK ON THE BREAST OF WEAKNESS"; }
+}
+
+@keyframes vox-simple-blink {
+    from, to { border-color: transparent }
+    50% { border-color: #00ffff; }
+}
+
+/* SCROLL BAR */
+.central-terminal::-webkit-scrollbar { width: 8px !important; }
+.central-terminal::-webkit-scrollbar-track { background: #000 !important; }
+.central-terminal::-webkit-scrollbar-thumb {
+    background: #00ffffb8 !important;
+    border-radius: 10px !important;
+}
+
+/* GLITCH KEYFRAMES */
+@keyframes simple-glitch {
+    0% { transform: translate(0); text-shadow: -2px 0 #ff00ff, 2px 0 #00ffff; }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(-2px, -2px); text-shadow: 2px 0 #ff00ff, -2px 0 #00ffff; }
+    60% { transform: translate(2px, 2px); }
+    80% { transform: translate(2px, -2px); }
+    100% { transform: translate(0); }
+}
+
+.typewriter h1::before {
+
+    animation: 
+        vox-15-typing 120s steps(50) infinite,
+        vox-15-swap 120s steps(1) infinite,
+        vox-simple-blink .75s step-end infinite;
+}
+
+.v-slide {
+    position: absolute !important;
+    top: 0; left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+    background: #000;
+    opacity: 0;
+    z-index: 1;
+    animation: vox-fade-cycle 30s infinite linear !important;
+}
+
+@keyframes vox-fade-cycle {
+    0% { opacity: 0; z-index: 1; }
+    2% { opacity: 1; z-index: 10; }  
+    10% { opacity: 1; z-index: 10; } 
+    12% { opacity: 0; z-index: 1; }  
+    100% { opacity: 0; z-index: 1; }
+}
+
+/* TIMING CHAIN FOR SLIDESHOW */
+.s1 { animation-delay: 0s !important; }
+.s2 { animation-delay: 3s !important; }
+.s3 { animation-delay: 6s !important; }
+.s4 { animation-delay: 9s !important; }
+.s5 { animation-delay: 12s !important; }
+.s6 { animation-delay: 15s !important; }
+.s7 { animation-delay: 18s !important; }
+.s8 { animation-delay: 21s !important; }
+.s9 { animation-delay: 24s !important; }
+.s10 { animation-delay: 27s !important; }
+
+h1 {
+    position: relative !important;
+    cursor: pointer !important;
+}
+
+h1:hover {
+    color: transparent !important;
+    text-shadow: none !important;
+}
+
+h1:hover::before {
+    content: "YOUR GODDESS HAS NO DOMINION HERE" !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    color: #00ffff !important;
+    font-size: 24px !important; 
+    visibility: visible !important;
+    background: #000 !important; 
+    z-index: 9999 !important;
 }
