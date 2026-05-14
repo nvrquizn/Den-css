@@ -680,7 +680,7 @@ h3:hover {
 }
 
 .typewriter h1 {
-    font-size: 14px; 
+    font-size: 10px; 
     margin: 0;
 
     color: #ff6a2a;
@@ -706,7 +706,7 @@ h3:hover {
     color: #ff6a2a !important;
     border-right: .15em solid #ff6a2a;
 
-    font-size: 14px;
+    font-size: 10px;
 
     animation:
         varang-15-swap 45s infinite,
