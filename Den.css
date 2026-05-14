@@ -697,24 +697,15 @@ h3:hover {
 .typewriter h1::before {
     content: "I AM THE FIRE!";
 
-    position: absolute !important;
-
-    top: 50%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
+    position: relative !important;
+    display: inline-block;
 
     white-space: nowrap;
-    overflow: hidden;
 
     color: #ff6a2a !important;
     border-right: .15em solid #ff6a2a;
 
     font-size: 16px;
-
-    width: 0;
-
-    font-family: 'IM Fell Double Pica SC', serif;
 
     animation:
         varang-15-swap 45s infinite,
