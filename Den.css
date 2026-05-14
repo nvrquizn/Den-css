@@ -678,14 +678,16 @@ h3:hover {
 }
 
 .typewriter h1 {
-    width: 720px;
+    position: relative;
+
+    width: 100%;
+    height: 60px;
+
     text-align: center;
 
-    white-space: nowrap;
     overflow: hidden;
 
-    color: #ff6a2a;
-    border-right: .15em solid #ff6a2a;
+    color: transparent;
 
     font-family: 'IM Fell Double Pica SC', serif;
 }
@@ -695,19 +697,27 @@ h3:hover {
     content: "I AM THE FIRE!";
 
     position: absolute !important;
+
     left: 50%;
-    top: 0;
-    transform: translateX(-50%);
+    top: 50%;
+
+    transform: translate(-50%, -50%);
 
     white-space: nowrap;
+    overflow: hidden;
 
     color: #ff6a2a !important;
 
     border-right: .15em solid #ff6a2a;
 
-    width: 100%;
+    width: 0;
 
-    animation: varang-simple-blink .75s step-end infinite;
+    font-family: 'IM Fell Double Pica SC', serif;
+
+    animation:
+        varang-15-swap 45s infinite,
+        varang-15-typing 45s infinite,
+        varang-simple-blink .75s step-end infinite;
 }
 
 /* ============================= */
