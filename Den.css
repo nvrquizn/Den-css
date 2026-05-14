@@ -692,16 +692,13 @@ h3:hover {
     font-family: 'IM Fell Double Pica SC', serif;
 }
 
-/* Broadcast text layer */
 .typewriter h1::before {
     content: "I AM THE FIRE!";
 
-	font-size: 20px;
-	
     position: absolute !important;
 
-    left: 50%;
     top: 50%;
+    left: 50%;
 
     transform: translate(-50%, -50%);
 
@@ -709,9 +706,9 @@ h3:hover {
     overflow: hidden;
 
     color: #ff6a2a !important;
-    text-align: center !important;
-
     border-right: .15em solid #ff6a2a;
+
+    font-size: 18px;
 
     width: 0;
 
