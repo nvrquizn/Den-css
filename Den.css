@@ -656,7 +656,7 @@ h3:hover {
 /* VARANG CENTRAL TERMINAL */
 /* ============================= */
 .central-terminal {
-    width: 600px !important;
+    width: 570px !important;
     height: 75px !important;
     margin: 20px auto !important;
     padding: 15px !important;
@@ -696,7 +696,7 @@ h3:hover {
 .typewriter h1::before {
     content: "I AM THE FIRE!";
 
-	font-size: 15px;
+	font-size: 20px;
 	
     position: absolute !important;
 
