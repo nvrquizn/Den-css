@@ -696,6 +696,8 @@ h3:hover {
 .typewriter h1::before {
     content: "I AM THE FIRE!";
 
+	font-size: 15px;
+	
     position: absolute !important;
 
     left: 50%;
