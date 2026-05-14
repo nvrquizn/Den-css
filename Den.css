@@ -709,6 +709,7 @@ h3:hover {
     overflow: hidden;
 
     color: #ff6a2a !important;
+    text-align: center !important;
 
     border-right: .15em solid #ff6a2a;
 
