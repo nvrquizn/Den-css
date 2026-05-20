@@ -380,7 +380,6 @@ a[href="cave.php?id=531977"] .cave-grid > img {
     border-radius: 10px !important;
     box-shadow: 1px 1px 5px var(--darkgray) !important;
     overflow: hidden;
-    transition: 2s ease;
 }
 
 a[href="cave.php?id=531977"] .cave-grid > img:hover {
@@ -394,7 +393,6 @@ a[href="cave.php?id=270907"] .cave-grid > img {
     border-radius: 10px !important;
     box-shadow: 1px 1px 5px var(--darkgray) !important;
     overflow: hidden;
-    transition: 2s ease;
 }
 
 a[href="cave.php?id=270907"] .cave-grid > img:hover {
@@ -408,7 +406,6 @@ a[href="cave.php?id=261140"] .cave-grid > img {
     border-radius: 10px !important;
     box-shadow: 1px 1px 5px var(--darkgray) !important;
     overflow: hidden;
-    transition: 2s ease;
 }
 
 a[href="cave.php?id=261140"] .cave-grid > img:hover {
@@ -422,7 +419,6 @@ a[href="cave.php?id=533067"] .cave-grid > img {
     border-radius: 10px !important;
     box-shadow: 1px 1px 5px var(--darkgray) !important;
     overflow: hidden;
-    transition: 2s ease;
 }
 
 a[href="cave.php?id=533067"] .cave-grid > img:hover {
@@ -430,7 +426,7 @@ a[href="cave.php?id=533067"] .cave-grid > img:hover {
 }
 
 a[href^="cave.php?id="] .cave-grid > img {
-    transition: 0.3s;
+    transition: 2s;
 }
 
 a[href^="cave.php?id="] .cave-grid > img:hover {
