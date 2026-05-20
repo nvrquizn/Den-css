@@ -1720,3 +1720,55 @@ img[src$="den_beetlebook.png"] {
         flex: none;
     }
 }
+
+/* ========================================================= */
+/* 🌌 FLOATING STARLIT EMBERS & FIREFLIES                    */
+/* ========================================================= */
+
+body::before, 
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1; /* Sits softly between background and content */
+    background-image: 
+        radial-gradient(#D4AF37 20%, transparent 25%),
+        radial-gradient(#C5A059 15%, transparent 20%);
+    background-size: 550px 550px;
+}
+
+body::after {
+    background-size: 400px 400px;
+    background-position: 150px 250px;
+    opacity: 0.6;
+    animation: fireflyFloat 28s linear infinite; /* Slower drift */
+}
+
+body::before {
+    animation: fireflyFloat 18s linear infinite; /* Faster drift */
+}
+
+/* 🪄 THE FLOATING ANIMATION MOTION */
+@keyframes fireflyFloat {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+        filter: drop-shadow(0 0 4px #D4AF37);
+    }
+    33% {
+        transform: translate(30px, -50px) rotate(4deg);
+        filter: drop-shadow(0 0 8px #D4AF37) brightness(1.3); /* Brighten/glow up */
+    }
+    66% {
+        transform: translate(-20px, -100px) rotate(-4deg);
+        filter: drop-shadow(0 0 3px #C5A059); /* Dim slightly */
+    }
+    100% {
+        transform: translate(0, -150px) rotate(0deg);
+        filter: drop-shadow(0 0 4px #D4AF37);
+        background-position: 0px -550px; /* Seamless vertical looping */
+    }
+}
