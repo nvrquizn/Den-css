@@ -44,7 +44,7 @@
 @media screen and (max-width: 800px){
 
   body {
-    background: url('https://i.ibb.co/mFY5ydRb/Screenshot-2026-05-12-at-23-02-35.png') no-repeat center center fixed;
+    background: url('https://i.ibb.co/wFwx0gwc/Screenshot-2026-05-19-at-23-01-31.png') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -70,7 +70,7 @@
         rgba(5, 8, 20, 0.55),
         rgba(13, 12, 16, 0.72)
       ),
-      url('https://i.ibb.co/mFY5ydRb/Screenshot-2026-05-12-at-23-02-35.png') center center;
+      url('https://i.ibb.co/wFwx0gwc/Screenshot-2026-05-19-at-23-01-31.png') center center;
 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -107,7 +107,7 @@
         rgba(5, 8, 20, 0.45),
         rgba(13, 12, 16, 0.68)
       ),
-      url('https://i.ibb.co/W4r2vDFH/Screenshot-2026-05-11-at-23-41-11.png') center center fixed;
+      url('https://i.ibb.co/wFwx0gwc/Screenshot-2026-05-19-at-23-01-31.png') center center fixed;
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -331,13 +331,13 @@ button#label_currentChannel {
 div.cave-grid > img {
     height: 150px;
     width: 200px;
-    opacity: 0.82;
+    opacity: 0.5;
     border-radius: 10px !important;
 
     box-shadow:
         0 0 12px rgba(212, 175, 55, 0.18) !important;
 
-    transition: 1s ease;
+    transition: 2s ease;
 }
 
 /* hover base */
@@ -346,53 +346,97 @@ div.cave-grid > img:hover {
     filter: brightness(1.08) contrast(1.03);
 }
 
-/* prideoverview */
-div.cave-grid > img[src$="prideoverviewbanner.png"] {
-    content: url('https://i.ibb.co/s9pMKDPs/prideoverview-20260512003943.png') !important;
-}
-
-div.cave-grid > img[src$="prideoverviewbanner.png"]:hover {
-    content: url('https://i.ibb.co/s9pMKDPs/prideoverview-20260512003943.png') !important;
-}
-
 /* unsorted lions */
 div.cave-grid > img[src$="unsortedlionsbanner.png"] {
-    content: url('https://i.ibb.co/SXGMpK8H/unsortedlions-20260512004645.png') !important;
+    content: url('https://i.ibb.co/pv9hd6Xk/Screenshot-2026-05-19-at-23-21-54.png') !important;
 }
 
 div.cave-grid > img[src$="unsortedlionsbanner.png"]:hover {
-    content: url('https://i.ibb.co/SXGMpK8H/unsortedlions-20260512004645.png') !important;
+    content: url('https://i.ibb.co/pv9hd6Xk/Screenshot-2026-05-19-at-23-21-54.png') !important;
 }
 
 /* nesting */
 div.cave-grid > img[src$="nestingbanner.png"] {
-    content: url('https://i.ibb.co/ycKhf5d8/nestinglionesses-20260512004304.png') !important;
+    content: url('https://i.ibb.co/NdXxht5s/Screenshot-2026-05-19-at-23-23-07.png') !important;
 }
 
 div.cave-grid > img[src$="nestingbanner.png"]:hover {
-    content: url('https://i.ibb.co/ycKhf5d8/nestinglionesses-20260512004304.png') !important;
+    content: url('https://i.ibb.co/NdXxht5s/Screenshot-2026-05-19-at-23-23-07.png') !important;
 }
 
-/* default caves */
-div.cave-grid > img[src$="cavedefault.jpg"],
+/* pride overview */
+div.cave-grid > img[src$="prideoverviewbanner.png"] {
+    content: url('https://i.ibb.co/0yBQLDJn/Screenshot-2026-05-19-at-23-23-40.png') !important;
+}
+
+div.cave-grid > img[src$="prideoverviewbanner.png"]:hover {
+    content: url('https://i.ibb.co/0yBQLDJn/Screenshot-2026-05-19-at-23-23-40.png') !important;
+}
+
+/* Sovereign Blood */
+a[href="cave.php?id=531977"] .cave-grid > img {
+    content: url('https://i.ibb.co/s44tLgC/Screenshot-2026-05-19-at-23-14-27.png') !important;
+    opacity: 0.5;
+    border-radius: 10px !important;
+    box-shadow: 1px 1px 5px var(--darkgray) !important;
+    overflow: hidden;
+}
+
+a[href="cave.php?id=531977"] .cave-grid > img:hover {
+    opacity: 1;
+}
+
+/* High Council */
+a[href="cave.php?id=270907"] .cave-grid > img {
+    content: url('https://i.ibb.co/5W1K9328/Screenshot-2026-05-19-at-23-09-11.png') !important;
+    opacity: 0.5;
+    border-radius: 10px !important;
+    box-shadow: 1px 1px 5px var(--darkgray) !important;
+    overflow: hidden;
+}
+
+a[href="cave.php?id=270907"] .cave-grid > img:hover {
+    opacity: 1;
+}
+
+/* The Commons */
+a[href="cave.php?id=261140"] .cave-grid > img {
+    content: url('https://i.ibb.co/MDX4QHBz/Screenshot-2026-05-19-at-23-18-19.png') !important;
+    opacity: 0.5;
+    border-radius: 10px !important;
+    box-shadow: 1px 1px 5px var(--darkgray) !important;
+    overflow: hidden;
+}
+
+a[href="cave.php?id=261140"] .cave-grid > img:hover {
+    opacity: 1;
+}
+
+/* Raffle Lions */
+a[href="cave.php?id=533067"] .cave-grid > img {
+    content: url('https://i.ibb.co/X9zgmN9/Screenshot-2026-05-19-at-23-19-28.png') !important;
+    opacity: 0.5;
+    border-radius: 10px !important;
+    box-shadow: 1px 1px 5px var(--darkgray) !important;
+    overflow: hidden;
+}
+
+a[href="cave.php?id=533067"] .cave-grid > img:hover {
+    opacity: 1;
+}
+
+a[href^="cave.php?id="] .cave-grid > img {
+    transition: 0.3s;
+}
+
+a[href^="cave.php?id="] .cave-grid > img:hover {
+    filter: brightness(1.1) contrast(1.05);
+}
+
+/* unused caves */
 div.cave-grid > img[src$="caveunused.jpg"] {
-    content: url("https://i.ibb.co/ZzXYmpL4/defaultcaves-20260512005115.png") !important;
-}
-
-/* ============================= */
-/* 🌌 FEATURED LIONESS */
-/* ============================= */
-
-.lionImage img:first-child {
-    visibility: hidden;
-}
-
-.lionImage {
-    background: url('https://i.ibb.co/3yysfx2y/Screenshot-2026-05-12-at-01-01-55.png') no-repeat !important;
-    background-size: cover;
-
-    box-shadow:
-        0 0 18px rgba(10, 17, 40, 0.20);
+    content: url("https://i.ibb.co/KpTrv7sL/Screenshot-2026-05-19-at-23-04-05.png") !important;
+	opacity: 0.3;
 }
 
 /* ============================= */
@@ -425,7 +469,7 @@ div.cave-grid > img[src$="caveunused.jpg"] {
 /* ============================= */
 
 .mound-grid img {
-    background: url('https://i.ibb.co/VpCBDnV0/Screenshot-2026-05-12-at-21-42-43.png') no-repeat center !important;
+    background: url('https://i.ibb.co/wFGLBRf9/Screenshot-2026-05-19-at-23-25-55.png') no-repeat center !important;
 
     width: 0;
     height: 0;
@@ -436,7 +480,7 @@ div.cave-grid > img[src$="caveunused.jpg"] {
     background-size: contain !important; 
 
     border-radius: 10px !important;
-    opacity: 0.85;
+    opacity: 0.5;
 
     box-shadow:
         1px 1px 5px rgba(0,0,0,0.55),
@@ -723,7 +767,7 @@ button.button:hover {
 /* ============================= */
 
 #commentBox {
-	background: linear-gradient(rgba(38, 28, 20, 0.55), rgba(38, 28, 20, 0.55)), url('https://i.imgur.com/7FYCQ8N.jpeg') center !important;
+	background: linear-gradient(rgba(38, 28, 20, 0.55), rgba(38, 28, 20, 0.55)), url('https://i.ibb.co/1Yrfsy7g/Screenshot-2026-05-19-at-23-06-50.png') center !important;
 	background-size: cover !important;
 	box-shadow: 0px 0px 10px black !important;
 	border: 1px solid #95BF39 !important;
