@@ -1292,74 +1292,6 @@ img[src$="den_beetlebook.png"] {
 	pointer-events: none;
 }
 
-/* ============================= */
-/* 🌙 CONTAINER */
-/* ============================= */
-
-.boxcontainer {
-    width: 100% !important;
-    max-width: 1000px;
-    margin: 0 auto 20px auto;
-
-    display: flex !important;
-    flex-wrap: nowrap !important;   /* 🚫 prevents second row */
-    justify-content: space-between;
-
-    gap: 15px;
-
-    clear: both !important;
-}
-
-/* ============================= */
-/* 👑 BOX */
-/* ============================= */
-
-.box {
-    flex: 1 1 0; /* equal sizing */
-
-    min-width: 0; /* prevents overflow pushing wrap */
-    height: 240px;
-
-    background: linear-gradient(
-        180deg,
-        rgba(10, 17, 40, 0.95),
-        rgba(13, 12, 16, 0.95)
-    ) !important;
-
-    color: #ffffff;
-    padding: 12px;
-
-    border: 1px solid rgba(212, 175, 55, 0.30);
-    border-radius: 12px;
-
-    box-shadow:
-        0 0 18px rgba(0,0,0,0.65),
-        inset 0 0 25px rgba(212, 175, 55, 0.10);
-
-    box-sizing: border-box;
-
-    overflow: auto;
-}
-
-/* ============================= */
-/* ✨ HOVER */
-/* ============================= */
-
-.box:hover {
-    transform: translateY(-4px);
-}
-
-/* ============================= */
-/* 📱 MOBILE */
-/* ============================= */
-
-@media (max-width: 767px) {
-    .box {
-        width: 100% !important;
-        margin: 0 0 10px 0;
-    }
-}
-
 /* ========================================================= */
 /* 📜 MANUSCRIPT BOX CONNECTING STYLING                      */
 /* ========================================================= */
@@ -1502,5 +1434,213 @@ img[src$="den_beetlebook.png"] {
         padding-left: 0;
         border-top: 1px dotted rgba(212, 175, 55, 0.2);
         padding-top: 20px;
+    }
+}
+
+/* ========================================================= */
+/* 📜 HOVER-EXPANDING MANUSCRIPT CARDS                       */
+/* ========================================================= */
+
+/* Container layout alignment */
+.den-accordion-wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 950px;
+    height: 480px; /* Locked elegant height */
+    margin: 30px auto;
+    gap: 15px;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Base Card Setup */
+.accordion-card {
+    flex: 1; /* Everyone shares equal width at rest */
+    height: 100%;
+    background: rgba(13, 12, 16, 0.85); /* Onyx velvet overlay */
+    border: 1px solid #D4AF37;
+    outline: 3px double #D4AF37;
+    outline-offset: -6px;
+    border-radius: 4px;
+    padding: 20px 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    position: relative;
+    transition: flex 0.5s cubic-bezier(0.25, 1, 0.5, 1), filter 0.4s ease;
+    box-sizing: border-box;
+}
+
+/* 🪄 THE HOVER EXPANSION MAGIC */
+.den-accordion-wrapper:hover .accordion-card {
+    flex: 0.6; /* Shrink unhovered cards slightly */
+    filter: blur(1px) brightness(0.6); /* Softly push back surrounding cards */
+}
+
+.den-accordion-wrapper .accordion-card:hover {
+    flex: 2; /* Target card opens up wide */
+    filter: blur(0) brightness(1); /* Full focus brightness */
+    background: rgba(18, 16, 22, 0.95); /* Deepens background focus */
+}
+
+/* Inner frame and titles */
+.card-inner-frame {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.card-title {
+    font-size: 18px !important;
+    color: #D4AF37 !important;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 5px 0 15px 0 !important;
+    text-shadow: 0 0 8px rgba(212, 175, 55, 0.3);
+    border-bottom: 1px double rgba(212, 175, 55, 0.3);
+    padding-bottom: 8px;
+    flex-shrink: 0;
+}
+
+/* Clean Custom Scroll Content Box */
+.card-scroll-content {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-right: 5px;
+    color: #EAE0D5 !important;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+/* Hide ugly standard scrollbars while keeping scroll active */
+.card-scroll-content::-webkit-scrollbar {
+    width: 4px;
+}
+.card-scroll-content::-webkit-scrollbar-thumb {
+    background: #D4AF37;
+    border-radius: 2px;
+}
+.card-scroll-content::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* 📝 Specific List Typography Styling */
+.card-intro {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.card-highlight {
+    color: #C5A059;
+    border-left: 2px solid #D4AF37;
+    padding-left: 10px;
+    margin: 15px 0;
+    font-style: italic;
+}
+
+/* Fandom & Mutation List Styles */
+.fandom-list, .mutation-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.fandom-list li, .mutation-list li {
+    padding: 6px 0 6px 15px;
+    position: relative;
+    border-bottom: 1px dotted rgba(212, 175, 55, 0.15);
+}
+
+.fandom-list li::before, .mutation-list li:not(.mut-category)::before {
+    content: "✦";
+    position: absolute;
+    left: 0;
+    color: #C5A059;
+    font-size: 10px;
+}
+
+/* Decorative Inner Group Headers */
+.section-label {
+    color: #D4AF37;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin: 20px 0 10px 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.mut-category {
+    color: #C5A059;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    padding-left: 0 !important;
+    margin-top: 15px;
+    border-bottom: none !important;
+}
+
+.mut-type {
+    font-weight: 600;
+}
+
+.lethal-item {
+    color: #fca1a1; /* Subtle soft crimson highlight for lethals */
+}
+
+/* Center Image Badges & Shop Buttons */
+.pokemon-badge, .clan-banner {
+    text-align: center;
+    margin: 20px auto 10px auto;
+}
+
+.clan-banner img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #D4AF37;
+    border-radius: 3px;
+}
+
+.shop-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.gold-link {
+    display: block;
+    text-align: center;
+    padding: 6px;
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    color: #C5A059 !important;
+    text-decoration: none !important;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    background: rgba(212, 175, 55, 0.03);
+}
+
+.gold-link:hover {
+    background: rgba(212, 175, 55, 0.15);
+    color: #ffffff !important;
+    border-color: #D4AF37;
+    box-shadow: 0 0 8px rgba(212, 175, 55, 0.3);
+}
+
+/* 📱 Mobile Responsiveness Layout */
+@media (max-width: 768px) {
+    .den-accordion-wrapper {
+        flex-direction: column;
+        height: auto;
+    }
+    .accordion-card {
+        flex: none !important;
+        width: 100%;
+        height: 350px;
+    }
+    .den-accordion-wrapper:hover .accordion-card {
+        filter: none;
+        flex: none;
     }
 }
