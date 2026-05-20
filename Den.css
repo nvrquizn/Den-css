@@ -989,10 +989,15 @@ background: repeating-linear-gradient(
 
 /* 📊 GENERAL BAR STYLE */
 .progress-bar {
-
-	border-radius: 20px;
-
-	box-shadow:1px 1px 5px #000 !important;
+border-radius: 20px;
+    box-shadow: 1px 1px 5px #000 !important;
+    background: repeating-linear-gradient(
+        45deg,
+        #C5A059,
+        #C5A059 10px,
+        #A38243 10px,
+        #A38243 20px
+    ) !important;
 }
 
 /* 🏆 ACHIEVEMENT BAR */
