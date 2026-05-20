@@ -1722,7 +1722,7 @@ img[src$="den_beetlebook.png"] {
 }
 
 /* ========================================================= */
-/* 🌌 FLOATING STARLIT EMBERS & FIREFLIES (Spaced Version)   */
+/* 🌌 FLOATING STARLIT EMBERS & FIREFLIES      */
 /* ========================================================= */
 body::before, body::after {
     content: "";
@@ -1733,26 +1733,24 @@ body::before, body::after {
     height: 100%;
     pointer-events: none;
     z-index: 1;
-
-    background-image: 
-        radial-gradient(#D4AF37 1.5%, transparent 3%), 
-        radial-gradient(#C5A059 1%, transparent 2%);
-    background-size: 900px 900px; 
-}
-
-body::after {
-    background-size: 1200px 1200px;
-    background-position: 400px 600px;
-    opacity: 0.35; 
-    animation: fireflyFloat 45s linear infinite;
 }
 
 body::before {
-    animation: fireflyFloat 35s linear infinite; 
+    background-image: radial-gradient(#D4AF37 1.2%, transparent 2.5%);
+    background-size: 700px 700px;
+    animation: fireflyFloat 50s linear infinite;
+}
+
+body::after {
+    background-image: radial-gradient(#C5A059 1%, transparent 2%);
+    background-size: 950px 950px;
+    background-position: 300px 400px;
+    opacity: 0.5;
+    animation: fireflyFloat 65s linear infinite;
 }
 
 /* 🪄 THE FLOATING ANIMATION MOTION */
 @keyframes fireflyFloat {
-    0% { transform: translate(0, 0); }
-    100% { transform: translate(0, -1000px); }
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-1000px); }
 }
