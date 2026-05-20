@@ -956,22 +956,39 @@ div.left {
 
 /* 👑 ENERGY BAR */
 .progress-bar-warning {
-   background: linear-gradient(#D4AF37, #261C14)!important;
+background: repeating-linear-gradient(
+        45deg,
+        #D4AF37,
+        #D4AF37 10px,
+        #B3922E 10px,
+        #B3922E 20px
+    ) !important;
 }
 
 /* 👑 HUNGER BAR */
 .progress-bar-danger {
-    background: linear-gradient(#0A1128, #D4AF37)!important;
+    background: repeating-linear-gradient(
+        45deg,
+        #0A1128,
+        #0A1128 10px,
+        #1C2541 10px,
+        #1C2541 20px
+    ) !important;
 }
 
 /* ✨ XP BAR */
 .progress-bar-success {
-    background: linear-gradient(#C5A059, #0A1128)!important;
+background: repeating-linear-gradient(
+        45deg,
+        #C5A059,
+        #C5A059 10px,
+        #A38243 10px,
+        #A38243 20px
+    ) !important;
 }
 
 /* 📊 GENERAL BAR STYLE */
 .progress-bar {
-    background: linear-gradient(#D4AF37, #1C2541);
 
 	border-radius: 20px;
 
