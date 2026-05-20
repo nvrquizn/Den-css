@@ -1722,7 +1722,7 @@ img[src$="den_beetlebook.png"] {
 }
 
 /* ========================================================= */
-/* 🌌 FLOATING STARLIT EMBERS & FIREFLIES                    */
+/* 🌌 FLOATING STARLIT EMBERS & FIREFLIES (Spaced Version)   */
 /* ========================================================= */
 body::before, body::after {
     content: "";
@@ -1732,63 +1732,27 @@ body::before, body::after {
     width: 100%;
     height: 100%;
     pointer-events: none;
-    z-index: 1; /* Sits softly between background and content */
-    
+    z-index: 1;
+
     background-image: 
-        radial-gradient(#D4AF37 2%, transparent 6%), 
-        radial-gradient(#C5A059 2%, transparent 5%);
-    background-size: 140px 140px; /* 🌌 Spaced out grid so there aren't too many */
+        radial-gradient(#D4AF37 1.5%, transparent 3%), 
+        radial-gradient(#C5A059 1%, transparent 2%);
+    background-size: 900px 900px; 
 }
 
 body::after {
-    background-size: 190px 190px;
-    background-position: 80px 120px;
-    opacity: 0.45;
-    animation: fireflyFloat 32s linear infinite;
+    background-size: 1200px 1200px;
+    background-position: 400px 600px;
+    opacity: 0.35; 
+    animation: fireflyFloat 45s linear infinite;
 }
 
 body::before {
-    animation: fireflyFloat 22s linear infinite; 
+    animation: fireflyFloat 35s linear infinite; 
 }
 
 /* 🪄 THE FLOATING ANIMATION MOTION */
 @keyframes fireflyFloat {
-    0% {
-        transform: translate(0, 0) rotate(0deg);
-        filter: drop-shadow(0 0 2px #D4AF37);
-    }
-    33% {
-        transform: translate(20px, -40px) rotate(3deg);
-        filter: drop-shadow(0 0 4px #D4AF37) brightness(1.2);
-    }
-    66% {
-        transform: translate(-15px, -80px) rotate(-3deg);
-        filter: drop-shadow(0 0 1px #C5A059);
-    }
-    100% {
-        transform: translate(0, -120px) rotate(0deg);
-        filter: drop-shadow(0 0 2px #D4AF37);
-        background-position: 0px -550px;
-    }
-}
-
-/* 🪄 THE FLOATING ANIMATION MOTION */
-@keyframes fireflyFloat {
-    0% {
-        transform: translate(0, 0) rotate(0deg);
-        filter: drop-shadow(0 0 4px #D4AF37);
-    }
-    33% {
-        transform: translate(30px, -50px) rotate(4deg);
-        filter: drop-shadow(0 0 8px #D4AF37) brightness(1.3); /* Brighten/glow up */
-    }
-    66% {
-        transform: translate(-20px, -100px) rotate(-4deg);
-        filter: drop-shadow(0 0 3px #C5A059); /* Dim slightly */
-    }
-    100% {
-        transform: translate(0, -150px) rotate(0deg);
-        filter: drop-shadow(0 0 4px #D4AF37);
-        background-position: 0px -550px; /* Seamless vertical looping */
-    }
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(0, -1000px); }
 }
