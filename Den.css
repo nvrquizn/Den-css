@@ -1724,9 +1724,7 @@ img[src$="den_beetlebook.png"] {
 /* ========================================================= */
 /* 🌌 FLOATING STARLIT EMBERS & FIREFLIES                    */
 /* ========================================================= */
-
-body::before, 
-body::after {
+body::before, body::after {
     content: "";
     position: fixed;
     top: 0;
@@ -1736,13 +1734,13 @@ body::after {
     pointer-events: none;
     z-index: 1; /* Sits softly between background and content */
     background-image: 
-        radial-gradient(#D4AF37 20%, transparent 25%),
+        radial-gradient(#D4AF37 20%, transparent 25%), 
         radial-gradient(#C5A059 15%, transparent 20%);
-    background-size: 550px 550px;
+    background-size: 250px 250px;
 }
 
 body::after {
-    background-size: 400px 400px;
+    background-size: 180px 180px;
     background-position: 150px 250px;
     opacity: 0.6;
     animation: fireflyFloat 28s linear infinite; /* Slower drift */
