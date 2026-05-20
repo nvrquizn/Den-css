@@ -1321,19 +1321,24 @@ img[src$="den_beetlebook.png"] {
 	font-family: 'Cinzel Decorative', serif;
 }
 
-/* pagedoll */
-.container.main::after {
-	 content: "";
-    background-image: url('https://i.ibb.co/4RbQGb1t/Ashveilpagedoll-20260512003628.png');
-    background-size: cover;
+/* ✉️ FLOATING LORE LETTER */
+.floating-letter {
     position: fixed;
-	display: block;
-    height:200px;
-    width:200px;
-	right:0px;
-    bottom: 1rem;
-	z-index: 1;
-	pointer-events: none;
+    bottom: 20px;
+    right: 20px;
+    width: 180px; /* Perfect size to look like a desk prop */
+    height: auto;
+    z-index: 9999;
+    pointer-events: none; /* Keeps it from blocking layout clicks */
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.6));
+    
+    /* Soft, magical floating animation */
+    animation: letterFloat 4s ease-in-out infinite;
+}
+
+@keyframes letterFloat {
+    0%, 100% { transform: translateY(0px) rotate(2deg); }
+    50% { transform: translateY(-10px) rotate(-1deg); }
 }
 
 /* ========================================================= */
