@@ -3,7 +3,7 @@
 /* 🌙 Deep navy/black aesthetic with royal gold & blue accents */
 /* ========================================================= */
 
-/* font - Upgraded to Cinzel Decorative for an ornate royal vibe */
+/* font */
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Marcellus&display=swap');
 
 :root {
@@ -1227,7 +1227,7 @@ div.slider.round::before {
 	background-size: cover !important;
 	background-position: center !important;
 	background-repeat: no-repeat !important;
-	transition: 0.8s ease;
+	transition: 3s ease;
 	box-shadow: 1px 1px 5px #000;
 	width: 200px;
 	height: 200px;
@@ -1247,27 +1247,27 @@ div.slider.round::before {
 /* change beetle book image by TawnyCollar#251887 */
 img[src$="den_ancestors.png"] {
 	background:none!important; 
-      content:url('https://i.ibb.co/vx3Hj6nP/Screenshot-2026-05-11-at-23-53-01.png')!important;
+      content:url('https://i.ibb.co/wNYNrq7D/sovereigndynasty-20260519235743.png')!important;
 }
 
 img[src$="den_ancestorsfem.png"] {
 	background:none!important; 
-	    content:url('https://i.ibb.co/fdgy74Pw/Screenshot-2026-05-11-at-23-53-14.png')!important;
+	    content:url('https://i.ibb.co/q3Kd9zZ3/pridedynasty-20260520000543.png')!important;
 }
 
 img[src$="den_achievements.png"] {
 	background:none!important; 
-      content:url('https://i.ibb.co/mCSfh5Dt/Screenshot-2026-05-11-at-23-53-27.png')!important;
+      content:url('https://i.ibb.co/ycHGFByQ/achievements-20260520001340.png')!important;
 }
 
 img[src$="den_showcase.png"] {
 	background:none!important; 
-       content:url('https://i.ibb.co/ks8FyVLY/Screenshot-2026-05-11-at-23-53-35.png')!important;
+       content:url('https://i.ibb.co/MDqZc8tX/showcase-20260520001843.png')!important;
 }
 
 img[src$="den_beetlebook.png"] {
 	background:none!important; 
-       content:url('https://i.ibb.co/NgwLynMc/Screenshot-2026-05-11-at-23-53-46.png');
+       content:url('https://i.ibb.co/Z6KKM2Rv/beetlebook-20260520002902.png');
 }
 
 /* 🌌 hover glow effect */
