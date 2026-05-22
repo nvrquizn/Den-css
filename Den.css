@@ -677,6 +677,69 @@ table#player img {
     font-family: 'Cinzel Decorative', serif;
 }
 
+/* ==========================================================================
+   👑 MAIN PANEL & LEFT SIDEBAR LAYOUT FLIP
+========================================================================== */
+
+@media (min-width: 768px) {
+    .container.main {
+        background: rgba(13, 12, 16, 0.50) !important;
+        border-left: 0px ridge;
+        border-right: 0px ridge;
+        border-bottom: 0px ridge;
+        border-radius: 10px;
+        box-shadow: inset 0 0 90px rgba(212, 175, 55, 0.10), 0 0 10px rgba(10, 17, 40, 0.18) !important;
+        text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+        font-family: 'Cinzel Decorative', serif;
+        width: 100%;
+        margin-top: 0%;
+    }
+}
+
+/* MOBILE RESPONSIVE RESET */
+@media only screen and (max-width: 600px) {
+    .col-md-3 { 
+        background: none !important; 
+        border: none !important; 
+    }
+    .col-md-9 { 
+        background: none; 
+        border-right: none; 
+    }
+}
+
+/* 🌙 SIDEBAR (PINNED TO LEFT & TRANSPARENT) */
+@media only screen and (min-width: 601px) {
+    .sidebar { 
+        background: none !important; 
+        box-shadow: none !important;
+        border: none !important; 
+        position: absolute; 
+        margin-left: 0px; 
+        width: 301px; 
+    }
+}
+
+@media only screen and (max-width: 601px) {
+    .sidebar { 
+        background: none !important; 
+        box-shadow: none !important; 
+        border: none !important; 
+    }
+}
+
+/* 👑 MAIN CONTENT PANEL (PUSHED TO RIGHT) */
+@media only screen and (min-width: 601px) {
+    .col-md-9 {
+        background: none;
+        border-right: none;
+        color: #ffffff !important;
+        font-family: 'Cinzel Decorative', serif;
+        position: relative; 
+        margin-left: 290px; /* Pushes den content over so it doesn't overlap the sidebar */
+    }
+}
+
 /* ============================= */
 /* 👑 BREADCRUMB */
 /* ============================= */
@@ -1234,7 +1297,7 @@ div.slider.round::before {
 
 /* 👑 Credit Area */ 
 .breadcrumb::after { 
-	content: "Heavy Hangs the Crown"; 
+	content: "— Heavy Hangs the Crown —"; 
 	color: #C5A059; /* soft gold glow */
 	text-shadow: 1px 1px 1.5px #000; 
 	font-size: 12px !important; 
