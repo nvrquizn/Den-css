@@ -1415,8 +1415,9 @@ img[src$="den_beetlebook.png"] {
 .floating-letter {
     position: fixed;
     bottom: 20px;
-    right: 20px;
-    width: 180px; /* Perfect size to look like a desk prop */
+    left: 20px;
+    right: auto !important;
+    width: 180px; 
     height: auto;
     z-index: 9999;
     pointer-events: none; /* Keeps it from blocking layout clicks */
