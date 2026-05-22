@@ -136,8 +136,8 @@
 /* Logo Replacer */
 div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
     content: url('https://i.ibb.co/9mv3WMCs/goldseallogo-20260520010003.png');
-    width: 200px !important;
-    height: 120px !important;
+    width: 180px !important;
+    height: 110px !important;
     object-fit: contain !important;
 }
 
