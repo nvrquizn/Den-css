@@ -1786,6 +1786,29 @@ img[src$="den_beetlebook.png"] {
 }
 
 /* ========================================================= */
+/* 🎴 VERTICAL HOVER EXPANSION BOX MATRIX                   */
+/* ========================================================= */
+
+.vertical-expand-box {
+    height: 380px !important; /* Locks it to match Extra Hub perfectly at rest */
+    overflow: hidden !important;
+    transition: height 0.6s cubic-bezier(0.25, 1, 0.5, 1) !important;
+}
+
+/* Smoothly slides down to show everything on hover */
+.vertical-expand-box:hover {
+    height: 720px !important; 
+    overflow-y: auto !important; 
+}
+
+/* Mobile fix: makes it tap-friendly so it doesn't stay permanently locked */
+@media (max-width: 768px) {
+    .vertical-expand-box {
+        height: auto !important;
+    }
+}
+
+/* ========================================================= */
 /* 🌌 FLOATING STARLIT EMBERS & FIREFLIES      */
 /* ========================================================= */
 body::before, body::after {
