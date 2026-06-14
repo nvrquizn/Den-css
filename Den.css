@@ -439,28 +439,43 @@ div.cave-grid > img[src$="caveunused.jpg"] {
 	opacity: 0.3;
 }
 
-/* ============================= */
-/* 👑 FEATURED LIONESS  */
-/* ============================= */
+/* ========================================================= */
+/* 👑 FEATURED LION SECTION */
+/* ========================================================= */
 
-.lionImage img {
-    visibility: visible !important;
-    display: inline-block !important;
+.featured-lion {
+    background: #0d0f12; 
+    color: #ebd197; 
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 0 1px #3a3220, 0 4px 15px rgba(224, 180, 88, 0.15);
 }
 
-.lionImage {
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
+.featured-lion img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
-.lionImage-holder {
-    background-image: url('https://i.ibb.co/KpTrv7sL/Screenshot-2026-05-19-at-23-04-05.png') !important;
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    box-shadow: 0 0 18px rgba(198, 180, 120, 0.18) !important;
-    overflow: hidden !important; 
+/* Featured lion background image */
+.featured-lion img[src$='//static.lioden.com/images/cave/default.png'] {
+    content: url('https://i.ibb.co/KpTrv7sL/Screenshot-2026-05-19-at-23-04-05.png') !important;
+}
+
+.featured-lion .b {
+    padding-top: 8px;
+}
+
+/* Links */
+.featured-lion a:hover,
+.featured-lion a:focus {
+    color: #ffcc66;
+}
+
+/* Links */
+.featured-lion a:link,
+.featured-lion a:active,
+.featured-lion a:visited {
+    color: #c6b478;
 }
 
 /* ============================= */
