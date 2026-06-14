@@ -443,19 +443,12 @@ div.cave-grid > img[src$="caveunused.jpg"] {
 /* 👑 FEATURED LIONESS */
 /* ============================= */
 
-.lionImage img {
-	visibility: visible !important;
+.lionImage img:first-child {
+visibility: hidden;
 }
 
 .lionImage {
-	background: none !important;
-	box-shadow: none !important;
-}
-
-.lionImage-holder {
-	background-image: url('https://i.ibb.co/KpTrv7sL/Screenshot-2026-05-19-at-23-04-05.png') !important;
-	background-size: cover;
-	background-position: center;
+	background: url('https://i.ibb.co/KpTrv7sL/Screenshot-2026-05-19-at-23-04-05.png') no-repeat !important;
 	box-shadow: 0 0 18px rgba(198, 180, 120, 0.18);
 }
 
