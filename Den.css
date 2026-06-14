@@ -448,7 +448,7 @@ div.cave-grid > img[src$="caveunused.jpg"] {
 }
 
 .lionImage {
-	content: url('https://i.ibb.co/KpTrv7sL/Screenshot-2026-05-19-at-23-04-05.png') no-repeat !important;
+	content: url('https://i.ibb.co/KpTrv7sL/Screenshot-2026-05-19-at-23-04-05.png') !important;
 	background-size: cover;
 	box-shadow: 0 0 18px rgba(198, 180, 120, 0.18);
 }
