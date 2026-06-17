@@ -1631,7 +1631,20 @@ img[src$="den_beetlebook.png"] {
     margin-bottom: 25px;
 }
 
-/* 🎨 Customized Inner Elements */
+/* 🪄 Smooth Vertical Expansion Box Matrix */
+.vertical-expand-box {
+    height: 380px !important;
+    overflow: hidden !important;
+    transition: height 0.6s cubic-bezier(0.25, 1, 0.5, 1) !important;
+    box-sizing: border-box;
+}
+
+.vertical-expand-box:hover {
+    height: 750px !important; 
+    overflow-y: auto !important; 
+}
+
+/* 🎨 Customized Inner Elements & Custom Scrollbars */
 .lore-quote {
     font-style: italic;
     color: #C5A059;
@@ -1641,6 +1654,18 @@ img[src$="den_beetlebook.png"] {
     margin: 15px 0;
     text-align: left;
     line-height: 1.6;
+}
+
+/* Hide ugly scrollbars, enable smooth custom starlit track */
+.vertical-expand-box::-webkit-scrollbar {
+    width: 4px;
+}
+.vertical-expand-box::-webkit-scrollbar-thumb {
+    background: #D4AF37;
+    border-radius: 2px;
+}
+.vertical-expand-box::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
 }
 
 /* 🐾 Chicken Smoothie Grid */
@@ -1668,6 +1693,10 @@ img[src$="den_beetlebook.png"] {
     .den-grid-row {
         grid-template-columns: 1fr;
         gap: 20px;
+    }
+    .vertical-expand-box {
+        height: auto !important;
+        overflow: visible !important;
     }
     .cs-pet-grid {
         grid-template-columns: repeat(3, 1fr);
