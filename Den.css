@@ -674,7 +674,7 @@ table#player img {
 .member-online {
     background: rgba(207, 207, 207, 0);
     content: url('https://i.ibb.co/WNXq0Xyk/moononline-20260630044151.png')!important;
-    width: 55px!important;
+    width: 45px!important;
     height: 32px;
     position: relative;
     top: 07px;
@@ -684,7 +684,7 @@ table#player img {
 .member-offline {
     background: rgba(51, 51, 79, 0);
     content: url('https://i.ibb.co/BH1ZX2nq/sunoffline-20260630043648.png')!important;
-    width: 60px!important;
+    width: 50px!important;
     height: 30px;
     position: relative;
     top: 07px;
