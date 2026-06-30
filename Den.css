@@ -141,6 +141,20 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
     object-fit: contain !important;
 }
 
+/* Bookmark Button */
+input.floatright {
+    background: url(https://i.ibb.co/yBWh4cLC/moonbookmark-20260630045544.png) 0 0 no-repeat !important;
+    display:block;
+    height: 100px;
+    width: 75px;
+    overflow:visible;
+    text-indent:-99999em;
+    background-size: 70px 70px !important;
+    margin-top: -17px;
+	margin-right: -05px;
+    
+}
+
 /* Cursor */
 * {
   cursor: url('https://cdn.cursors-4u.net/previews/da-vinci-s-pen-ac944e9f-32.webp') 32 32, auto !important;
@@ -653,7 +667,43 @@ table#player img {
 }
 
 /* ============================= */
-/* 🌙 NAVBAR (ROYAL GOLD GLOW) */
+/* 💫 ONLINE/OFFLINE + BEETLES */
+/* ============================= */
+
+/* Member online */
+.member-online {
+    background: rgba(207, 207, 207, 0);
+    content: url('https://i.ibb.co/WNXq0Xyk/moononline-20260630044151.png')!important;
+    width: 55px!important;
+    height: 32px;
+    position: relative;
+    top: 07px;
+    left: 0px;
+}
+/* Member offline */
+.member-offline {
+    background: rgba(51, 51, 79, 0);
+    content: url('https://i.ibb.co/BH1ZX2nq/sunoffline-20260630043648.png')!important;
+    width: 60px!important;
+    height: 30px;
+    position: relative;
+    top: 07px;
+    left: 0px;
+}
+
+/* Gold beetles */
+img[src$="icon-beetle-gold.png"] {
+    content:url('https://i.ibb.co/5gRFs0p4/goldbar-20260630044759.png')!important;
+    width:20px!important;
+}
+/* Silver beetles */
+img[src$="icon-beetle-silver.png"] {
+    content:url('https://i.ibb.co/d4zc10LP/silvercoin-20260630045009.png')!important;
+    width:20px!important;
+}
+
+/* ============================= */
+/* 🌙 NAVBAR */
 /* ============================= */
 
 .navbar {
