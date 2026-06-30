@@ -696,6 +696,7 @@ img[src$="icon-beetle-gold.png"] {
     content:url('https://i.ibb.co/5gRFs0p4/goldbar-20260630044759.png')!important;
     width:20px!important;
 }
+
 /* Silver beetles */
 img[src$="icon-beetle-silver.png"] {
     content:url('https://i.ibb.co/d4zc10LP/silvercoin-20260630045009.png')!important;
