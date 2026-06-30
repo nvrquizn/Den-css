@@ -143,14 +143,12 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
 
 /* Bookmark Button */
 input.floatright {
-    background: url('https://i.ibb.co/yBWh4cLC/moonbookmark-20260630045544.png') 0 0 no-repeat !important;
-	background-position: 0 0 !important;
-    background-size: 70px 70px !important;
+    content: url('https://i.ibb.co/yBWh4cLC/moonbookmark-20260630045544.png') 0 0 no-repeat !important;
     display:block;
     height: 100px;
     width: 75px;
     overflow:visible;
-    text-indent:-99999em;
+    text-indent:-999em;
     background-size: 70px 70px !important;
     margin-top: -17px;
 	margin-right: -5px; 
