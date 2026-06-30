@@ -412,6 +412,19 @@ a[href="cave.php?id=261140"] .cave-grid > img:hover {
     opacity: 1;
 }
 
+/* Raise & Chase */
+a[href="cave.php?id=545355"] .cave-grid > img {
+    content: url('https://i.ibb.co/JwDkpmdL/Screenshot-2026-06-30-at-03-37-51.png') !important;
+    opacity: 0.5;
+    border-radius: 10px !important;
+    box-shadow: 1px 1px 5px var(--darkgray) !important;
+    overflow: hidden;
+}
+
+a[href="cave.php?id=545355"] .cave-grid > img:hover {
+    opacity: 1;
+}
+
 /* Raffle Lions */
 a[href="cave.php?id=533067"] .cave-grid > img {
     content: url('https://i.ibb.co/X9zgmN9/Screenshot-2026-05-19-at-23-19-28.png') !important;
